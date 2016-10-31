@@ -1,0 +1,25 @@
+int attr alphaChannelText 0x7f010003
+int attr alphaChannelVisible 0x7f010002
+int attr colorPickerBorderColor 0x7f010005
+int attr colorPickerSliderColor 0x7f010004
+int attr showDialogTitle 0x7f010000
+int attr showSelectedColorInList 0x7f010001
+int drawable icon 0x7f020000
+int id color_panel_new 0x7f050000
+int id color_panel_old 0x7f050001
+int id color_picker_view 0x7f050002
+int id dialog_color_picker_extra_layout_landscape 0x7f050003
+int id layout1 0x7f050005
+int id preference_preview_color_panel 0x7f050004
+int layout dialog_color_picker 0x7f030000
+int layout preference_preview_layout 0x7f030001
+int string app_name 0x7f060000
+int style dialog_color_pciker_view_portrait 0x7f040000
+int[] styleable ColorPickerPreference { 0x7f010000, 0x7f010001 }
+int styleable ColorPickerPreference_showDialogTitle 0
+int styleable ColorPickerPreference_showSelectedColorInList 1
+int[] styleable ColorPickerView { 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005 }
+int styleable ColorPickerView_alphaChannelText 1
+int styleable ColorPickerView_alphaChannelVisible 0
+int styleable ColorPickerView_colorPickerBorderColor 3
+int styleable ColorPickerView_colorPickerSliderColor 2

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/internal_impl-23.1.0_497123fca13e359bd62f44542f67a65d83b92c89/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/com.android.support-appcompat-v7-23.1.0_314466744f63561a6ccf2e99d611cd74349d48c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jordyn-ubuntumate/Desktop/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/support-annotations-23.1.0_b3eac6df3e7fd31072bd4837e4fcfc1abf556151/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/incremental-classes/normal/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f476b6ee241fd2d7abe3a82206804c84724d9a90">
+        <dex dex="/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_bb48b02d6488771947fda8273042e846190a3554/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/incremental-runtime-classes/normal/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e31651ffd7067001ca7fb42bc75276a9128b823b">
+        <dex dex="/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_e1c4550aeb20a2b1df5668bbfb5fde5c6160328f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/com.android.support-support-v4-23.1.0_2c863b76f25340728d85136f32103dd0bf6b05a5/classes.dex" />
+    </item>
+
+</items>

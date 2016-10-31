@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/jordyn-ubuntumate/code/Atomic (copy)/viewPagerIndicator/build/intermediates/res/merged/androidTest/debug/color/vpi__light_theme.xml",
+        "source": "/home/jordyn-ubuntumate/code/Atomic (copy)/viewPagerIndicator/build/intermediates/bundles/debug/res/color/vpi__light_theme.xml"
+    },
+    {
+        "merged": "/home/jordyn-ubuntumate/code/Atomic/viewPagerIndicator/build/intermediates/res/merged/androidTest/debug/color/vpi__light_theme.xml",
+        "source": "/home/jordyn-ubuntumate/code/Atomic/viewPagerIndicator/build/intermediates/bundles/debug/res/color/vpi__light_theme.xml"
+    },
+    {
+        "merged": "/home/jordyn-ubuntumate/code/Atomic (copy)/viewPagerIndicator/build/intermediates/res/merged/androidTest/debug/color/vpi__dark_theme.xml",
+        "source": "/home/jordyn-ubuntumate/code/Atomic (copy)/viewPagerIndicator/build/intermediates/bundles/debug/res/color/vpi__dark_theme.xml"
+    },
+    {
+        "merged": "/home/jordyn-ubuntumate/code/Atomic/viewPagerIndicator/build/intermediates/res/merged/androidTest/debug/color/vpi__dark_theme.xml",
+        "source": "/home/jordyn-ubuntumate/code/Atomic/viewPagerIndicator/build/intermediates/bundles/debug/res/color/vpi__dark_theme.xml"
+    }
+]

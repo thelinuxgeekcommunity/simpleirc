@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+Yaaic - Yet Another Android IRC Client
+
+Copyright 2009-2013 Sebastian Kaspari
+
+This file is part of Yaaic.
+
+Yaaic is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Yaaic is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    package="indrora.atomic"
+    android:installLocation="auto"
+    android:versionCode="21"
+    android:versionName="2.1">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        tools:replace="icon,label"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:name=".App"
+        android:label="Simple IRC"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="indrora.atomic.activity.ServersActivity"
+            android:label="Simple IRC"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="indrora.atomic.activity.AddServerActivity"
+            android:theme="@style/Theme.AppCompat.DialogWhenLarge"
+            android:label="@string/add_server_label">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="irc" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="indrora.atomic.activity.ConversationActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges=""
+            android:launchMode="singleTop"
+            android:parentActivityName="indrora.atomic.activity.ServersActivity" />
+        <activity
+            android:name="indrora.atomic.activity.AboutActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:label="@string/about_label" />
+        <activity
+            android:name="indrora.atomic.activity.SettingsActivity"
+            android:parentActivityName="indrora.atomic.activity.ServersActivity"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:label="@string/settings_label">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="indrora.atomic.activity.ServersActivity" />
+
+        </activity>
+        <activity
+            android:name="indrora.atomic.activity.JoinActivity"
+            android:label="@string/join_label"
+            android:theme="@style/AppDialogTheme"></activity>
+        <activity
+            android:name="indrora.atomic.activity.MessageActivity"
+            android:theme="@style/AppDialogTheme" />
+
+        <service android:name="indrora.atomic.irc.IRCService" />
+
+        <activity android:name="indrora.atomic.activity.ForgetCertificatesActivity">
+            <intent-filter>
+                <action android:name="indrora.atomic.activity.ForgetCertificatesActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <!-- Memorizing Trust manager -->
+        <activity android:name="de.duenndns.ssl.MemorizingActivity"
+            tools:replace="android:theme"
+            android:theme="@style/Theme.AppCompat.DialogWhenLarge"
+            />
+        <activity
+            android:name="indrora.atomic.FirstRunActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/title_activity_first_run" />
+    </application>
+
+</manifest>

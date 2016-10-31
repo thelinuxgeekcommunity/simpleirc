@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorPickerPreference"><attr format="boolean|reference" name="showDialogTitle"/><attr format="boolean|reference" name="showSelectedColorInList"/></declare-styleable>
+    <declare-styleable name="ColorPickerView"><attr format="boolean|reference" name="alphaChannelVisible"/><attr format="string|reference" name="alphaChannelText"/><attr format="color|reference" name="colorPickerSliderColor"/><attr format="color|reference" name="colorPickerBorderColor"/></declare-styleable>
+    <item name="color_panel_new" type="id"/>
+    <item name="color_panel_old" type="id"/>
+    <item name="color_picker_view" type="id"/>
+    <item name="dialog_color_picker_extra_layout_landscape" type="id"/>
+    <item name="preference_preview_color_panel" type="id"/>
+    <string name="app_name">ColorPickerView</string>
+    <style name="dialog_color_pciker_view_portrait">
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

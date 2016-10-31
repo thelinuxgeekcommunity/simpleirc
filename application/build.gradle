@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    lintOptions {
+        abortOnError false
+    }
+    compileSdkVersion 23
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId 'tk.jordynsmediagroup.simpleirc'
+        minSdkVersion 14
+        targetSdkVersion 22
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+        debug {
+            applicationIdSuffix = '.debug'
+        }
+    }
+    productFlavors {
+        normal {
+            applicationId 'tk.jordynsmediagroup.simpleirc'
+        }
+    }
+}
+
+dependencies {
+    compile project(':viewPagerIndicator')
+    compile project(':memorizingTrustManager')
+    compile project(':colorPickerView')
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+}

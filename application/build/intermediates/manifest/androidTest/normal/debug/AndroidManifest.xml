@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tk.jordynsmediagroup.simpleirc.debug.test">
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="22" />
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="tk.jordynsmediagroup.simpleirc.debug"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for tk.jordynsmediagroup.simpleirc.debug"/>
+</manifest>

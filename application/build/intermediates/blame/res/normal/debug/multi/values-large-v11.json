@@ -1,0 +1,28 @@
+[
+    {
+        "outputFile": "/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/incremental/mergeNormalDebugResources/merged.dir/values-large-v11/values-large-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 5,
+                    "endColumn": 12,
+                    "endOffset": 234
+                },
+                "from": {
+                    "file": "/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/exploded-aar/Atomic (copy)/colorPickerView/unspecified/res/values-large-v11/values-large-v11.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 5,
+                        "endColumn": 12,
+                        "endOffset": 234
+                    }
+                }
+            }
+        ]
+    }
+]
