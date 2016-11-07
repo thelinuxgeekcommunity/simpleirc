@@ -101,6 +101,9 @@ public class ColorScheme {
       scheme_colors.put("foreground", Color.parseColor(themeProps.getProperty("foreground." + (useDarkTheme ? "dark" : "light"))));
       scheme_colors.put("background", Color.parseColor(themeProps.getProperty("background." + (useDarkTheme ? "dark" : "light"))));
 
+        //scheme_colors.put("toolbartext", Color.parseColor(themeProps.getProperty("toolbartext." + (useDarkTheme ? "dark" : "light"))));
+        //scheme_colors.put("toolbarbackground", Color.parseColor(themeProps.getProperty("toolbarbackground." + (useDarkTheme ? "dark" : "light"))));
+
       this._name = scheme;
     }
 
@@ -154,7 +157,7 @@ public class ColorScheme {
     return getColorCached("url");
   }
 
-  public int getToolbarBackground() { return getColorCached("toolbarbackground"); }
+  public int getToolbarBackground() { return getColorCached("toolbarbackground.dark"); }
 
-    public int getToolbarText() { return getColorCached("toolbartext"); }
+  public int getToolbarText() { return getColorCached("toolbartext.dark"); }
 }

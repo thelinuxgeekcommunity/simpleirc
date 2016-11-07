@@ -5,33 +5,40 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="84844360554582"
+    timestamp="93920995252639"
     token="-3981717647132312139"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="296" />
+        duration="166" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="290" />
     <task
         name="instant-run-transform"
-        duration="21" />
+        duration="4" />
     <task
         name="verifier"
         duration="1" />
 
     <artifact
-        location="/home/jordyn-arch/code/simpleirc/application/build/outputs/apk/application-normal-debug.apk"
-        type="MAIN" />
+        location="/home/jordyn-arch/code/simpleirc/application/build/intermediates/reload-dex/normal/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="84844360554582"
+        timestamp="93881459887587"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/jordyn-arch/code/simpleirc/application/build/outputs/apk/application-normal-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="93920995252639"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/jordyn-arch/code/simpleirc/application/build/intermediates/reload-dex/normal/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

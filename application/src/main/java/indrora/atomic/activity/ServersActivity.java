@@ -71,7 +71,6 @@ import android.widget.Toast;
 /**
  * List of servers
  *
- * @author Sebastian Kaspari <sebastian@yaaic.org>
  */
 public class ServersActivity extends AppCompatActivity implements ServiceConnection, ServerListener, OnItemClickListener, OnItemLongClickListener {
   private IRCBinder binder;

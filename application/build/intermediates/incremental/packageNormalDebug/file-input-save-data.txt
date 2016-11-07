@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Nov 07 01:12:56 CST 2016
+#Mon Nov 07 03:43:30 CST 2016
 210.set=ANDROID_RESOURCE
 282.file=/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/resources-normal-debug.ap_/res/menu/messageops.xml
 14.set=ANDROID_RESOURCE

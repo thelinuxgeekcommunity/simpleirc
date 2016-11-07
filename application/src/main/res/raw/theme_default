@@ -5,8 +5,11 @@ background.dark:#ff000000
 foreground.light:#ff000000
 background.light:#ffffffff
 
-toolbarbackground:#000000
-toolbartext:#ffffff
+toolbarbackground.light:#ffffff
+toolbartext.light:#000000
+toolbarbackground.dark:#000000
+toolbartext.dark:#ffffff
+
 userevent:#ff458509
 error:#ffcc0000
 channelevent:#ff729fcf

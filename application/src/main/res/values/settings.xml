@@ -25,7 +25,7 @@
     <string name="default_reconnect_interval" translatable="false">5</string>
 
     <string name="key_ignore_motd" translatable="false">ignore_motd</string>
-    <string name="default_ignore_motd" translatable="false">true</string>
+    <string name="default_ignore_motd" translatable="false">false</string>
 
     <string name="key_quitmessage" translatable="false">quitmessage</string>
     <string name="default_quitmessage" translatable="false">AtomicIRC: The nuclear option.</string>
@@ -49,7 +49,6 @@
     <string name="default_sound_highlight" translatable="false">false</string>
 
     <string name="key_sound_ring" translatable="false">sound_ring</string>
-
 
     <string name="key_led_highlight" translatable="false">led_highlight</string>
     <string name="default_led_highlight" translatable="false">true</string>
@@ -88,7 +87,7 @@
     <string name="default_show_channelbar" translatable="false">true</string>
 
     <string name="key_colorscheme_dark">colorscheme_dark</string>
-    <string name="default_colorscheme_dark">true</string>
+    <string name="default_colorscheme_dark">false</string>
 
     <string name="key_reconnect_transient">reconnect_transient</string>
     <string name="default_reconnect_transient">false</string>
@@ -99,9 +98,9 @@
     <!--  the default value of default_nickname will be mangled on first run -->
     <!--  It also gets force-set if there is no "valid" name, so we're 100% OK -->
     <string name="key_default_username">default_username</string>
-    <string name="default_default_username">atomic</string>
+    <string name="default_default_username">simpleircuser</string>
 
     <string name="key_default_realname">default_realname</string>
-    <string name="default_default_realname">Atomic User</string>
+    <string name="default_default_realname">Simple IRC User</string>
 
 </resources>

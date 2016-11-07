@@ -1,28 +1,10 @@
-/*
-Yaaic - Yet Another Android IRC Client
-
-Copyright 2009-2013 Sebastian Kaspari
-
-This file is part of Yaaic.
-
-Yaaic is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-Yaaic is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
- */
 package indrora.atomic.activity;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.support.v7.app.ActionBar;
-//import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -42,6 +24,7 @@ import android.os.IBinder;
 import android.speech.RecognizerIntent;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
 import android.text.SpannableString;
@@ -57,6 +40,8 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnKeyListener;
+import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
@@ -98,10 +83,11 @@ import indrora.atomic.model.Status;
 import indrora.atomic.receiver.ConversationReceiver;
 import indrora.atomic.receiver.ServerReceiver;
 
+import static android.R.color.white;
+
 /**
  * The server view with a scrollable list of all channels
  *
- * @author Sebastian Kaspari <sebastian@yaaic.org>
  */
 public class ConversationActivity extends AppCompatActivity implements
     ServiceConnection, ServerListener, ConversationListener,
@@ -217,9 +203,6 @@ public class ConversationActivity extends AppCompatActivity implements
    */
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-
-
-
     serverId = getIntent().getExtras().getInt("serverId");
     server = Atomic.getInstance().getServerById(serverId);
     settings = App.getSettings();
@@ -244,10 +227,10 @@ public class ConversationActivity extends AppCompatActivity implements
 
     _mainToolbar = (Toolbar)findViewById(R.id.toolbar);
     _mainToolbar.inflateMenu(R.menu.conversations);
-      _mainToolbar.setTitleTextColor(_scheme.getToolbarText());
+          _mainToolbar.setTitleTextColor(_scheme.getToolbarText());
+          _mainToolbar.setBackgroundColor(_scheme.getToolbarBackground());
       _mainToolbar.setSubtitleTextColor(_scheme.getForeground());
-      _mainToolbar.setBackgroundColor(_scheme.getToolbarBackground());
-    this.setSupportActionBar(_mainToolbar);
+      this.setSupportActionBar(_mainToolbar);
 
 
     boolean isLandscape = (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE);

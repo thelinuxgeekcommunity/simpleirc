@@ -472,8 +472,8 @@
     <string name="app_copyright" translatable="false">© 2016 The Linux Geek</string>
     <string name="app_full_name" translatable="false">Simple IRC:  A simple irc client based off of atomic</string>
     <string name="app_homepage" translatable="false">https://github.com/jcjordyn130/simpleirc</string>
-    <string name="app_irc" translatable="false">irc://chat.freenode.net/atomic-irc</string>
-    <string name="app_name" translatable="false">Atomic</string>
+    <string name="app_irc" translatable="false">irc://chat.freenode.net/thelinuxgeekcommunity</string>
+    <string name="app_name" translatable="false">Simple IRC</string>
     <string name="app_version" translatable="false">release "Helium"</string>
     <string name="auth_description">Atomic will authenticate you with these services after connect.</string>
     <string name="auth_nickserv">Authenticate with Nickserv</string>
@@ -532,14 +532,14 @@
     <string name="default_autocorrect_text" translatable="false">true</string>
     <string name="default_autorejoin_kick" translatable="false">false</string>
     <string name="default_colorscheme" translatable="false">default</string>
-    <string name="default_colorscheme_dark">true</string>
+    <string name="default_colorscheme_dark">false</string>
     <string name="default_debug_traffic" translatable="false">false</string>
-    <string name="default_default_realname">Atomic User</string>
-    <string name="default_default_username">atomic</string>
+    <string name="default_default_realname">Simple IRC User</string>
+    <string name="default_default_username">simpleircuser</string>
     <string name="default_fontsize" translatable="false">11</string>
     <string name="default_graphical_smilies" translatable="false">true</string>
     <string name="default_history_size" translatable="false">500</string>
-    <string name="default_ignore_motd" translatable="false">true</string>
+    <string name="default_ignore_motd" translatable="false">false</string>
     <string name="default_ime_extract" translatable="false">true</string>
     <string name="default_include_seconds" translatable="false">true</string>
     <string name="default_led_highlight" translatable="false">true</string>
@@ -669,13 +669,12 @@
     <string name="key_voice_recognition" translatable="false">voice_recognition</string>
     <string name="licence_info" translatable="false">
     
-	  &lt;p>Atomic is a fork of Yaaic, Yet Another Android IRC client, intended to work on some of the problems that haven\'t been touched in yaaic for a good long while.&lt;/p>
+        &lt;p>Simple IRC is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&lt;/p>
 
-        &lt;p>Atomic (nee Yaaic) is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&lt;/p>
+        &lt;p>Simple IRC is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.&lt;/p>
 
-        &lt;p>Atomic (nee Yaaic) is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.&lt;/p>
-
-     	&lt;p>Atomic makes use of the following libraries:&lt;/p>
+     	&lt;p>Simple IRC makes use of the following libraries:&lt;/p>
+     	&lt;p>&lt;a href="http://www.jibble.org/pircbot.php">PircBot&lt;/a> (a IRC API written in java)&lt;/p>
      	&lt;p>&lt;a href="https://github.com/ge0rg/MemorizingTrustManager/wiki">MemorizingTrustManager&lt;/a> (providing a non-naive SSL certificate manager)&lt;/p>
      	&lt;p>&lt;a href="http://viewpagerindicator.com">ViewPagerIndicator&lt;/a> (A wonderful library for the view page style indicator)&lt;/p>
 
