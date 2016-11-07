@@ -530,6 +530,7 @@
     <string name="default_24h_format" translatable="false">true</string>
     <string name="default_autocap_sentences" translatable="false">false</string>
     <string name="default_autocorrect_text" translatable="false">true</string>
+    <string name="default_autorejoin_kick" translatable="false">false</string>
     <string name="default_colorscheme" translatable="false">default</string>
     <string name="default_colorscheme_dark">true</string>
     <string name="default_debug_traffic" translatable="false">false</string>
@@ -634,6 +635,7 @@
     <string name="key_24h_format" translatable="false">24h_format</string>
     <string name="key_autocap_sentences" translatable="false">autocap_sentences</string>
     <string name="key_autocorrect_text" translatable="false">autocorrect_text</string>
+    <string name="key_autorejoin_kick" translatable="false">autorejoin_kick</string>
     <string name="key_colorscheme" translatable="false">colorscheme</string>
     <string name="key_colorscheme_dark">colorscheme_dark</string>
     <string name="key_debug_traffic" translatable="false">debug_traffic</string>
@@ -698,6 +700,7 @@
     <string name="message_not_connected">Not connected</string>
     <string name="message_now_login">Now logging in…</string>
     <string name="message_op">%1$s ops %2$s</string>
+    <string name="message_ownkick">You have been kicked from %1$s, Rejoining...</string>
     <string name="message_part">%1$s parts</string>
     <string name="message_quit">%1$s quits (%2$s)</string>
     <string name="message_remove_ban">%1$s removes ban: %2$s</string>

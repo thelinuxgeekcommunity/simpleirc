@@ -1,7 +1,7 @@
-#Mon Oct 31 06:07:18 CDT 2016
-base.0=/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_bb48b02d6488771947fda8273042e846190a3554
+#Mon Nov 07 01:12:56 CST 2016
+base.0=/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_04e03cfa2cffa0cfc1227eefe15fe5ef67b78b18
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_e1c4550aeb20a2b1df5668bbfb5fde5c6160328f/classes.dex
-base.1=/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_e1c4550aeb20a2b1df5668bbfb5fde5c6160328f
-file.0=/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_bb48b02d6488771947fda8273042e846190a3554/classes.dex
+file.1=/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_96583ff2276f916991519389f2777ff52faeaa70/classes.dex
+base.1=/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_96583ff2276f916991519389f2777ff52faeaa70
+file.0=/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_04e03cfa2cffa0cfc1227eefe15fe5ef67b78b18/classes.dex

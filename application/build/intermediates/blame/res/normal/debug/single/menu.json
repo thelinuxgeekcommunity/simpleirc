@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/res/merged/normal/debug/menu/messageops.xml",
-        "source": "/home/jordyn-ubuntumate/code/Atomic (copy)/application/src/main/res/menu/messageops.xml"
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/menu/addserver.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/menu/addserver.xml"
     },
     {
-        "merged": "/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/res/merged/normal/debug/menu/addserver.xml",
-        "source": "/home/jordyn-ubuntumate/code/Atomic (copy)/application/src/main/res/menu/addserver.xml"
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/menu/conversations.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/menu/conversations.xml"
     },
     {
-        "merged": "/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/res/merged/normal/debug/menu/conversations.xml",
-        "source": "/home/jordyn-ubuntumate/code/Atomic (copy)/application/src/main/res/menu/conversations.xml"
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/menu/servers.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/menu/servers.xml"
     },
     {
-        "merged": "/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/res/merged/normal/debug/menu/servers.xml",
-        "source": "/home/jordyn-ubuntumate/code/Atomic (copy)/application/src/main/res/menu/servers.xml"
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/menu/messageops.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/menu/messageops.xml"
     }
 ]

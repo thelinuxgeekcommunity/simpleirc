@@ -42,6 +42,9 @@
     <string name="key_vibrate_highlight" translatable="false">vibrate_highlight</string>
     <string name="default_vibrate_highlight" translatable="false">true</string>
 
+    <string name="key_autorejoin_kick" translatable="false">autorejoin_kick</string>
+    <string name="default_autorejoin_kick" translatable="false">false</string>
+
     <string name="key_sound_highlight" translatable="false">sound_highlight</string>
     <string name="default_sound_highlight" translatable="false">false</string>
 

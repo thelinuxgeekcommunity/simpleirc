@@ -6,5 +6,9 @@
     {
         "merged": "/home/jordyn-ubuntumate/code/Atomic/colorPickerView/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/icon.png",
         "source": "/home/jordyn-ubuntumate/code/Atomic/colorPickerView/build/intermediates/bundles/debug/res/drawable-hdpi-v4/icon.png"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/colorPickerView/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/icon.png",
+        "source": "/home/jordyn-arch/code/simpleirc/colorPickerView/build/intermediates/bundles/debug/res/drawable-hdpi-v4/icon.png"
     }
 ]

@@ -5,32 +5,32 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="94722820236307"
-    token="7174988248172991075"
+    timestamp="84844360554582"
+    token="-3981717647132312139"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="296" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="21" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
     <artifact
-        location="/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/outputs/apk/application-normal-debug.apk"
+        location="/home/jordyn-arch/code/simpleirc/application/build/outputs/apk/application-normal-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="94722820236307"
+        timestamp="84844360554582"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/outputs/apk/application-normal-debug.apk"
+            location="/home/jordyn-arch/code/simpleirc/application/build/outputs/apk/application-normal-debug.apk"
             type="MAIN" />
     </build>
 

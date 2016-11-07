@@ -58,7 +58,7 @@ public class Settings {
     this.resources = context.getApplicationContext().getResources();
     try {
       this.currentRelease = context.getPackageManager().getPackageInfo(
-          context.getPackageName(), 0).versionCode;
+              context.getPackageName(), 0).versionCode;
     } catch ( Exception ex ) {
       this.currentRelease = 99;
     }
@@ -74,8 +74,8 @@ public class Settings {
    */
   public boolean showTimestamp() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_show_timestamp), Boolean.parseBoolean(resources
-        .getString(R.string.default_show_timestamp)));
+            .getString(R.string.key_show_timestamp), Boolean.parseBoolean(resources
+            .getString(R.string.default_show_timestamp)));
   }
 
   /**
@@ -85,7 +85,7 @@ public class Settings {
    */
   public boolean showIcons() {
     return preferences.getBoolean(resources.getString(R.string.key_show_icons),
-        Boolean.parseBoolean(resources.getString(R.string.default_show_icons)));
+            Boolean.parseBoolean(resources.getString(R.string.default_show_icons)));
   }
 
   /**
@@ -95,8 +95,8 @@ public class Settings {
    */
   public boolean showMessageColors() {
     return preferences
-        .getBoolean(resources.getString(R.string.key_show_colors), Boolean
-            .parseBoolean(resources.getString(R.string.default_show_colors)));
+            .getBoolean(resources.getString(R.string.key_show_colors), Boolean
+                    .parseBoolean(resources.getString(R.string.default_show_colors)));
   }
 
   /**
@@ -106,8 +106,8 @@ public class Settings {
    */
   public boolean showColorsNick() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_show_colors_nick), Boolean
-        .parseBoolean(resources.getString(R.string.default_show_colors_nick)));
+            .getString(R.string.key_show_colors_nick), Boolean
+            .parseBoolean(resources.getString(R.string.default_show_colors_nick)));
   }
 
   /**
@@ -117,7 +117,7 @@ public class Settings {
    */
   public boolean use24hFormat() {
     return preferences.getBoolean(resources.getString(R.string.key_24h_format),
-        Boolean.parseBoolean(resources.getString(R.string.default_24h_format)));
+            Boolean.parseBoolean(resources.getString(R.string.default_24h_format)));
   }
 
   /**
@@ -127,8 +127,8 @@ public class Settings {
    */
   public boolean includeSeconds() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_include_seconds), Boolean
-        .parseBoolean(resources.getString(R.string.default_include_seconds)));
+            .getString(R.string.key_include_seconds), Boolean
+            .parseBoolean(resources.getString(R.string.default_include_seconds)));
   }
 
   /**
@@ -138,7 +138,7 @@ public class Settings {
    */
   public boolean isReconnectEnabled() {
     return preferences.getBoolean(resources.getString(R.string.key_reconnect_error),
-        Boolean.parseBoolean(resources.getString(R.string.default_reconnect_error)));
+            Boolean.parseBoolean(resources.getString(R.string.default_reconnect_error)));
   }
 
 
@@ -149,8 +149,8 @@ public class Settings {
    */
   public boolean isIgnoreMOTDEnabled() {
     return preferences
-        .getBoolean(resources.getString(R.string.key_ignore_motd), Boolean
-            .parseBoolean(resources.getString(R.string.default_ignore_motd)));
+            .getBoolean(resources.getString(R.string.key_ignore_motd), Boolean
+                    .parseBoolean(resources.getString(R.string.default_ignore_motd)));
   }
 
   /**
@@ -160,7 +160,7 @@ public class Settings {
    */
   public String getQuitMessage() {
     return preferences.getString(resources.getString(R.string.key_quitmessage),
-        resources.getString(R.string.default_quitmessage));
+            resources.getString(R.string.default_quitmessage));
   }
 
   /**
@@ -170,8 +170,8 @@ public class Settings {
    */
   public int getFontSize() {
     return Integer.parseInt(preferences.getString(
-        resources.getString(R.string.key_fontsize),
-        resources.getString(R.string.default_fontsize)));
+            resources.getString(R.string.key_fontsize),
+            resources.getString(R.string.default_fontsize)));
   }
 
   /**
@@ -181,8 +181,8 @@ public class Settings {
    */
   public boolean isVoiceRecognitionEnabled() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_voice_recognition), Boolean
-        .parseBoolean(resources.getString(R.string.default_voice_recognition)));
+            .getString(R.string.key_voice_recognition), Boolean
+            .parseBoolean(resources.getString(R.string.default_voice_recognition)));
   }
 
   /**
@@ -192,8 +192,8 @@ public class Settings {
    */
   public boolean isSoundHighlightEnabled() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_sound_highlight), Boolean
-        .parseBoolean(resources.getString(R.string.default_sound_highlight)));
+            .getString(R.string.key_sound_highlight), Boolean
+            .parseBoolean(resources.getString(R.string.default_sound_highlight)));
   }
 
   /**
@@ -203,8 +203,8 @@ public class Settings {
    */
   public Uri getHighlightSoundLocation() {
     return Uri.parse(preferences.getString(
-        resources.getString(R.string.key_sound_ring),
-        "content://settings/system/notification_sound"));
+            resources.getString(R.string.key_sound_ring),
+            "content://settings/system/notification_sound"));
 
     /*
      * return preferences.getBoolean(
@@ -221,10 +221,20 @@ public class Settings {
    */
   public boolean isVibrateHighlightEnabled() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_vibrate_highlight), Boolean
-        .parseBoolean(resources.getString(R.string.default_vibrate_highlight)));
+            .getString(R.string.key_vibrate_highlight), Boolean
+            .parseBoolean(resources.getString(R.string.default_vibrate_highlight)));
   }
 
+  /**
+   * Auto rejoin after kick?
+   *
+   * @return True if Auto rejoin after kick is enabled, false otherwise
+   */
+  public boolean isAutoRejoinAfterKick() {
+    return preferences.getBoolean(resources
+            .getString(R.string.key_autorejoin_kick), Boolean.parseBoolean(resources
+            .getString(R.string.default_autorejoin_kick)));
+  }
   /**
    * LED light notification on highlight?
    *
@@ -232,8 +242,8 @@ public class Settings {
    */
   public boolean isLedHighlightEnabled() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_led_highlight), Boolean.parseBoolean(resources
-        .getString(R.string.default_led_highlight)));
+            .getString(R.string.key_led_highlight), Boolean.parseBoolean(resources
+            .getString(R.string.default_led_highlight)));
   }
 
   /**
@@ -243,8 +253,8 @@ public class Settings {
    */
   public boolean showJoinPartAndQuit() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_show_joinpartquit), Boolean
-        .parseBoolean(resources.getString(R.string.default_show_joinpartquit)));
+            .getString(R.string.key_show_joinpartquit), Boolean
+            .parseBoolean(resources.getString(R.string.default_show_joinpartquit)));
   }
 
   /**
@@ -254,9 +264,9 @@ public class Settings {
    */
   public boolean showNoticeInServerWindow() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_notice_server_window), Boolean
-        .parseBoolean(resources
-            .getString(R.string.default_notice_server_window)));
+            .getString(R.string.key_notice_server_window), Boolean
+            .parseBoolean(resources
+                    .getString(R.string.default_notice_server_window)));
   }
 
   /**
@@ -266,8 +276,8 @@ public class Settings {
    */
   public boolean showMircColors() {
     return preferences
-        .getBoolean(resources.getString(R.string.key_mirc_colors), Boolean
-            .parseBoolean(resources.getString(R.string.default_mirc_colors)));
+            .getBoolean(resources.getString(R.string.key_mirc_colors), Boolean
+                    .parseBoolean(resources.getString(R.string.default_mirc_colors)));
   }
 
   /**
@@ -278,18 +288,18 @@ public class Settings {
    */
   public boolean showGraphicalSmilies() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_graphical_smilies), Boolean
-        .parseBoolean(resources.getString(R.string.default_graphical_smilies)));
+            .getString(R.string.key_graphical_smilies), Boolean
+            .parseBoolean(resources.getString(R.string.default_graphical_smilies)));
   }
 
   public String getColorScheme() {
     return preferences.getString(resources.getString(R.string.key_colorscheme),
-        resources.getString(R.string.default_colorscheme));
+            resources.getString(R.string.default_colorscheme));
   }
 
   public void setColorScheme(String val) {
     preferences.edit()
-        .putString(resources.getString(R.string.key_colorscheme), val).commit();
+            .putString(resources.getString(R.string.key_colorscheme), val).commit();
   }
 
   /**
@@ -297,8 +307,8 @@ public class Settings {
    */
   public boolean autoCorrectText() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_autocorrect_text), Boolean
-        .parseBoolean(resources.getString(R.string.default_autocorrect_text)));
+            .getString(R.string.key_autocorrect_text), Boolean
+            .parseBoolean(resources.getString(R.string.default_autocorrect_text)));
   }
 
   /**
@@ -308,8 +318,14 @@ public class Settings {
    */
   public boolean debugTraffic() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_debug_traffic), Boolean.parseBoolean(resources
-        .getString(R.string.default_debug_traffic)));
+            .getString(R.string.key_debug_traffic), Boolean.parseBoolean(resources
+            .getString(R.string.default_debug_traffic)));
+  }
+
+  public boolean getAutorejoinKick() {
+    return preferences.getBoolean(resources
+            .getString(R.string.key_debug_traffic), Boolean.parseBoolean(resources
+            .getString(R.string.default_debug_traffic)));
   }
 
   /**
@@ -317,8 +333,8 @@ public class Settings {
    */
   public boolean autoCapSentences() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_autocap_sentences), Boolean
-        .parseBoolean(resources.getString(R.string.default_autocap_sentences)));
+            .getString(R.string.key_autocap_sentences), Boolean
+            .parseBoolean(resources.getString(R.string.default_autocap_sentences)));
   }
 
   /**
@@ -326,27 +342,27 @@ public class Settings {
    */
   public boolean imeExtract() {
     return preferences
-        .getBoolean(resources.getString(R.string.key_ime_extract), Boolean
-            .parseBoolean(resources.getString(R.string.default_ime_extract)));
+            .getBoolean(resources.getString(R.string.key_ime_extract), Boolean
+                    .parseBoolean(resources.getString(R.string.default_ime_extract)));
   }
 
   public boolean showChannelBar() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_show_channelbar), Boolean
-        .parseBoolean(resources.getString(R.string.default_show_channelbar)));
+            .getString(R.string.key_show_channelbar), Boolean
+            .parseBoolean(resources.getString(R.string.default_show_channelbar)));
   }
 
   public boolean reconnectTransient() {
     return preferences.getBoolean(resources
-            .getString(R.string.key_reconnect_transient),
-        Boolean.parseBoolean(resources
-            .getString(R.string.default_reconnect_transient)));
+                    .getString(R.string.key_reconnect_transient),
+            Boolean.parseBoolean(resources
+                    .getString(R.string.default_reconnect_transient)));
   }
 
   public boolean reconnectLoss() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_reconnect_loss), Boolean.parseBoolean(resources
-        .getString(R.string.default_reconnect_loss)));
+            .getString(R.string.key_reconnect_loss), Boolean.parseBoolean(resources
+            .getString(R.string.default_reconnect_loss)));
   }
 
   /**
@@ -357,18 +373,18 @@ public class Settings {
   public int getHistorySize() {
     try {
       return Integer.parseInt(preferences.getString(
-          resources.getString(R.string.key_history_size),
-          resources.getString(R.string.default_history_size)));
+              resources.getString(R.string.key_history_size),
+              resources.getString(R.string.default_history_size)));
     } catch ( NumberFormatException e ) {
       return Integer.parseInt(resources
-          .getString(R.string.default_history_size));
+              .getString(R.string.default_history_size));
     }
   }
 
   public boolean getUseDarkColors() {
     return preferences.getBoolean(resources
-        .getString(R.string.key_colorscheme_dark), Boolean
-        .parseBoolean(resources.getString(R.string.default_colorscheme_dark)));
+            .getString(R.string.key_colorscheme_dark), Boolean
+            .parseBoolean(resources.getString(R.string.default_colorscheme_dark)));
   }
 
   public int getLastRunVersion() {
@@ -389,7 +405,7 @@ public class Settings {
 
   private String getRandomNick(int len) {
     char[] valid_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890_"
-        .toCharArray();
+            .toCharArray();
     String ret = "";
     for( int i = 0; i < len; i++ ) {
       ret += valid_chars[(int)(Math.random() * valid_chars.length)];

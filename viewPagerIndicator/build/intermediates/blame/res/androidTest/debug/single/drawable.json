@@ -4,6 +4,10 @@
         "source": "/home/jordyn-ubuntumate/code/Atomic/viewPagerIndicator/build/intermediates/bundles/debug/res/drawable/vpi__tab_indicator.xml"
     },
     {
+        "merged": "/home/jordyn-arch/code/simpleirc/viewPagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable/vpi__tab_indicator.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/drawable/vpi__tab_indicator.xml"
+    },
+    {
         "merged": "/home/jordyn-ubuntumate/code/Atomic (copy)/viewPagerIndicator/build/intermediates/res/merged/androidTest/debug/drawable/vpi__tab_indicator.xml",
         "source": "/home/jordyn-ubuntumate/code/Atomic (copy)/viewPagerIndicator/build/intermediates/bundles/debug/res/drawable/vpi__tab_indicator.xml"
     }

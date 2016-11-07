@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/incremental/mergeNormalDebugResources/merged.dir/values-h320dp-v13/values-h320dp-v13.xml",
+        "outputFile": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/incremental/mergeNormalDebugResources/merged.dir/values-h320dp-v13/values-h320dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/home/jordyn-ubuntumate/code/Atomic (copy)/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-h320dp/values-h320dp.xml",
+                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-h320dp/values-h320dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

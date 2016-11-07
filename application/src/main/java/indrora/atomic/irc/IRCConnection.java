@@ -438,24 +438,42 @@ public class IRCConnection extends PircBot {
   protected void onKick(String target, String kickerNick, String kickerLogin, String kickerHostname, String recipientNick, String reason) {
     if( recipientNick.equals(getNick()) ) {
       // We are kicked
-      service.ackNewMentions(server.getId(), target);
-      server.removeConversation(target);
+      // If Autorejoin Kick is set then send a notice then rejoin here
+      if( service.getSettings().isAutoRejoinAfterKick()) {
+        // Send notice
+        Message message = new Message(service.getString(R.string.message_ownkick, target));
+        message.setColor(Message.MessageColor.USER_EVENT);
+        server.getConversation(target).addMessage(message);
 
-      Intent intent = Broadcast.createConversationIntent(
-          Broadcast.CONVERSATION_REMOVE,
-          server.getId(),
-          target
-      );
-      service.sendBroadcast(intent);
+        Intent intent = Broadcast.createConversationIntent(
+                Broadcast.CONVERSATION_MESSAGE,
+                server.getId(),
+                ServerInfo.DEFAULT_NAME
+        );
+        service.sendBroadcast(intent);
+        // Then rejoin
+        joinChannel(target);
+      } else {
+        // Else close the conversation activity
+        service.ackNewMentions(server.getId(), target);
+        server.removeConversation(target);
+
+        Intent on_kick_convo_remove_intent = Broadcast.createConversationIntent(
+                Broadcast.CONVERSATION_REMOVE,
+                server.getId(),
+                target
+        );
+        service.sendBroadcast(on_kick_convo_remove_intent); }
     } else {
+      // Send notice
       Message message = new Message(service.getString(R.string.message_kick, kickerNick, recipientNick));
       message.setColor(Message.MessageColor.USER_EVENT);
       server.getConversation(target).addMessage(message);
 
       Intent intent = Broadcast.createConversationIntent(
-          Broadcast.CONVERSATION_MESSAGE,
-          server.getId(),
-          target
+              Broadcast.CONVERSATION_MESSAGE,
+              server.getId(),
+              target
       );
       service.sendBroadcast(intent);
     }

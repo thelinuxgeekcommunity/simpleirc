@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/jordyn-arch/code/simpleirc/colorPickerView/build/intermediates/res/merged/androidTest/debug/layout-large-land-v4/dialog_color_picker.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/colorPickerView/build/intermediates/bundles/debug/res/layout-large-land-v4/dialog_color_picker.xml"
+    },
+    {
         "merged": "/home/jordyn-ubuntumate/code/Atomic/colorPickerView/build/intermediates/res/merged/androidTest/debug/layout-large-land-v4/dialog_color_picker.xml",
         "source": "/home/jordyn-ubuntumate/code/Atomic/colorPickerView/build/intermediates/bundles/debug/res/layout-large-land-v4/dialog_color_picker.xml"
     },
