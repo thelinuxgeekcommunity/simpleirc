@@ -404,7 +404,7 @@ public class Settings {
   }
 
   private String getRandomNick(int len) {
-    char[] valid_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890_"
+    char[] valid_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
             .toCharArray();
     String ret = "";
     for( int i = 0; i < len; i++ ) {
