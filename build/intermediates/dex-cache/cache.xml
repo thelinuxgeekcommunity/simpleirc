@@ -21,20 +21,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/com.android.support-appcompat-v7-23.1.0_cfcc80c908d08da4ce32be4d4386a84119e15392/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/incremental-runtime-classes/normal/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="e3d27357f1cc6ca2aa565d40ecd41687229b1f76">
+        sha1="0c43c1c645c8e59d41650332f5b387ebb689f959">
         <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_04e03cfa2cffa0cfc1227eefe15fe5ef67b78b18/classes.dex" />
     </item>
     <item
@@ -43,8 +34,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="d548fe114a6dde2786560cea017782de80c86e88">
+        sha1="aa1f6cbc34a5c53b6b024d3e7a3d20879f83852e">
         <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_96583ff2276f916991519389f2777ff52faeaa70/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/com.android.support-appcompat-v7-23.1.0_cfcc80c908d08da4ce32be4d4386a84119e15392/classes.dex" />
     </item>
     <item
         is-multidex="true"

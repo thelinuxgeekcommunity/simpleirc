@@ -59,6 +59,11 @@
                     android:summary="@string/settings_colorscheme_dark_desc"
                     android:title="@string/settings_colorscheme_dark_title" />
                 <CheckBoxPreference
+                    android:key="@string/key_tint_actionbar"
+                    android:title="@string/settings_colorscheme_tint_actionbar_title"
+                    android:summary="@string/settings_colorscheme_tint_actionbar_desc"
+                    android:defaultValue="@string/default_tint_actionbar" />
+                <CheckBoxPreference
                     android:defaultValue="@string/default_mirc_colors"
                     android:key="@string/key_mirc_colors"
                     android:summary="@string/settings_mirc_colors_desc"
@@ -210,7 +215,7 @@
             <PreferenceScreen
                 android:summary="@string/settings_forget_certificates_desc"
                 android:title="@string/settings_forget_certificates_title">
-                <intent android:action="indrora.atomic.activity.ForgetCertificatesActivity" />
+                <intent android:action="tk.jordynsmediagroup.simpleirc.activity.ForgetCertificatesActivity" />
             </PreferenceScreen>
         </PreferenceScreen>
     </PreferenceCategory>

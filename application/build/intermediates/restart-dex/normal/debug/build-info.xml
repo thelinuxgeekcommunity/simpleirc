@@ -1,44 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
+    abi="x86_64,x86"
     api-level="22"
     density="hdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="93920995252639"
+    timestamp="123429595669283"
     token="-3981717647132312139"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="166" />
+        duration="296" />
     <task
         name="instant-run-dex"
-        duration="290" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="4" />
+        duration="198" />
     <task
         name="verifier"
-        duration="1" />
+        duration="14" />
 
     <artifact
-        location="/home/jordyn-arch/code/simpleirc/application/build/intermediates/reload-dex/normal/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/home/jordyn-arch/code/simpleirc/application/build/outputs/apk/application-normal-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="93881459887587"
+        timestamp="123429595669283"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/jordyn-arch/code/simpleirc/application/build/outputs/apk/application-normal-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="93920995252639"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jordyn-arch/code/simpleirc/application/build/intermediates/reload-dex/normal/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

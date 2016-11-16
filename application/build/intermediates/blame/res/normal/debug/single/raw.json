@@ -76,6 +76,10 @@
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_atelierlakeside"
     },
     {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_grey.txt",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_grey.txt"
+    },
+    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_twilight",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_twilight"
     },

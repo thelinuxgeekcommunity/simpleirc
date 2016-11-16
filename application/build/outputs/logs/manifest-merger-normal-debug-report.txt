@@ -1,197 +1,197 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:21:1-113:12
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:2:1-94:12
 	package
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:24:5-29
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:5:5-45
 		INJECTED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml
 		INJECTED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:27:5-30
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:8:5-30
 		INJECTED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml
 		INJECTED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:23:5-51
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:4:5-51
 	android:versionCode
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:26:5-29
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:7:5-29
 		INJECTED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml
 		INJECTED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:21:11-69
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:2:11-69
 	android:installLocation
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:25:5-35
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:6:5-35
+uses-permission#android.permission.INTERNET
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:10:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:11:22-76
+uses-permission#android.permission.VIBRATE
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:12:5-66
+	android:name
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:12:22-63
 uses-sdk
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:29:5-31:41
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:14:5-16:41
 MERGED from [simpleirc:viewPagerIndicator:unspecified] /home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/simpleirc/viewPagerIndicator/unspecified/AndroidManifest.xml:7:5-9:40
 MERGED from [com.android.support:support-v4:23.1.0] /home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:20:5-43
 MERGED from [simpleirc:colorPickerView:unspecified] /home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/simpleirc/colorPickerView/unspecified/AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:appcompat-v7:23.1.0] /home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:31:9-38
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:16:9-38
 		INJECTED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml
 		INJECTED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:30:9-35
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:15:9-35
 		INJECTED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml
 		INJECTED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:33:5-67
-	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:33:22-64
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:34:5-79
-	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:34:22-76
-uses-permission#android.permission.VIBRATE
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:35:5-66
-	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:35:22-63
 application
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:37:5-111:19
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:18:5-92:19
 MERGED from [com.android.support:support-v4:23.1.0] /home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
 MERGED from [simpleirc:memorizingTrustManager:unspecified] /home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/simpleirc/memorizingTrustManager/unspecified/AndroidManifest.xml:7:5-11:19
 MERGED from [com.android.support:appcompat-v7:23.1.0] /home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:42:9-35
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:23:9-35
 		REJECTED from [simpleirc:memorizingTrustManager:unspecified] /home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/simpleirc/memorizingTrustManager/unspecified/AndroidManifest.xml:7:18-56
 	android:allowBackup
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:39:9-35
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:20:9-35
 	android:icon
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:40:9-43
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:21:9-43
 	android:theme
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:43:9-40
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:24:9-40
 	tools:replace
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:38:9-35
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:19:9-35
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:41:9-28
-activity#indrora.atomic.activity.ServersActivity
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:44:9-52:20
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:22:9-58
+activity#tk.jordynsmediagroup.simpleirc.activity.ServersActivity
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:25:9-33:20
 	android:label
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:46:13-39
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:27:13-39
 	android:launchMode
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:47:13-42
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:28:13-42
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:45:13-67
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:26:13-83
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:48:13-51:29
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:29:13-32:29
 action#android.intent.action.MAIN
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:49:17-69
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:49:25-66
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:50:17-77
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:50:27-74
-activity#indrora.atomic.activity.AddServerActivity
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:53:9-64:20
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:31:27-74
+activity#tk.jordynsmediagroup.simpleirc.activity.AddServerActivity
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:34:9-45:20
 	android:label
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:56:13-53
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:37:13-53
 	android:theme
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:55:13-67
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:36:13-67
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:54:13-69
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:35:13-85
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:57:13-63:29
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:38:13-44:29
 action#android.intent.action.VIEW
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:58:17-69
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:58:25-66
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:39:25-66
 category#android.intent.category.DEFAULT
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:59:17-76
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:40:17-76
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:59:27-73
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:40:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:60:17-78
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:41:17-78
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:60:27-75
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:41:27-75
 data
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:62:17-46
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:43:17-46
 	android:scheme
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:62:23-43
-activity#indrora.atomic.activity.ConversationActivity
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:65:9-70:84
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:43:23-43
+activity#tk.jordynsmediagroup.simpleirc.activity.ConversationActivity
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:46:9-51:100
 	android:parentActivityName
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:70:13-81
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:51:13-97
 	android:launchMode
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:69:13-43
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:50:13-43
 	android:windowSoftInputMode
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:67:13-55
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:48:13-55
 	android:configChanges
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:68:13-37
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:66:13-72
-activity#indrora.atomic.activity.AboutActivity
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:71:9-74:51
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:47:13-88
+activity#tk.jordynsmediagroup.simpleirc.activity.AboutActivity
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:52:9-55:51
 	android:label
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:74:13-48
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:55:13-48
 	android:theme
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:73:13-64
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:54:13-64
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:72:13-65
-activity#indrora.atomic.activity.SettingsActivity
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:75:9-84:20
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:53:13-81
+activity#tk.jordynsmediagroup.simpleirc.activity.SettingsActivity
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:56:9-65:20
 	android:label
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:79:13-51
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:60:13-51
 	android:parentActivityName
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:77:13-81
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:58:13-97
 	android:theme
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:78:13-57
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:59:13-57
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:76:13-68
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:57:13-84
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:80:13-82:75
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:61:13-63:91
 	android:value
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:82:17-72
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:63:17-88
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:81:17-63
-activity#indrora.atomic.activity.JoinActivity
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:85:9-88:62
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:62:17-63
+activity#tk.jordynsmediagroup.simpleirc.activity.JoinActivity
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:66:9-69:62
 	android:label
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:87:13-47
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:68:13-47
 	android:theme
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:88:13-50
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:69:13-50
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:86:13-64
-activity#indrora.atomic.activity.MessageActivity
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:89:9-91:53
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:67:13-80
+activity#tk.jordynsmediagroup.simpleirc.activity.MessageActivity
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:70:9-72:53
 	android:theme
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:91:13-50
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:72:13-50
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:90:13-67
-service#indrora.atomic.irc.IRCService
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:93:9-65
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:71:13-83
+service#tk.jordynsmediagroup.simpleirc.irc.IRCService
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:74:9-81
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:93:18-62
-activity#indrora.atomic.activity.ForgetCertificatesActivity
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:95:9-101:20
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:74:18-78
+activity#tk.jordynsmediagroup.simpleirc.activity.ForgetCertificatesActivity
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:76:9-82:20
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:95:19-84
-intent-filter#android.intent.category.DEFAULT+indrora.atomic.activity.ForgetCertificatesActivity
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:96:13-99:29
-action#indrora.atomic.activity.ForgetCertificatesActivity
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:97:17-93
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:76:19-100
+intent-filter#android.intent.category.DEFAULT+tk.jordynsmediagroup.simpleirc.activity.ForgetCertificatesActivity
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:77:13-80:29
+action#tk.jordynsmediagroup.simpleirc.activity.ForgetCertificatesActivity
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:78:17-109
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:97:25-90
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:78:25-106
 activity#de.duenndns.ssl.MemorizingActivity
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:103:9-106:15
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:84:9-87:15
 MERGED from [simpleirc:memorizingTrustManager:unspecified] /home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/simpleirc/memorizingTrustManager/unspecified/AndroidManifest.xml:8:9-10:75
 	android:theme
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:105:13-67
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:86:13-67
 		REJECTED from [simpleirc:memorizingTrustManager:unspecified] /home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/simpleirc/memorizingTrustManager/unspecified/AndroidManifest.xml:10:13-72
 	tools:replace
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:104:13-42
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:85:13-42
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:103:19-68
-activity#indrora.atomic.FirstRunActivity
-ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:107:9-110:64
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:84:19-68
+activity#tk.jordynsmediagroup.simpleirc.FirstRunActivity
+ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:88:9-91:64
 	android:label
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:110:13-61
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:91:13-61
 	android:theme
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:109:13-63
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:90:13-63
 	android:name
-		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:108:13-59
+		ADDED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:89:13-75
 android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:21:1-113:12 reason: de.duenndns.ssl has a targetSdkVersion < 4
+IMPLIED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:2:1-94:12 reason: de.duenndns.ssl has a targetSdkVersion < 4
 android:uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:21:1-113:12 reason: de.duenndns.ssl has a targetSdkVersion < 4
+IMPLIED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:2:1-94:12 reason: de.duenndns.ssl has a targetSdkVersion < 4
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:21:1-113:12 reason: de.duenndns.ssl requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /home/jordyn-arch/code/simpleirc/application/src/main/AndroidManifest.xml:2:1-94:12 reason: de.duenndns.ssl requested WRITE_EXTERNAL_STORAGE

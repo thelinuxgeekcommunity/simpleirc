@@ -1,15 +1,13 @@
-# default color scheme
+# Default color scheme
+# Dark/AMOLED mode background/foreground colors
 foreground.dark:#ffffffff
 background.dark:#ff000000
 
-foreground.light:#ff000000
-background.light:#ffffffff
+# Normal mode background/foreground colors
+foreground.light:#000000
+background.light:#ffffff
 
-toolbarbackground.light:#ffffff
-toolbartext.light:#000000
-toolbarbackground.dark:#000000
-toolbartext.dark:#ffffff
-
+# Other things
 userevent:#ff458509
 error:#ffcc0000
 channelevent:#ff729fcf

@@ -3,6 +3,7 @@
 
     <string-array name="theme_labels">
         <item>Default</item>
+        <item>Grey</item>
         <item>base16 Default</item>
         <item>Base16 3024</item>
         <item>Base16 Ashes</item>
@@ -34,6 +35,7 @@
     </string-array>
     <string-array name="theme_values">
         <item>default</item>
+        <item>grey</item>
         <item>base16_default</item>
         <item>base16_3024</item>
         <item>base16_ashes</item>

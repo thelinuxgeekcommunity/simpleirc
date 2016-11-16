@@ -13,13 +13,13 @@
     <string name="default_show_colors_nick" translatable="false">true</string>
 
     <string name="key_24h_format" translatable="false">24h_format</string>
-    <string name="default_24h_format" translatable="false">true</string>
+    <string name="default_24h_format" translatable="false">false</string>
 
     <string name="key_include_seconds" translatable="false">include_seconds</string>
-    <string name="default_include_seconds" translatable="false">true</string>
+    <string name="default_include_seconds" translatable="false">false</string>
 
     <string name="key_reconnect_error" translatable="false">reconnect_error</string>
-    <string name="default_reconnect_error" translatable="false">false</string>
+    <string name="default_reconnect_error" translatable="false">true</string>
 
     <string name="key_reconnect_interval" translatable="false">reconnect_interval</string>
     <string name="default_reconnect_interval" translatable="false">5</string>
@@ -28,7 +28,7 @@
     <string name="default_ignore_motd" translatable="false">false</string>
 
     <string name="key_quitmessage" translatable="false">quitmessage</string>
-    <string name="default_quitmessage" translatable="false">AtomicIRC: The nuclear option.</string>
+    <string name="default_quitmessage" translatable="false">Simple IRC: The quit option.</string>
 
     <string name="key_fontsize" translatable="false">fontsize</string>
     <string name="default_fontsize" translatable="false">11</string>
@@ -66,7 +66,7 @@
     <string name="default_colorscheme" translatable="false">default</string>
 
     <string name="key_graphical_smilies" translatable="false">graphical_smilies</string>
-    <string name="default_graphical_smilies" translatable="false">true</string>
+    <string name="default_graphical_smilies" translatable="false">false</string>
 
     <string name="key_autocorrect_text" translatable="false">autocorrect_text</string>
     <string name="default_autocorrect_text" translatable="false">true</string>
@@ -89,8 +89,11 @@
     <string name="key_colorscheme_dark">colorscheme_dark</string>
     <string name="default_colorscheme_dark">false</string>
 
+    <string name="key_tint_actionbar">tint_actionbar</string>
+    <string name="default_tint_actionbar">false</string>
+
     <string name="key_reconnect_transient">reconnect_transient</string>
-    <string name="default_reconnect_transient">false</string>
+    <string name="default_reconnect_transient">true</string>
     <string name="key_reconnect_loss">reconnect_loss</string>
     <string name="default_reconnect_loss">true</string>
 

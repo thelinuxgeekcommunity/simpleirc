@@ -84,7 +84,7 @@
     <string name="alias_add_description">These aliases will be used if the main nickname is unavailable.</string>
     <string name="channel_add_description">These channels will be automatically joined after connect.</string>
     <string name="command_add_description">These commands will be executed after connect.</string>
-    <string name="auth_description">Atomic will authenticate you with these services after connect.</string>
+    <string name="auth_description">Simple IRC will authenticate you with these services after connect.</string>
     <string name="auth_nickserv">Authenticate with Nickserv</string>
     <string name="auth_nickserv_password">Nickserv password</string>
     <string name="auth_sasl">Authenticate via SASL</string>
@@ -183,7 +183,7 @@
     <string name="command_desc_whois">Get information about a user</string>
 
     <!-- Notification string: The application is running. -->
-    <string name="notification_running">Atomic is running</string>
+    <string name="notification_running">Simple IRC is running</string>
     <!-- Notification string: We aren't connected to any servers. -->
     <string name="notification_not_connected">Not connected</string>
     <!-- Notification: We are connected to one or more servers (will be a comma separated list) -->

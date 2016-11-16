@@ -164,12 +164,12 @@
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-hdpi/apptheme_textfield_disabled_holo_dark.9.png"
     },
     {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/drawable-hdpi/action_query.png",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-hdpi/action_query.png"
-    },
-    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/drawable-hdpi/ic_message_copy.png",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-hdpi/ic_message_copy.png"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/drawable-hdpi/action_query.png",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-hdpi/action_query.png"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/drawable-hdpi/abc_ic_search_api_mtrl_alpha.png",

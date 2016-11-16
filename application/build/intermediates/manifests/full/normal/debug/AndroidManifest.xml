@@ -1,24 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-Yaaic - Yet Another Android IRC Client
-
-Copyright 2009-2013 Sebastian Kaspari
-
-This file is part of Yaaic.
-
-Yaaic is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-Yaaic is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
--->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tk.jordynsmediagroup.simpleirc.debug"
     android:installLocation="auto"
@@ -26,7 +6,7 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
     android:versionName="2.1" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="11"
         android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -38,13 +18,13 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
     <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name="indrora.atomic.App"
+        android:name="tk.jordynsmediagroup.simpleirc.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Simple IRC"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="indrora.atomic.activity.ServersActivity"
+            android:name="tk.jordynsmediagroup.simpleirc.activity.ServersActivity"
             android:label="Simple IRC"
             android:launchMode="standard" >
             <intent-filter>
@@ -54,7 +34,7 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
             </intent-filter>
         </activity>
         <activity
-            android:name="indrora.atomic.activity.AddServerActivity"
+            android:name="tk.jordynsmediagroup.simpleirc.activity.AddServerActivity"
             android:label="@string/add_server_label"
             android:theme="@style/Theme.AppCompat.DialogWhenLarge" >
             <intent-filter>
@@ -67,37 +47,37 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
             </intent-filter>
         </activity>
         <activity
-            android:name="indrora.atomic.activity.ConversationActivity"
+            android:name="tk.jordynsmediagroup.simpleirc.activity.ConversationActivity"
             android:configChanges=""
             android:launchMode="singleTop"
-            android:parentActivityName="indrora.atomic.activity.ServersActivity"
+            android:parentActivityName="tk.jordynsmediagroup.simpleirc.activity.ServersActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="indrora.atomic.activity.AboutActivity"
+            android:name="tk.jordynsmediagroup.simpleirc.activity.AboutActivity"
             android:label="@string/about_label"
             android:theme="@style/Theme.AppCompat.Light.Dialog" />
         <activity
-            android:name="indrora.atomic.activity.SettingsActivity"
+            android:name="tk.jordynsmediagroup.simpleirc.activity.SettingsActivity"
             android:label="@string/settings_label"
-            android:parentActivityName="indrora.atomic.activity.ServersActivity"
+            android:parentActivityName="tk.jordynsmediagroup.simpleirc.activity.ServersActivity"
             android:theme="@style/Theme.AppCompat.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="indrora.atomic.activity.ServersActivity" />
+                android:value="tk.jordynsmediagroup.simpleirc.activity.ServersActivity" />
         </activity>
         <activity
-            android:name="indrora.atomic.activity.JoinActivity"
+            android:name="tk.jordynsmediagroup.simpleirc.activity.JoinActivity"
             android:label="@string/join_label"
             android:theme="@style/AppDialogTheme" />
         <activity
-            android:name="indrora.atomic.activity.MessageActivity"
+            android:name="tk.jordynsmediagroup.simpleirc.activity.MessageActivity"
             android:theme="@style/AppDialogTheme" />
 
-        <service android:name="indrora.atomic.irc.IRCService" />
+        <service android:name="tk.jordynsmediagroup.simpleirc.irc.IRCService" />
 
-        <activity android:name="indrora.atomic.activity.ForgetCertificatesActivity" >
+        <activity android:name="tk.jordynsmediagroup.simpleirc.activity.ForgetCertificatesActivity" >
             <intent-filter>
-                <action android:name="indrora.atomic.activity.ForgetCertificatesActivity" />
+                <action android:name="tk.jordynsmediagroup.simpleirc.activity.ForgetCertificatesActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -107,7 +87,7 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
             android:name="de.duenndns.ssl.MemorizingActivity"
             android:theme="@style/Theme.AppCompat.DialogWhenLarge" />
         <activity
-            android:name="indrora.atomic.FirstRunActivity"
+            android:name="tk.jordynsmediagroup.simpleirc.FirstRunActivity"
             android:label="@string/title_activity_first_run"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
     </application>

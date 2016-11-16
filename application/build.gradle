@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId 'tk.jordynsmediagroup.simpleirc'
-        minSdkVersion 14
+        minSdkVersion 11
         targetSdkVersion 22
     }
 

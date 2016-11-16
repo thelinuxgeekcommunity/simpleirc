@@ -1,316 +1,298 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-Yaaic - Yet Another Android IRC Client
-
-Copyright 2009-2013 Sebastian Kaspari
-
-This file is part of Yaaic.
-
-Yaaic is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-Yaaic is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
--->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Server add layout xml -->
 <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
-<ScrollView
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:scrollbarStyle="outsideInset"
-    android:layout_weight="1"
-    android:padding="10dp">
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            style="?android:attr/listSeparatorTextViewStyle"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="3dip"
-            android:text="@string/server" />
-
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideInset"
+        android:layout_weight="1"
+        android:padding="10dp">
 
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/server_title" />
+                android:layout_marginBottom="3dip"
+                android:text="@string/server" />
 
-            <EditText
-                android:id="@+id/title"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/server_title"
-                android:inputType="textCapWords|textNoSuggestions"
-                android:singleLine="true" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content"
-            android:weightSum="4">
-            <LinearLayout android:layout_width="fill_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content"
-                android:layout_weight="3">
-                <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/server_host" />
-
-                <EditText
-                    android:id="@+id/host"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/server_host"
-                    android:inputType="textNoSuggestions"
-                    android:nextFocusForward="@+id/port"
-                    android:singleLine="true" />
-            </LinearLayout>
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:layout_weight="1">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/server_port" />
-
-                <EditText
-                    android:id="@+id/port"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/server_port"
-                    android:inputType="number"
-                    android:maxLength="5"
-                    android:minEms="6"
-                    android:singleLine="true"
-                    android:nextFocusForward="@+id/password"
-                    android:text="6667" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="10">
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="4">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/server_password" />
+                    android:text="@string/server_title" />
 
                 <EditText
-                    android:id="@+id/password"
+                    android:id="@+id/title"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/server_password"
-                    android:inputType="textPassword"
-                    android:maxEms="10"
-                    android:minEms="10"
+                    android:contentDescription="@string/server_title"
+                    android:inputType="textCapWords|textNoSuggestions"
                     android:singleLine="true" />
 
             </LinearLayout>
 
-            <Button
-                android:id="@+id/authentication"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/authentication"
-                android:layout_weight="6"
-                android:layout_gravity="center_vertical" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="3">
-
-            <CheckBox
-                android:id="@+id/useSSL"
+            <LinearLayout
                 android:layout_width="fill_parent"
+                android:orientation="horizontal"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/server_useSSL"
-                android:text="@string/server_useSSL"
-                android:layout_weight="2" />
+                android:weightSum="4">
+                <LinearLayout android:layout_width="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/server_host" />
 
-            <CheckBox
-                android:id="@+id/autoconnect"
-                android:layout_width="fill_parent"
+                    <EditText
+                        android:id="@+id/host"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/server_host"
+                        android:inputType="textNoSuggestions"
+                        android:nextFocusForward="@+id/port"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/server_port" />
+
+                    <EditText
+                        android:id="@+id/port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/server_port"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:minEms="6"
+                        android:singleLine="true"
+                        android:nextFocusForward="@+id/password"
+                        android:text="6667" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/server_autoconnect"
-                android:layout_weight="1" />
-        </LinearLayout>
-        <!-- ############################################################################ -->
+                android:weightSum="10">
 
-        <TextView
-            style="?android:attr/listSeparatorTextViewStyle"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="3dip"
-            android:text="@string/user" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4">
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:weightSum="10">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/server_password" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/server_password"
+                        android:inputType="textPassword"
+                        android:maxEms="10"
+                        android:minEms="10"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/authentication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/authentication"
+                    android:layout_weight="6"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
 
             <LinearLayout
                 android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <CheckBox
+                    android:id="@+id/useSSL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/server_useSSL"
+                    android:text="@string/server_useSSL"
+                    android:layout_weight="2" />
+
+                <CheckBox
+                    android:id="@+id/autoconnect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/server_autoconnect"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <!-- ############################################################################ -->
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="3">
+                android:layout_marginBottom="3dip"
+                android:text="@string/user" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nickname" />
+
+                    <EditText
+                        android:id="@+id/nickname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/nickname"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:editable="false"
+                        android:elegantTextHeight="false" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/aliases"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aliases"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/nickname" />
+                    android:text="@string/username" />
 
                 <EditText
-                    android:id="@+id/nickname"
+                    android:id="@+id/username"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/nickname"
+                    android:contentDescription="@string/username"
                     android:inputType="textNoSuggestions"
                     android:singleLine="true"
-                    android:editable="false"
-                    android:elegantTextHeight="false" />
+                    android:text="yaaic" />
             </LinearLayout>
 
-            <Button
-                android:id="@+id/aliases"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/realname" />
+
+                <EditText
+                    android:id="@+id/realname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/realname"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:text="" />
+            </LinearLayout>
+
+            <!-- ############################################################################ -->
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/aliases"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="7" />
-        </LinearLayout>
+                android:layout_marginBottom="3dip"
+                android:text="@string/on_connect" />
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/channels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/channels"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/commands"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commands"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- ############################################################################ -->
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dip"
+                android:text="@string/preferences" />
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/username" />
+                android:text="@string/charset" />
 
-            <EditText
-                android:id="@+id/username"
+            <Spinner
+                android:id="@+id/charset"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/username"
-                android:inputType="textNoSuggestions"
-                android:singleLine="true"
-                android:text="yaaic" />
+                android:prompt="@string/select_charset" />
+            <!-- ############################################################################ -->
+
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/realname" />
-
-            <EditText
-                android:id="@+id/realname"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/realname"
-                android:inputType="textPersonName"
-                android:singleLine="true"
-                android:text="" />
-        </LinearLayout>
-
-        <!-- ############################################################################ -->
-
-        <TextView
-            style="?android:attr/listSeparatorTextViewStyle"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="3dip"
-            android:text="@string/on_connect" />
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/channels"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/channels"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/commands"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/commands"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-        <!-- ############################################################################ -->
-
-        <TextView
-            style="?android:attr/listSeparatorTextViewStyle"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="3dip"
-            android:text="@string/preferences" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/charset" />
-
-        <Spinner
-            android:id="@+id/charset"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:prompt="@string/select_charset" />
-        <!-- ############################################################################ -->
-
-    </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="fill_parent"

@@ -14,8 +14,8 @@ Modified by: Sebastian Kaspari <sebastian@yaaic.org>
  */
 package org.jibble.pircbot;
 
-import indrora.atomic.ssl.NaiveTrustManager;
-import indrora.atomic.tools.Base64;
+import tk.jordynsmediagroup.simpleirc.ssl.NaiveTrustManager;
+import tk.jordynsmediagroup.simpleirc.tools.Base64;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -32,7 +32,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Calendar;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
@@ -52,7 +51,6 @@ import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.X509TrustManager;
 
-import android.os.PatternMatcher;
 import android.util.Log;
 
 

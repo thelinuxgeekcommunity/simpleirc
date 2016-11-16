@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-Yaaic - Yet Another Android IRC Client
-
-Copyright 2009-2013 Sebastian Kaspari
-
-This file is part of Yaaic.
-
-Yaaic is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-Yaaic is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
--->
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
@@ -30,7 +11,7 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
         android:layout_height="wrap_content"
         />
 
-    <indrora.atomic.indicator.ConversationIndicator
+    <tk.jordynsmediagroup.simpleirc.indicator.ConversationIndicator
         android:id="@+id/titleIndicator"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
