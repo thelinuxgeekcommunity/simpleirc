@@ -28,12 +28,12 @@
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_default"
     },
     {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_ashes",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_ashes"
-    },
-    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_greenscreen",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_greenscreen"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_ashes",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_ashes"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_eighties",
@@ -56,12 +56,12 @@
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_brewer"
     },
     {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_tomorrow",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_tomorrow"
-    },
-    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_codeschool",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_codeschool"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_tomorrow",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_tomorrow"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_chalk",

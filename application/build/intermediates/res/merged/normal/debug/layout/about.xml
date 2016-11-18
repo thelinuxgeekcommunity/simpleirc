@@ -21,19 +21,19 @@
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/version_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Placeholder version here"
+            android:textSize="12sp" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Simple IRC: A simple irc client based off of Atmoic"
             android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/version_label"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="@string/app_version"
-            android:textSize="12sp" />
 
         <TextView
             android:layout_width="fill_parent"

@@ -303,7 +303,7 @@ public class IRCService extends Service {
     // We want this service to continue running until it is explicitly
     // stopped, so return sticky.
     //return START_STICKY;
-    return 1;
+    return START_STICKY;
   }
 
 

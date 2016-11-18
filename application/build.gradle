@@ -1,25 +1,52 @@
 apply plugin: 'com.android.application'
+// Load the keystore properties from the root of the project
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
+    signingConfigs {
+        KeyConfig {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
     lintOptions {
         abortOnError false
     }
-    compileSdkVersion 23
+    compileSdkVersion 22
     buildToolsVersion "25.0.0"
-
     defaultConfig {
         applicationId 'tk.jordynsmediagroup.simpleirc'
         minSdkVersion 11
         targetSdkVersion 22
     }
-
-
     buildTypes {
         release {
             minifyEnabled false
+            signingConfig signingConfigs.KeyConfig
+            pseudoLocalesEnabled true
+            zipAlignEnabled true
         }
         debug {
             applicationIdSuffix = '.debug'
+            jniDebuggable true
+            renderscriptDebuggable true
+            minifyEnabled true
+            zipAlignEnabled true
+            applicationIdSuffix '.debug'
+        }
+        fdroid {
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            minifyEnabled false
+            pseudoLocalesEnabled true
+            applicationIdSuffix '.fdroid'
+            zipAlignEnabled true
+            signingConfig signingConfigs.KeyConfig
         }
     }
     productFlavors {
@@ -34,5 +61,5 @@ dependencies {
     compile project(':memorizingTrustManager')
     compile project(':colorPickerView')
     compile 'com.android.support:support-v4:22.0.0'
-    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:appcompat-v7:22.1.0'
 }

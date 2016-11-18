@@ -194,7 +194,7 @@ public class ConversationActivity extends AppCompatActivity implements
     server = Atomic.getInstance().getServerById(serverId);
     settings = App.getSettings();
     if(settings == null) {
-      Log.wtf("OH GOD WHY", "ALL THE SETTINGS ARE GON OH GOD WHY");
+      Log.wtf("SimpleIRC/Error", "Settings might be corrupt, please clear data and try again.");
       finish(); }
     _scheme = new ColorScheme(
             settings.getColorScheme(),
@@ -695,7 +695,7 @@ public class ConversationActivity extends AppCompatActivity implements
                   String nicknameWithoutPrefix = removeStatusChar(nick);
 
                   final IRCConnection connection = binder.getService()
-                      .getConnection(server.getId());
+                          .getConnection(server.getId());
                   final String conversation = server.getSelectedConversation();
 
                   switch ( which ) {
@@ -717,17 +717,17 @@ public class ConversationActivity extends AppCompatActivity implements
                       break;
                     case 1:
                       Conversation query = server
-                          .getConversation(nicknameWithoutPrefix);
+                              .getConversation(nicknameWithoutPrefix);
                       if( query == null ) {
                         // Open a query if there's none yet
                         query = new Query(nicknameWithoutPrefix);
                         query.setHistorySize(binder.getService().getSettings()
-                            .getHistorySize());
+                                .getHistorySize());
                         server.addConversation(query);
 
                         Intent intent = Broadcast.createConversationIntent(
-                            Broadcast.CONVERSATION_NEW, server.getId(),
-                            nicknameWithoutPrefix);
+                                Broadcast.CONVERSATION_NEW, server.getId(),
+                                nicknameWithoutPrefix);
                         binder.getService().sendBroadcast(intent);
                       }
                       break;
@@ -751,7 +751,7 @@ public class ConversationActivity extends AppCompatActivity implements
                       break;
                     case 8:
                       connection.ban(conversation, nicknameWithoutPrefix
-                          + "!*@*");
+                              + "!*@*");
                       break;
                     case 9:
                       connection.kick(conversation, nicknameWithoutPrefix);
@@ -1068,7 +1068,7 @@ public class ConversationActivity extends AppCompatActivity implements
 
   // This is a guess, based on the fact that you'll probably never get more than 100 characters
   // in the preamble of a line.
-  private static final int MAX_MESSAGE_LENGTH = 450;
+  private static final int MAX_MESSAGE_LENGTH = 500;
 
   /**
    * Send a message in this conversation
@@ -1088,7 +1088,7 @@ public class ConversationActivity extends AppCompatActivity implements
       String lines[] = text.split("\\r?\\n");
       // And send each line at at time.
       for( String line : lines ) {
-        sendMessage(line);
+          sendMessage(line);
       }
       // Since we don't want to send things twice, return.
       return;
@@ -1105,7 +1105,8 @@ public class ConversationActivity extends AppCompatActivity implements
         if( idx > 0 ) {
           real_line = "\u2026" + real_line;
         }
-        sendMessage(real_line);
+          // Send message here
+          this.sendMessage(real_line);
       }
       return;
     }

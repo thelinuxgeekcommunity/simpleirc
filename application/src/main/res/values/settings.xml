@@ -63,7 +63,7 @@
     <string name="default_mirc_colors" translatable="false">true</string>
 
     <string name="key_colorscheme" translatable="false">colorscheme</string>
-    <string name="default_colorscheme" translatable="false">default</string>
+    <string name="default_colorscheme" translatable="false">grey</string>
 
     <string name="key_graphical_smilies" translatable="false">graphical_smilies</string>
     <string name="default_graphical_smilies" translatable="false">false</string>
@@ -82,6 +82,12 @@
 
     <string name="key_debug_traffic" translatable="false">debug_traffic</string>
     <string name="default_debug_traffic" translatable="false">false</string>
+
+    <string name="key_log_traffic" translatable="false">log_traffic</string>
+    <string name="default_log_traffic" translatable="false">false</string>
+
+    <string name="key_log_file" translatable="false">log_file</string>
+    <string name="default_log_file" translatable="false">/sdcard/SimpleIRC/</string>
 
     <string name="key_show_channelbar" translatable="false">show_channelbar</string>
     <string name="default_show_channelbar" translatable="false">true</string>

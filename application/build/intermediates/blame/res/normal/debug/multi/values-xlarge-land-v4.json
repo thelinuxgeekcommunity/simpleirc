@@ -11,13 +11,13 @@
                     "endOffset": 114
                 },
                 "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-xlarge-land/values-xlarge-land.xml",
+                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-xlarge-land-v4/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 295,
+                        "startOffset": 299,
                         "endColumn": 63,
-                        "endOffset": 354
+                        "endOffset": 358
                     }
                 }
             }

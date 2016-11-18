@@ -1,3 +1,4 @@
+// This file in only started on first run
 package tk.jordynsmediagroup.simpleirc;
 
 import android.app.Activity;

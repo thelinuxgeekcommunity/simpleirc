@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/join"
+        android:title="@string/join_channel"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/chooseConversation"
+        android:title="Conversations"
+        android:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/users"
+        android:title="@string/users"
+        android:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/close"
+        android:title="@string/close"
+        android:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/disconnect"
+        android:title="@string/disconnect"
+        android:showAsAction="never" />
+
+</menu>

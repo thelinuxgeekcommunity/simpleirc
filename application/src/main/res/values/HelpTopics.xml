@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Help topics. These are fairly common. -->
-
+    <!-- First start pages. -->
     <string name="helptopic_titlepage_title">Welcome to Atomic!</string>
     <string name="helptopic_titlepage_body">
         <![CDATA[
         <p>Welcome to Simple IRC, a fork of Atmoic. This guide will fill you in on what\'s changed or what\'s new.</p>
-        <p>Check out the project page at: <a href="https://github.com/indrora/atomic">https://github.com/jcjordyn130/simpleirc</a> </p>
+        <p>Check out the project page at: <a href="https://github.com/jcjordyn130/simpleirc">https://github.com/jcjordyn130/simpleirc</a> </p>
         <p>I depend on you to provide me with feedback!</p>
         ]]>
     </string>
@@ -61,8 +59,11 @@
         <![CDATA[
         <p><em>New in this version</em></p>
 		<p>Connections will automatically re-connect themselves when your mobile or wifi network breaks down.</p>
-		<p>Optionally, you may automatically reconnect your networks when you move between wifi and mobile networks</p>
-        <p>When you get kicked it will auto rejoin immediately (not enabled by default)</P>
+		<p>Optionally, you may automatically reconnect your networks when you move between wifi and mobile networks.</p>
+        <p>When you get kicked it will auto rejoin immediately (not enabled by default).</p>
+        <p>Simple IRC has logging support, it stores it in the folder /sdcard/SimpleIRC by default.</p>
+        <p>The files are named YYYY-MM-DD.log (ex, 2016-11-18.log).</p>
+        <p>The incomming part of the logs are raw irc protocol though.</p>
         ]]>
     </string>
 </resources>

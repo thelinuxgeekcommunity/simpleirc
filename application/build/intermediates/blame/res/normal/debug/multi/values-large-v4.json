@@ -11,13 +11,13 @@
                     "endOffset": 112
                 },
                 "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-large/values-large.xml",
+                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-large-v4/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 288,
+                        "startOffset": 292,
                         "endColumn": 61,
-                        "endOffset": 345
+                        "endOffset": 349
                     }
                 }
             },
@@ -30,13 +30,13 @@
                     "endOffset": 184
                 },
                 "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-large/values-large.xml",
+                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-large-v4/values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 584,
+                        "startOffset": 592,
                         "endColumn": 71,
-                        "endOffset": 651
+                        "endOffset": 659
                     }
                 }
             },
@@ -49,13 +49,13 @@
                     "endOffset": 243
                 },
                 "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-large/values-large.xml",
+                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-large-v4/values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 656,
+                        "startOffset": 664,
                         "endColumn": 58,
-                        "endOffset": 710
+                        "endOffset": 718
                     }
                 }
             },
@@ -64,17 +64,17 @@
                     "startLine": 5,
                     "startColumn": 4,
                     "startOffset": 248,
-                    "endColumn": 70,
-                    "endOffset": 314
+                    "endColumn": 63,
+                    "endOffset": 307
                 },
                 "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-large/values-large.xml",
+                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-large-v4/values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 949,
-                        "endColumn": 70,
-                        "endOffset": 1015
+                        "startOffset": 961,
+                        "endColumn": 63,
+                        "endOffset": 1020
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 319,
-                    "endColumn": 70,
-                    "endOffset": 385
+                    "startOffset": 312,
+                    "endColumn": 66,
+                    "endOffset": 374
                 },
                 "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-large/values-large.xml",
+                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-large-v4/values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1020,
-                        "endColumn": 70,
-                        "endOffset": 1086
+                        "startOffset": 1025,
+                        "endColumn": 66,
+                        "endOffset": 1087
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 390,
-                    "endColumn": 69,
-                    "endOffset": 455
+                    "startOffset": 379,
+                    "endColumn": 66,
+                    "endOffset": 441
                 },
                 "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-large/values-large.xml",
+                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-large-v4/values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1091,
-                        "endColumn": 69,
-                        "endOffset": 1156
+                        "startOffset": 1092,
+                        "endColumn": 66,
+                        "endOffset": 1154
                     }
                 }
             },
@@ -120,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 460,
-                    "endColumn": 69,
-                    "endOffset": 525
+                    "startOffset": 446,
+                    "endColumn": 65,
+                    "endOffset": 507
                 },
                 "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-large/values-large.xml",
+                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-large-v4/values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1161,
-                        "endColumn": 69,
-                        "endOffset": 1226
+                        "startOffset": 1159,
+                        "endColumn": 65,
+                        "endOffset": 1220
                     }
                 }
             },
@@ -139,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 530,
-                    "endColumn": 67,
-                    "endOffset": 593
+                    "startOffset": 512,
+                    "endColumn": 65,
+                    "endOffset": 573
                 },
                 "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-large/values-large.xml",
+                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-large-v4/values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1231,
-                        "endColumn": 67,
-                        "endOffset": 1294
+                        "startOffset": 1225,
+                        "endColumn": 65,
+                        "endOffset": 1286
                     }
                 }
             },
@@ -158,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 598,
-                    "endColumn": 67,
-                    "endOffset": 661
+                    "startOffset": 578,
+                    "endColumn": 54,
+                    "endOffset": 628
                 },
                 "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-large/values-large.xml",
+                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-large-v4/values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1299,
-                        "endColumn": 67,
-                        "endOffset": 1362
+                        "startOffset": 1291,
+                        "endColumn": 54,
+                        "endOffset": 1341
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 666,
-                    "endColumn": 63,
-                    "endOffset": 725
+                    "startOffset": 633,
+                    "endColumn": 103,
+                    "endOffset": 732
                 },
                 "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-large/values-large.xml",
+                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-large-v4/values.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1367,
-                        "endColumn": 63,
-                        "endOffset": 1426
+                        "startOffset": 1589,
+                        "endColumn": 103,
+                        "endOffset": 1688
                     }
                 }
             },
@@ -196,56 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 730,
-                    "endColumn": 54,
-                    "endOffset": 780
-                },
-                "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1431,
-                        "endColumn": 54,
-                        "endOffset": 1481
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 785,
-                    "endColumn": 103,
-                    "endOffset": 884
-                },
-                "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-large/values-large.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1725,
-                        "endColumn": 103,
-                        "endOffset": 1824
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 889,
+                    "startOffset": 737,
                     "endColumn": 115,
-                    "endOffset": 1000
+                    "endOffset": 848
                 },
                 "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-large/values-large.xml",
+                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-large-v4/values.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 1829,
+                        "startOffset": 1693,
                         "endColumn": 115,
-                        "endOffset": 1940
+                        "endOffset": 1804
                     }
                 }
             }

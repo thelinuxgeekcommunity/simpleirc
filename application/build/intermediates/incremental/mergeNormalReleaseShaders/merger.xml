@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/jordyn-arch/code/simpleirc/application/src/main/shaders"/></dataSet><dataSet config="normal"><source path="/home/jordyn-arch/code/simpleirc/application/src/normal/shaders"/></dataSet><dataSet config="release"><source path="/home/jordyn-arch/code/simpleirc/application/src/release/shaders"/></dataSet><dataSet config="normalRelease"><source path="/home/jordyn-arch/code/simpleirc/application/src/normalRelease/shaders"/></dataSet></merger>

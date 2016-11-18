@@ -140,7 +140,6 @@ public class Settings {
     return preferences.getString(resources.getString(R.string.key_quitmessage),
             resources.getString(R.string.default_quitmessage));
   }
-
   /**
    * Get the font size
    *
@@ -343,6 +342,16 @@ public class Settings {
             .getString(R.string.default_reconnect_loss)));
   }
 
+    public boolean logTraffic() {
+        return preferences.getBoolean(resources
+                .getString(R.string.key_log_traffic), Boolean.parseBoolean(resources
+                .getString(R.string.default_log_traffic)));
+    }
+
+    public String getLogFile() {
+        return preferences.getString(resources.getString(R.string.key_log_file),
+                resources.getString(R.string.default_log_file));
+    }
   /**
    * Get the conversation history size.
    *

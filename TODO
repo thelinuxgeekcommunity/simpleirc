@@ -1,6 +1,5 @@
 Todo list for simpleirc:
 
-Add support to change the background and foreground of the action bar for AMOLED/dark mode
 Add support to keep the screen on if in a conversation activty
 Add a shadow to the text box
 Add /ctcp support

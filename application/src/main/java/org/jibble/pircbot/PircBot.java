@@ -10,16 +10,27 @@ a commercial license is also provided. Full license information can be
 found at http://www.jibble.org/licenses/
 
 Modified by: Sebastian Kaspari <sebastian@yaaic.org>
+Modified by: The Linux Geek <onlinecloud1@gmail.com>
 
  */
 package org.jibble.pircbot;
 
+import tk.jordynsmediagroup.simpleirc.App;
+import tk.jordynsmediagroup.simpleirc.R;
+import tk.jordynsmediagroup.simpleirc.activity.ConversationActivity;
+import tk.jordynsmediagroup.simpleirc.model.Broadcast;
+import tk.jordynsmediagroup.simpleirc.model.Conversation;
+import tk.jordynsmediagroup.simpleirc.model.Message;
+import tk.jordynsmediagroup.simpleirc.model.Server;
+import tk.jordynsmediagroup.simpleirc.model.Settings;
+import tk.jordynsmediagroup.simpleirc.model.Status;
 import tk.jordynsmediagroup.simpleirc.ssl.NaiveTrustManager;
 import tk.jordynsmediagroup.simpleirc.tools.Base64;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
@@ -28,10 +39,12 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.security.SecureRandom;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
@@ -51,7 +64,19 @@ import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.X509TrustManager;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.text.format.Time;
 import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
+
+import static android.provider.Settings.System.DATE_FORMAT;
+import static tk.jordynsmediagroup.simpleirc.R.id.settings;
+import static tk.jordynsmediagroup.simpleirc.R.string.server;
 
 
 /**
@@ -446,14 +471,7 @@ public abstract class PircBot implements ReplyConstants {
    * Sends a message to a channel or a private message to a user.  These
    * messages are added to the outgoing message queue and sent at the
    * earliest possible opportunity.
-   * <p/>
-   * Some examples: -
-   * <pre>    // Send the message "Hello!" to the channel #cs.
-   *    sendMessage("#cs", "Hello!");
-   * <p/>
-   *    // Send a private message to Paul that says "Hi".
-   *    sendMessage("Paul", "Hi");</pre>
-   * <p/>
+   *
    * You may optionally apply colours, boldness, underlining, etc to
    * the message by using the <code>Colors</code> class.
    *
@@ -461,8 +479,33 @@ public abstract class PircBot implements ReplyConstants {
    * @param message The message to send.
    * @see Colors
    */
-  public final void sendMessage(String target, String message) {
-    _outQueue.add("PRIVMSG " + target + " :" + message);
+  public void sendMessage(String target, String message) {
+      // Write the message to the log if enabled
+    if (App.getSettings().logTraffic()) {
+      try {
+        String outDir = App.getSettings().getLogFile();
+        DateFormat filedf = new SimpleDateFormat("yyyy-MM-dd");
+        String filedate = filedf.format(Calendar.getInstance().getTime());
+        File file = new File(outDir + filedate + ".log");
+        BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
+        DateFormat df = new SimpleDateFormat("EEE, MMM d yyyy h:mm:ss a");
+        String date = df.format(Calendar.getInstance().getTime());
+        String entry = "[" + date + "]" + " " + target + ":" + " " + getNick() + ":" + " " + message;
+        writer.write(entry);
+        writer.newLine();
+        writer.flush();
+        writer.close();
+          // Send message here
+          _outQueue.add("PRIVMSG " + target + " :" + message);
+      } catch (IOException e) {
+        // on IO Execption
+        // We need to get a better error message
+        System.out.println("Could not write to log: " + e);
+      }
+      } else {
+          // Send message here
+          _outQueue.add("PRIVMSG " + target + " :" + message);
+      }
   }
 
 
@@ -474,7 +517,33 @@ public abstract class PircBot implements ReplyConstants {
    * @see Colors
    */
   public final void sendAction(String target, String action) {
-    sendCTCPCommand(target, "ACTION " + action);
+      if (App.getSettings().logTraffic()) {
+          if (App.getSettings().logTraffic()) {
+              try {
+                  String outDir = App.getSettings().getLogFile();
+                  DateFormat filedf = new SimpleDateFormat("yyyy-MM-dd");
+                  String filedate = filedf.format(Calendar.getInstance().getTime());
+                  File file = new File(outDir + filedate + ".log");
+                  BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
+                  DateFormat df = new SimpleDateFormat("EEE, MMM d yyyy h:mm:ss a");
+                  String date = df.format(Calendar.getInstance().getTime());
+                  String entry = "[" + date + "]" + " " + target + ":" + " " + getNick() + ":" + " " + "[ACTION]" + " " + action;
+                  writer.write(entry);
+                  writer.newLine();
+                  writer.flush();
+                  writer.close();
+                  // Send CTCP ACTION here
+                  sendCTCPCommand(target, "ACTION " + action);
+              } catch (IOException e) {
+                  // on IO Execption
+                  // We need to get a better error message
+                  System.out.println("Could not write to log: " + e);
+              }
+          } else {
+              // Send CTCP ACTION here
+              sendCTCPCommand(target, "ACTION " + action);
+          }
+      }
   }
 
 
@@ -545,7 +614,6 @@ public abstract class PircBot implements ReplyConstants {
    */
   public final void identify(String password) {
     this.sendMessage("NickServ", "identify " + password);
-    //this.sendRawLine("NICKSERV IDENTIFY " + password);
   }
 
 

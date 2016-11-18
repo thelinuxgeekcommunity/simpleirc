@@ -212,6 +212,17 @@
                 android:summary="@string/settings_debug_traffic_desc"
                 android:title="@string/settings_debug_traffic_title" />
 
+            <CheckBoxPreference
+                android:defaultValue="@string/default_log_traffic"
+                android:key="@string/key_log_traffic"
+                android:summary="@string/settings_log_traffic_desc"
+                android:title="@string/settings_log_traffic_title" />
+
+            <EditTextPreference
+                android:defaultValue="@string/default_log_file"
+                android:key="@string/key_log_file"
+                android:title="@string/settings_log_file_title" />
+
             <PreferenceScreen
                 android:summary="@string/settings_forget_certificates_desc"
                 android:title="@string/settings_forget_certificates_title">

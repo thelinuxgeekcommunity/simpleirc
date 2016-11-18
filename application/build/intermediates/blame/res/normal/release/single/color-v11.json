@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

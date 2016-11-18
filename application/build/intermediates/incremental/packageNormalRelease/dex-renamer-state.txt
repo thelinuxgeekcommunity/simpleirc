@@ -1,0 +1,4 @@
+#Fri Nov 18 17:00:04 CST 2016
+base.0=/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/release/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/release/folders/1000/1f/main/classes.dex

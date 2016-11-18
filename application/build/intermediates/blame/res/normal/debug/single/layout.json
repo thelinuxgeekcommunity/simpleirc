@@ -25,15 +25,11 @@
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/notification_template_big_media.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/notification_template_big_media.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_list_menu_item_icon.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_list_menu_item_icon.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/about.xml",
@@ -41,7 +37,7 @@
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_action_menu_layout.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_action_menu_layout.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_action_menu_layout.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/join.xml",
@@ -52,20 +48,8 @@
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/layout/servers.xml"
     },
     {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/notification_template_big_media_narrow.xml"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/notification_template_part_chronometer.xml"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/notification_media_cancel_action.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/notification_media_cancel_action.xml"
-    },
-    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_list_menu_item_radio.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/channeldialog.xml",
@@ -77,11 +61,11 @@
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_select_dialog_material.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_select_dialog_material.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_select_dialog_material.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_action_bar_up_container.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_action_bar_up_container.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/serveradd.xml",
@@ -93,11 +77,11 @@
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_screen_simple.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_screen_simple.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_screen_simple.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_alert_dialog_material.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/dialog_color_picker.xml",
@@ -108,16 +92,12 @@
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/layout/commandadd.xml"
     },
     {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/notification_template_media.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/notification_template_media.xml"
-    },
-    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_activity_chooser_view.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_activity_chooser_view.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_action_mode_bar.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_action_mode_bar.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/actionitem.xml",
@@ -125,11 +105,11 @@
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_action_bar_title_item.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_action_bar_title_item.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/firstrun.xml",
@@ -137,15 +117,7 @@
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_alert_dialog_button_bar_material.xml"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/notification_template_lines.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/notification_template_lines.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_expanded_menu_layout.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/aliasadd.xml",
@@ -153,31 +125,31 @@
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_activity_chooser_view_list_item.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_popup_menu_item_layout.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_simple_dropdown_hint.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_simple_dropdown_hint.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/select_dialog_item_material.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/select_dialog_item_material.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/select_dialog_item_material.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_list_menu_item_checkbox.xml"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/notification_template_part_time.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/notification_template_part_time.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/support_simple_spinner_dropdown_item.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/select_dialog_multichoice_material.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/select_dialog_multichoice_material.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/conversations.xml",
@@ -185,47 +157,39 @@
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_dialog_title_material.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_dialog_title_material.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/select_dialog_singlechoice_material.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_screen_content_include.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_screen_content_include.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/channeladd.xml",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/layout/channeladd.xml"
     },
     {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/notification_media_action.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/notification_media_action.xml"
-    },
-    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_list_menu_item_layout.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_list_menu_item_layout.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_search_view.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_search_view.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_search_view.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_action_mode_close_item_material.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/abc_screen_toolbar.xml",
-        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_screen_toolbar.xml"
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/layout/addserveritem.xml",

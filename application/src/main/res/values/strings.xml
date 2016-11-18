@@ -392,6 +392,12 @@
     <string name="settings_debug_traffic_title">Debug IRC traffic</string>
     <string name="settings_debug_traffic_desc">Log IRC traffic to the verbose log. This may be a security risk!</string>
 
+    <string name="settings_log_traffic_title">Log IRC traffic</string>
+    <string name="settings_log_traffic_desc">Log IRC traffic to the log file.</string>
+
+    <string name="settings_log_file_title">Folder to log to</string>
+    <string name="settings_log_file_desc">This folder will be used when "Log IRC traffic" is selcted</string>
+
     <string name="settings_show_channelbar_title">Show channelbar</string>
     <string name="settings_show_channelbar_desc">Display channel name and unread status in conversation view</string>
 

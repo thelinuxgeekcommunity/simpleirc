@@ -7,15 +7,22 @@ import org.jibble.pircbot.NickAlreadyInUseException;
 import org.jibble.pircbot.PircBot;
 import org.jibble.pircbot.User;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.Vector;
 import java.util.regex.Pattern;
 
+import tk.jordynsmediagroup.simpleirc.App;
 import tk.jordynsmediagroup.simpleirc.Atomic;
 import tk.jordynsmediagroup.simpleirc.R;
 import tk.jordynsmediagroup.simpleirc.command.CommandParser;
@@ -31,7 +38,9 @@ import tk.jordynsmediagroup.simpleirc.model.Status;
 import tk.jordynsmediagroup.simpleirc.utils.LatchingValue;
 import tk.jordynsmediagroup.simpleirc.utils.MircColors;
 
- // The class that actually handles the connection to an IRC server
+import static java.util.regex.Pattern.compile;
+
+// The class that actually handles the connection to an IRC server
 public class IRCConnection extends PircBot {
   private static final String TAG = "SimpleIRC/IRCConnection";
   private final IRCService service;
@@ -56,7 +65,6 @@ public class IRCConnection extends PircBot {
     this.service = service;
 
     this.debugTraffic = service.getSettings().debugTraffic();
-
     // XXX: Should be configurable via settings
     this.setAutoNickChange(false);
     // haha xD
@@ -72,11 +80,34 @@ public class IRCConnection extends PircBot {
    */
   @Override
   protected void handleLine(String line) throws NickAlreadyInUseException, IOException {
-    if( debugTraffic ) {
-      Log.v(TAG, server.getTitle() + " :: " + line);
+      // Handle line early
+      super.handleLine(line);
+      // Print line to adb logs
+      if( debugTraffic ) {
+       Log.v(TAG, server.getTitle() + " :: " + line);
+       }
+    // Write the message to the log file(s)
+    if (App.getSettings().logTraffic()) {
+      try {
+        String outDir = App.getSettings().getLogFile();
+          DateFormat filedf = new SimpleDateFormat("yyyy-MM-dd");
+          String filedate = filedf.format(Calendar.getInstance().getTime());
+          File file = new File(outDir + filedate + ".log");
+        BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
+        DateFormat df = new SimpleDateFormat("EEE, MMM d yyyy h:mm:ss a");
+        String date = df.format(Calendar.getInstance().getTime());
+        // Pattern real_line = Pattern.compile(line);
+        String entry = "[" + date + "]" + " " + line;
+        writer.write(entry);
+        writer.newLine();
+        writer.flush();
+        writer.close();
+      } catch (IOException e) {
+          // on IO Execption
+        // We need to get a better error message
+        System.out.println("Could not write to log: " + e);
+      }
     }
-
-    super.handleLine(line);
   }
 
   /**
@@ -1349,7 +1380,7 @@ public class IRCConnection extends PircBot {
    * Update the nick matching pattern, should be called when the nickname changes.
    */
   private void updateNickMatchPattern() {
-    mNickMatch = Pattern.compile("(?:^|[\\s?!'�:;,.])" + Pattern.quote(getNick()) + "(?:[\\s?!'�:;,.]|$)", Pattern.CASE_INSENSITIVE);
+    mNickMatch = compile("(?:^|[\\s?!'�:;,.])" + Pattern.quote(getNick()) + "(?:[\\s?!'�:;,.]|$)", Pattern.CASE_INSENSITIVE);
   }
 
   @Override
