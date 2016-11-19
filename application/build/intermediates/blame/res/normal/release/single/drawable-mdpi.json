@@ -20,12 +20,12 @@
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-mdpi/ic_tabcomplete_light.png"
     },
     {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-mdpi/action_ban.png",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-mdpi/action_ban.png"
-    },
-    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-mdpi/apptheme_textfield_disabled_focused_holo_dark.9.png",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-mdpi/apptheme_textfield_disabled_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-mdpi/action_ban.png",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-mdpi/action_ban.png"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-mdpi/ic_action_conversations_dark.png",
@@ -44,12 +44,12 @@
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-mdpi/ic_action_close_conversation_light.png"
     },
     {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-mdpi/ic_message_copy.png",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-mdpi/ic_message_copy.png"
-    },
-    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-mdpi/op.png",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-mdpi/op.png"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-mdpi/ic_message_copy.png",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-mdpi/ic_message_copy.png"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-mdpi/ic_action_users_light.png",

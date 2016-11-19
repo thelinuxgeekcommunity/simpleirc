@@ -179,7 +179,7 @@ public class IRCConnection extends PircBot {
     );
 
     service.notifyConnected(server.getTitle());
-    Message message = new Message(service.getString(R.string.message_connected, server.getTitle()));
+    /*Message message = new Message(service.getString(R.string.message_connected, server.getTitle()));
     message.setColor(Message.MessageColor.USER_EVENT);
     server.getConversation(ServerInfo.DEFAULT_NAME).addMessage(message);
 
@@ -191,12 +191,12 @@ public class IRCConnection extends PircBot {
         Broadcast.CONVERSATION_MESSAGE,
         server.getId(),
         ServerInfo.DEFAULT_NAME
-    );
+    ); */
     if( server.getAuthentication().hasNickservCredentials() ) {
       identify(server.getAuthentication().getNickservPassword());
     }
 
-    service.sendBroadcast(intent);
+    //service.sendBroadcast(intent);
   }
 
   LatchingValue<Boolean> hasDoneAutorun = new LatchingValue<Boolean>(true, false);

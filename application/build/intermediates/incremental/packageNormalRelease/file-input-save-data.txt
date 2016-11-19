@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Nov 18 17:00:05 CST 2016
+#Fri Nov 18 17:58:21 CST 2016
 210.set=ANDROID_RESOURCE
 282.file=/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/resources-normal-release.ap_/res/drawable-xhdpi-v4/ic_network_connecting.png
 14.set=ANDROID_RESOURCE
