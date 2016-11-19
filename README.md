@@ -1,5 +1,6 @@
 # simpleirc
 A Simple open source irc client based off of Atmoic for android.
+
 Licensed under the GPLv3
 
 Supports the following:
