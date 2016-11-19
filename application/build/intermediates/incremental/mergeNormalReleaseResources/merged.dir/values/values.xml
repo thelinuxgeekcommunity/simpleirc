@@ -114,7 +114,7 @@
     </string-array>
     <string-array name="theme_labels">
         <item>Default</item>
-        <item>White And Black</item>
+        <item>White and Black</item>
         <item>base16 Default</item>
         <item>Base16 3024</item>
         <item>Base16 Ashes</item>
@@ -519,7 +519,7 @@
     <string name="default_ignore_motd" translatable="false">false</string>
     <string name="default_ime_extract" translatable="false">true</string>
     <string name="default_include_seconds" translatable="false">false</string>
-    <string name="default_led_highlight" translatable="false">true</string>
+    <string name="default_led_highlight" translatable="false">false</string>
     <string name="default_log_file" translatable="false">/sdcard/SimpleIRC/</string>
     <string name="default_log_traffic" translatable="false">false</string>
     <string name="default_mirc_colors" translatable="false">true</string>
@@ -536,7 +536,7 @@
     <string name="default_show_joinpartquit" translatable="false">true</string>
     <string name="default_show_timestamp" translatable="false">false</string>
     <string name="default_sound_highlight" translatable="false">false</string>
-    <string name="default_tint_actionbar">false</string>
+    <string name="default_tint_actionbar">true</string>
     <string name="default_vibrate_highlight" translatable="false">true</string>
     <string name="default_voice_recognition" translatable="false">false</string>
     <string name="delete">Delete</string>
@@ -656,7 +656,7 @@
     
         &lt;p>Simple IRC is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&lt;/p>
 
-        &lt;p>Simple IRC is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.&lt;/p>
+        &lt;p>Simple IRC is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License Version 3 for more details.&lt;/p>
 
      	&lt;p>Simple IRC makes use of the following libraries:&lt;/p>
      	&lt;p>&lt;a href="http://www.jibble.org/pircbot.php">PircBot&lt;/a> (a IRC API written in java)&lt;/p>

@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tk.jordynsmediagroup.simpleirc"
     android:installLocation="auto"
-    android:versionCode="10"
-    android:versionName="1.0" > <!-- Never remove this even if gradle teels you to do so. -->
+    android:versionCode="11"
+    android:versionName="1.1" > <!-- Never remove this even if gradle tells you to do so. -->
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="22" />

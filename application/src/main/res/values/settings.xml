@@ -51,7 +51,7 @@
     <string name="key_sound_ring" translatable="false">sound_ring</string>
 
     <string name="key_led_highlight" translatable="false">led_highlight</string>
-    <string name="default_led_highlight" translatable="false">true</string>
+    <string name="default_led_highlight" translatable="false">false</string>
 
     <string name="key_led_color" translatable="false">led_highlight_color</string>
     <color name="default_led_color">#FFFFFFFF</color>
@@ -96,7 +96,7 @@
     <string name="default_colorscheme_dark">false</string>
 
     <string name="key_tint_actionbar">tint_actionbar</string>
-    <string name="default_tint_actionbar">false</string>
+    <string name="default_tint_actionbar">true</string>
 
     <string name="key_reconnect_transient">reconnect_transient</string>
     <string name="default_reconnect_transient">true</string>

@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="tk.jordynsmediagroup.simpleirc"
     android:installLocation="auto"
-    android:versionCode="10"
-    android:versionName="1.0">
+    android:versionCode="11"
+    android:versionName="1.1">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <!-- Never remove this even if gradle teels you to do so. -->
+    <!-- Never remove this even if gradle tells you to do so. -->
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="21" />

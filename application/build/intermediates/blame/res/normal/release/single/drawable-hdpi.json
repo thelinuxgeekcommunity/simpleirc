@@ -16,12 +16,12 @@
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-hdpi/apptheme_textfield_focused_holo_dark.9.png"
     },
     {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-hdpi/action_deop.png",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-hdpi/action_deop.png"
-    },
-    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-hdpi/ic_action_conversations_dark.png",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-hdpi/ic_action_conversations_dark.png"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-hdpi/action_deop.png",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/drawable-hdpi/action_deop.png"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-hdpi/ic_button_prev.png",
