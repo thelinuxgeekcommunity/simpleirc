@@ -18,6 +18,8 @@ Supports the following:
 
 # Help
 To send a line to the server use /quote or /raw
+
 The default quit message is "Simple IRC: The quit option."
+
 The default log folder is /sdcard/SimpleIRC (You must create this if it doesn't exist or else it will not write to the log.)
 
