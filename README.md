@@ -16,6 +16,7 @@ Supports the following:
 * AMSG support
 * Notice support
 * Whois support
+* Colored Messages
 
 # Help
 To send a line to the server use /quote or /raw
