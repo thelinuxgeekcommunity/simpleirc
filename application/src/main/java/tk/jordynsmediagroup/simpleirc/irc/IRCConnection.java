@@ -90,22 +90,21 @@ public class IRCConnection extends PircBot {
     if (App.getSettings().logTraffic()) {
       try {
         String outDir = App.getSettings().getLogFile();
-          DateFormat filedf = new SimpleDateFormat("yyyy-MM-dd");
-          String filedate = filedf.format(Calendar.getInstance().getTime());
-          File file = new File(outDir + filedate + ".log");
+        DateFormat filedf = new SimpleDateFormat("yyyy-MM-dd");
+        String filedate = filedf.format(Calendar.getInstance().getTime());
+        File file = new File(outDir + filedate + ".log");
         BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
         DateFormat df = new SimpleDateFormat("EEE, MMM d yyyy h:mm:ss a");
         String date = df.format(Calendar.getInstance().getTime());
-        // Pattern real_line = Pattern.compile(line);
         String entry = "[" + date + "]" + " " + line;
         writer.write(entry);
         writer.newLine();
         writer.flush();
         writer.close();
       } catch (IOException e) {
-          // on IO Execption
+        // on IO Execption
         // We need to get a better error message
-        System.out.println("Could not write to log: " + e);
+        Log.v(TAG, "Could not write to log: " + e);
       }
     }
   }
@@ -116,6 +115,9 @@ public class IRCConnection extends PircBot {
    * @param nickname The nickname to use
    */
   public void setNickname(String nickname) {
+      if( debugTraffic ) {
+          Log.v(TAG, server.getTitle() + " :: " + "Setting nick to:" + " " + nickname);
+      }
     this.setName(nickname);
     this.updateNickMatchPattern();
   }
@@ -128,6 +130,9 @@ public class IRCConnection extends PircBot {
   public void setRealName(String realname) {
     // XXX: Pircbot uses the version for "real name" and "version".
     //      The real "version" value is provided by onVersion()
+      if( debugTraffic ) {
+          Log.v(TAG, server.getTitle() + " :: " + "Setting real name to:" + " " + realname);
+      }
     this.setVersion(realname);
   }
 
@@ -147,7 +152,10 @@ public class IRCConnection extends PircBot {
    */
   @Override
   protected void onVersion(String sourceNick, String sourceLogin, String sourceHostname, String target) {
-    this.sendRawLine(
+      if( debugTraffic ) {
+          Log.v(TAG, server.getTitle() + " :: " + "Recived CTCP version from:" + " " + sourceNick);
+      }
+     this.sendRawLine(
         "NOTICE " + sourceNick + " :\u0001VERSION " +
             "Simple IRC - A simple irc client based off of simpleirc https://github.com/jcjordyn130/simpleirc" +
             "\u0001"
@@ -160,7 +168,10 @@ public class IRCConnection extends PircBot {
    * @param ident The ident to use
    */
   public void setIdent(String ident) {
-    this.setLogin(ident);
+      if( debugTraffic ) {
+          Log.v(TAG, server.getTitle() + " :: " + "Setting ident to:" + " " + ident);
+      }
+      this.setLogin(ident);
   }
 
   /**
@@ -1155,6 +1166,9 @@ public class IRCConnection extends PircBot {
    */
   @Override
   protected void onServerResponse(int code, String response) {
+      if( debugTraffic ) {
+          Log.v(TAG, server.getTitle() + " :: " + "Server response code => "+ code);
+      }
     if( code == 4 ) {
       // User has registered with the server
       onRegister();

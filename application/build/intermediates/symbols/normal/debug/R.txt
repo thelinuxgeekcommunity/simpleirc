@@ -810,7 +810,7 @@ int raw theme_base16_solarized 0x7f07001a
 int raw theme_base16_tomorrow 0x7f07001b
 int raw theme_base16_twilight 0x7f07001c
 int raw theme_default 0x7f07001d
-int raw theme_grey 0x7f07001e
+int raw theme_white_and_black 0x7f07001e
 int string abc_action_bar_home_description 0x7f080000
 int string abc_action_bar_home_description_format 0x7f080121
 int string abc_action_bar_home_subtitle_description_format 0x7f080122

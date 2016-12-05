@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/jordyn-void/code/simpleirc/colorPickerView/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/icon.png",
+        "source": "/home/jordyn-void/code/simpleirc/colorPickerView/build/intermediates/bundles/debug/res/drawable-mdpi-v4/icon.png"
+    },
+    {
         "merged": "/home/jordyn-ubuntumate/code/Atomic/colorPickerView/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/icon.png",
         "source": "/home/jordyn-ubuntumate/code/Atomic/colorPickerView/build/intermediates/bundles/debug/res/drawable-mdpi-v4/icon.png"
     },

@@ -2,121 +2,58 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="983e2f375504bc04def18e709c35192afe92e65f">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/pre-dexed/normal/release/com.android.support-appcompat-v7-22.1.0_62b609230cff8610e05dd53b046154a53d47f54c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jordyn-arch/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.0/support-annotations-22.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="281bc6c58ecb3644c23fbc5ee0452019f67b4d5d">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/pre-dexed/normal/release/support-annotations-22.1.0_44bf0468e82328c047217ad324288c74b5b9d9dd.jar" />
-    </item>
-    <item
         is-multidex="true"
-        jar="/home/jordyn-arch/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.0/support-annotations-22.1.0.jar"
+        jar="/home/jordyn-void/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.0/support-annotations-22.1.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="281bc6c58ecb3644c23fbc5ee0452019f67b4d5d">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/support-annotations-22.1.0_44bf0468e82328c047217ad324288c74b5b9d9dd/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="eeebabdfd8203f6ab639ccea4ffa1f20e1adee3a">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/pre-dexed/normal/release/com.android.support-support-v4-22.1.0_247787303e591b2fc38efc1fd92c3d6cc6d5c7b6.jar" />
+        <dex dex="/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/support-annotations-22.1.0_31828f82688f172daf40d44e891f04ac97907b03/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/incremental-runtime-classes/normal/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ca2b3293b88610bd2d00763ad20208d1987d27b4">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_04e03cfa2cffa0cfc1227eefe15fe5ef67b78b18/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/incremental-classes/normal/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5930783b61b404969fef43d4e8c56bd6bb20e921">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_96583ff2276f916991519389f2777ff52faeaa70/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/simpleirc/memorizingTrustManager/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e322d6ff8c375a406d5b01075d37ecfad3d53b78">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/pre-dexed/normal/release/simpleirc-memorizingTrustManager-unspecified_d026c89605ed47d38dae6e2223c346a3c5709da7.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/jars/classes.jar"
+        jar="/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="983e2f375504bc04def18e709c35192afe92e65f">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/com.android.support-appcompat-v7-22.1.0_62b609230cff8610e05dd53b046154a53d47f54c/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/simpleirc/colorPickerView/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c5fbdc7af4fbe5667dce2f9c910ea7c29b897121">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/pre-dexed/normal/release/simpleirc-colorPickerView-unspecified_e3f5802b69f99175e7277d396a7a967cc453080f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/simpleirc/viewPagerIndicator/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="66cd35ab22c6200eb31d5967b2ac2d6af74b1851">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/pre-dexed/normal/release/simpleirc-viewPagerIndicator-unspecified_92e7189713b850b59f76e04955bba2d72efaae89.jar" />
+        <dex dex="/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/com.android.support-appcompat-v7-22.1.0_9da27c4d03df2d39b4ea2fe729467241bd9bee2d/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.0/jars/classes.jar"
+        jar="/home/jordyn-void/code/simpleirc/application/build/intermediates/incremental-classes/normal/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a2902cbc06767f4aaafb4fb9427e582caaeaf9e1">
+        <dex dex="/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_ed5f0c554368835c127b0a38e99bda492abde2e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jordyn-void/code/simpleirc/application/build/intermediates/incremental-runtime-classes/normal/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c872ce122bbd142d161c448fc5a2aae791dc65f">
+        <dex dex="/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_b3b3f33dbaf2338066bbf15b1e3a1b2a8c215433/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="eeebabdfd8203f6ab639ccea4ffa1f20e1adee3a">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/com.android.support-support-v4-22.1.0_247787303e591b2fc38efc1fd92c3d6cc6d5c7b6/classes.dex" />
+        <dex dex="/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/com.android.support-support-v4-22.1.0_a7d65883782f352020e5827680093f0e3508e68a/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.0/jars/libs/internal_impl-22.1.0.jar"
+        jar="/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.0/jars/libs/internal_impl-22.1.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="025cb89f2896c63200ff4c2e6c467a95691d880a">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/internal_impl-22.1.0_ef145ea16ba5c44b9ae1518d6bdf82662a90f838/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.0/jars/libs/internal_impl-22.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="025cb89f2896c63200ff4c2e6c467a95691d880a">
-        <dex dex="/home/jordyn-arch/code/simpleirc/application/build/intermediates/pre-dexed/normal/release/internal_impl-22.1.0_ef145ea16ba5c44b9ae1518d6bdf82662a90f838.jar" />
+        <dex dex="/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/internal_impl-22.1.0_84e5759903efc37f5fde9525d989439e27181f19/classes.dex" />
     </item>
 
 </items>

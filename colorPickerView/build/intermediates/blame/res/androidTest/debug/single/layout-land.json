@@ -8,6 +8,10 @@
         "source": "/home/jordyn-arch/code/simpleirc/colorPickerView/build/intermediates/bundles/debug/res/layout-land/dialog_color_picker.xml"
     },
     {
+        "merged": "/home/jordyn-void/code/simpleirc/colorPickerView/build/intermediates/res/merged/androidTest/debug/layout-land/dialog_color_picker.xml",
+        "source": "/home/jordyn-void/code/simpleirc/colorPickerView/build/intermediates/bundles/debug/res/layout-land/dialog_color_picker.xml"
+    },
+    {
         "merged": "/home/jordyn-ubuntumate/code/Atomic (copy)/colorPickerView/build/intermediates/res/merged/androidTest/debug/layout-land/dialog_color_picker.xml",
         "source": "/home/jordyn-ubuntumate/code/Atomic (copy)/colorPickerView/build/intermediates/bundles/debug/res/layout-land/dialog_color_picker.xml"
     }

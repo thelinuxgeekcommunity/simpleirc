@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/incremental/mergeNormalDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+        "outputFile": "/home/jordyn-void/code/simpleirc/application/build/intermediates/incremental/mergeNormalDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 325
                 },
                 "from": {
-                    "file": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-hdpi-v4/values.xml",
+                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-hdpi-v4/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

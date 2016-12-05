@@ -1320,8 +1320,6 @@ public abstract class PircBot implements ReplyConstants {
    * @param response The full response from the IRC server.
    */
   private final void processServerResponse(int code, String response) {
-    //android.util.Log.d("PIRCBot", "Server response code => "+code);
-
     if( code == RPL_WELCOME ) {
       // This will tell us what our real nick is.
       String real_nick = response.substring(0, response.indexOf(' '));

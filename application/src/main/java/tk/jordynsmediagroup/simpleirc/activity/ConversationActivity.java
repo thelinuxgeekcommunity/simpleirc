@@ -97,9 +97,7 @@ public class ConversationActivity extends AppCompatActivity implements
 
   private static ColorScheme _scheme;
 
-  public static ColorScheme getScheme() {
-    return _scheme;
-  }
+  public static ColorScheme getScheme() { return _scheme; }
 
   private int serverId;
   private Server server;
@@ -407,7 +405,7 @@ public class ConversationActivity extends AppCompatActivity implements
         return;
       }
     }
-    Log.d("ConversationActivity", "Didn't find conversation!?!?!!?");
+    Log.d("ConversationActivity", "Didn't find conversation");
   }
 
   private void setupColors() {
@@ -1202,7 +1200,7 @@ public class ConversationActivity extends AppCompatActivity implements
 
       word = text.substring(cursor, sel_end);
     }
-    // Log.d("Yaaic", "Trying to complete nick: " + word);
+    Log.v("ConversationActivity", server.getTitle() + " :: " + "Trying to complete nick: " + word);
 
     Conversation conversationForUserList = pagerAdapter.getItem(pager
         .getCurrentItem());

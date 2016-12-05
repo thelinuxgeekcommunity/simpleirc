@@ -10,5 +10,9 @@
     {
         "merged": "/home/jordyn-arch/code/simpleirc/colorPickerView/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/icon.png",
         "source": "/home/jordyn-arch/code/simpleirc/colorPickerView/build/intermediates/bundles/debug/res/drawable-hdpi-v4/icon.png"
+    },
+    {
+        "merged": "/home/jordyn-void/code/simpleirc/colorPickerView/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/icon.png",
+        "source": "/home/jordyn-void/code/simpleirc/colorPickerView/build/intermediates/bundles/debug/res/drawable-hdpi-v4/icon.png"
     }
 ]

@@ -1,5 +1,911 @@
 [
     {
+        "outputFile": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 44,
+                    "endOffset": 95
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 44,
+                        "endOffset": 95
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 100,
+                    "endColumn": 47,
+                    "endOffset": 143
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 100,
+                        "endColumn": 47,
+                        "endOffset": 143
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 148,
+                    "endColumn": 49,
+                    "endOffset": 193
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 148,
+                        "endColumn": 49,
+                        "endOffset": 193
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 198,
+                    "endColumn": 49,
+                    "endOffset": 243
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 198,
+                        "endColumn": 49,
+                        "endOffset": 243
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 248,
+                    "endColumn": 62,
+                    "endOffset": 306
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 248,
+                        "endColumn": 62,
+                        "endOffset": 306
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 311,
+                    "endColumn": 59,
+                    "endOffset": 366
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 311,
+                        "endColumn": 59,
+                        "endOffset": 366
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 371,
+                    "endColumn": 60,
+                    "endOffset": 427
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 371,
+                        "endColumn": 60,
+                        "endOffset": 427
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 432,
+                    "endColumn": 66,
+                    "endOffset": 494
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 432,
+                        "endColumn": 66,
+                        "endOffset": 494
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 499,
+                    "endColumn": 62,
+                    "endOffset": 557
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 499,
+                        "endColumn": 62,
+                        "endOffset": 557
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 562,
+                    "endColumn": 71,
+                    "endOffset": 629
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 562,
+                        "endColumn": 71,
+                        "endOffset": 629
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 634,
+                    "endColumn": 71,
+                    "endOffset": 701
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 634,
+                        "endColumn": 71,
+                        "endOffset": 701
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 706,
+                    "endColumn": 73,
+                    "endOffset": 775
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 706,
+                        "endColumn": 73,
+                        "endOffset": 775
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 780,
+                    "endColumn": 73,
+                    "endOffset": 849
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 780,
+                        "endColumn": 73,
+                        "endOffset": 849
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 854,
+                    "endColumn": 75,
+                    "endOffset": 925
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 854,
+                        "endColumn": 75,
+                        "endOffset": 925
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 930,
+                    "endColumn": 72,
+                    "endOffset": 998
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 930,
+                        "endColumn": 72,
+                        "endOffset": 998
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1003,
+                    "endColumn": 74,
+                    "endOffset": 1073
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1003,
+                        "endColumn": 74,
+                        "endOffset": 1073
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1078,
+                    "endColumn": 70,
+                    "endOffset": 1144
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1078,
+                        "endColumn": 70,
+                        "endOffset": 1144
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1149,
+                    "endColumn": 78,
+                    "endOffset": 1223
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1149,
+                        "endColumn": 78,
+                        "endOffset": 1223
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1228,
+                    "endColumn": 61,
+                    "endOffset": 1285
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1228,
+                        "endColumn": 61,
+                        "endOffset": 1285
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1290,
+                    "endColumn": 62,
+                    "endOffset": 1348
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1290,
+                        "endColumn": 62,
+                        "endOffset": 1348
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1353,
+                    "endColumn": 77,
+                    "endOffset": 1426
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1353,
+                        "endColumn": 77,
+                        "endOffset": 1426
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1431,
+                    "endColumn": 78,
+                    "endOffset": 1505
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1431,
+                        "endColumn": 78,
+                        "endOffset": 1505
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1510,
+                    "endColumn": 92,
+                    "endOffset": 1598
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1510,
+                        "endColumn": 92,
+                        "endOffset": 1598
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1603,
+                    "endColumn": 92,
+                    "endOffset": 1691
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1603,
+                        "endColumn": 92,
+                        "endOffset": 1691
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1696,
+                    "endColumn": 107,
+                    "endOffset": 1799
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1696,
+                        "endColumn": 107,
+                        "endOffset": 1799
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1804,
+                    "endColumn": 107,
+                    "endOffset": 1907
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1804,
+                        "endColumn": 107,
+                        "endOffset": 1907
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 3899,
+                    "endColumn": 61,
+                    "endOffset": 3956
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 3899,
+                        "endColumn": 61,
+                        "endOffset": 3956
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 3961,
+                    "endColumn": 67,
+                    "endOffset": 4024
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 3961,
+                        "endColumn": 67,
+                        "endOffset": 4024
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 4029,
+                    "endColumn": 62,
+                    "endOffset": 4087
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 4029,
+                        "endColumn": 62,
+                        "endOffset": 4087
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 4092,
+                    "endColumn": 64,
+                    "endOffset": 4152
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 4092,
+                        "endColumn": 64,
+                        "endOffset": 4152
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 4157,
+                    "endColumn": 65,
+                    "endOffset": 4218
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 4157,
+                        "endColumn": 65,
+                        "endOffset": 4218
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 4223,
+                    "endColumn": 66,
+                    "endOffset": 4285
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 4223,
+                        "endColumn": 66,
+                        "endOffset": 4285
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 4290,
+                    "endColumn": 77,
+                    "endOffset": 4363
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 4290,
+                        "endColumn": 77,
+                        "endOffset": 4363
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 4368,
+                    "endColumn": 89,
+                    "endOffset": 4453
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 4368,
+                        "endColumn": 89,
+                        "endOffset": 4453
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 4458,
+                    "endColumn": 72,
+                    "endOffset": 4526
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 4458,
+                        "endColumn": 72,
+                        "endOffset": 4526
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 4531,
+                    "endColumn": 68,
+                    "endOffset": 4595
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 4531,
+                        "endColumn": 68,
+                        "endOffset": 4595
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 4600,
+                    "endColumn": 64,
+                    "endOffset": 4660
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 4600,
+                        "endColumn": 64,
+                        "endOffset": 4660
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 4665,
+                    "endColumn": 67,
+                    "endOffset": 4728
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 4,
+                        "startOffset": 4665,
+                        "endColumn": 67,
+                        "endOffset": 4728
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 4733,
+                    "endColumn": 65,
+                    "endOffset": 4794
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 4733,
+                        "endColumn": 65,
+                        "endOffset": 4794
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 4799,
+                    "endColumn": 68,
+                    "endOffset": 4863
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 4799,
+                        "endColumn": 68,
+                        "endOffset": 4863
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 4868,
+                    "endColumn": 78,
+                    "endOffset": 4942
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 4,
+                        "startOffset": 4868,
+                        "endColumn": 78,
+                        "endOffset": 4942
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 4947,
+                    "endColumn": 72,
+                    "endOffset": 5015
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 4,
+                        "startOffset": 4947,
+                        "endColumn": 72,
+                        "endOffset": 5015
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 5020,
+                    "endColumn": 73,
+                    "endOffset": 5089
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 53,
+                        "startColumn": 4,
+                        "startOffset": 5020,
+                        "endColumn": 73,
+                        "endOffset": 5089
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 5094,
+                    "endLine": 57,
+                    "endColumn": 12,
+                    "endOffset": 5289
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 5094,
+                        "endLine": 57,
+                        "endColumn": 12,
+                        "endOffset": 5289
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 5294,
+                    "endLine": 60,
+                    "endColumn": 12,
+                    "endOffset": 5456
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 4,
+                        "startOffset": 5294,
+                        "endLine": 60,
+                        "endColumn": 12,
+                        "endOffset": 5456
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 5461,
+                    "endLine": 62,
+                    "endColumn": 12,
+                    "endOffset": 5495
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 5461,
+                        "endLine": 62,
+                        "endColumn": 12,
+                        "endOffset": 5495
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 5500,
+                    "endLine": 73,
+                    "endColumn": 12,
+                    "endOffset": 6097
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/viewPagerIndicator/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 5500,
+                        "endLine": 73,
+                        "endColumn": 12,
+                        "endOffset": 6097
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "/home/jordyn-ubuntumate/code/Atomic (copy)/viewPagerIndicator/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
         "map": [
             {

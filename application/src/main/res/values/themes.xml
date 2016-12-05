@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Define all the themes here -->
 <resources>
-
     <string-array name="theme_labels">
         <item>Default</item>
         <item>White and Black</item>
@@ -65,5 +65,4 @@
         <item>base16_tomorrow</item>
         <item>base16_twilight</item>
     </string-array>
-
 </resources>

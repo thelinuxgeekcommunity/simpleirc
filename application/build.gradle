@@ -20,17 +20,19 @@ android {
     buildToolsVersion "25.0.0"
     defaultConfig {
         applicationId 'tk.jordynsmediagroup.simpleirc'
-        minSdkVersion 11
-        targetSdkVersion 22
+        minSdkVersion 11 // Android 3.0 Honeycomb
+        targetSdkVersion 22 // Android 6.0 Marshmallow
     }
     buildTypes {
         release {
+            // Build config for a generic release build
             minifyEnabled false
             signingConfig signingConfigs.KeyConfig
             pseudoLocalesEnabled true
             zipAlignEnabled true
         }
         debug {
+            // Build config for a debug build
             applicationIdSuffix = '.debug'
             jniDebuggable true
             renderscriptDebuggable true
@@ -39,6 +41,7 @@ android {
             applicationIdSuffix '.debug'
         }
         fdroid {
+            // Build config for the F-droid marketplace
             debuggable false
             jniDebuggable false
             renderscriptDebuggable false
@@ -57,6 +60,7 @@ android {
 }
 
 dependencies {
+    // Dependencies for the entire project
     compile project(':viewPagerIndicator')
     compile project(':memorizingTrustManager')
     compile project(':colorPickerView')

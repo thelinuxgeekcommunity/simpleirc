@@ -2182,7 +2182,7 @@ containing a value of this type.
         public static final int theme_base16_tomorrow=0x7f07001b;
         public static final int theme_base16_twilight=0x7f07001c;
         public static final int theme_default=0x7f07001d;
-        public static final int theme_grey=0x7f07001e;
+        public static final int theme_white_and_black=0x7f07001e;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f080000;

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- What are these used for?
+    I just steal the description from github -->
     <string name="google_play_promo">Chat like it\'s 1991</string>
     <string name="google_play_description">AWESOME COOL DESCRIPTION LIKE HERE OR SOMETHING.</string>
 </resources>

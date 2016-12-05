@@ -13,10 +13,10 @@
     <string name="helptopic_introduction_title">Introduction</string>
     <string name="helptopic_introduction_body">
         <![CDATA[
-			<p>Many things have changed since the initial fork. This guide will show you some of the things that have changed between yaaic and Atomic.</p>
+			<p>Many things have changed since the initial fork. This guide will show you some of the things that have changed between Simple IRC and Atomic.</p>
         	<p>Several large changes have happened that stand out from the rest.</p>
         	<img src="nick_complete.png" />
-        	<p>A button has been added for nick completion. This is availible to all users, not just ones without physical search keys.</p>
+        	<p>A button has been added for nick completion. This is available to all users, not just ones without physical search keys.</p>
         	<img src="event_icons.png" />
         	<p>Nearly every icon and graphic has been revamped using the Holo style from Google.</p>
         	<img src="smileys.png" />
@@ -58,12 +58,11 @@
     <string name="helptopic_reconnect_body">
         <![CDATA[
         <p><em>New in this version</em></p>
-		<p>Connections will automatically re-connect themselves when your mobile or wifi network breaks down.</p>
-		<p>Optionally, you may automatically reconnect your networks when you move between wifi and mobile networks.</p>
         <p>When you get kicked it will auto rejoin immediately (not enabled by default).</p>
         <p>Simple IRC has logging support, it stores it in the folder /sdcard/SimpleIRC by default.</p>
         <p>The files are named YYYY-MM-DD.log (ex, 2016-11-18.log).</p>
-        <p>The incomming part of the logs are raw irc protocol though.</p>
+        <p>The incoming part of the logs are raw irc protocol though (which is human readable).</p>
+        <p>Brought back the tint action bar option :)</p>
         ]]>
     </string>
 </resources>

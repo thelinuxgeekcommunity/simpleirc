@@ -1,7 +1,7 @@
-#Fri Nov 18 03:58:29 CST 2016
-base.0=/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_04e03cfa2cffa0cfc1227eefe15fe5ef67b78b18
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_96583ff2276f916991519389f2777ff52faeaa70/classes.dex
-base.1=/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_96583ff2276f916991519389f2777ff52faeaa70
-file.0=/home/jordyn-arch/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_04e03cfa2cffa0cfc1227eefe15fe5ef67b78b18/classes.dex
+#Sun Dec 04 18:07:46 CST 2016
+base.0=/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_ed5f0c554368835c127b0a38e99bda492abde2e7
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_b3b3f33dbaf2338066bbf15b1e3a1b2a8c215433/classes.dex
+base.1=/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_b3b3f33dbaf2338066bbf15b1e3a1b2a8c215433
+file.0=/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_ed5f0c554368835c127b0a38e99bda492abde2e7/classes.dex

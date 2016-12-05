@@ -1,37 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
+    abi="armeabi-v7a,armeabi"
     api-level="22"
-    density="xhdpi"
+    density="hdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="306528051274600"
-    token="-3981717647132312139"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="9742327570113"
+    token="2639236558002093678"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="313" />
+        duration="1630" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="3720" />
     <task
         name="instant-run-transform"
-        duration="525" />
+        duration="67" />
     <task
         name="verifier"
-        duration="17" />
+        duration="20" />
 
     <artifact
-        location="/home/jordyn-arch/code/simpleirc/application/build/outputs/apk/application-normal-debug.apk"
-        type="MAIN" />
+        location="/home/jordyn-void/code/simpleirc/application/build/intermediates/reload-dex/normal/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="306528051274600"
+        timestamp="7882438245178"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/home/jordyn-arch/code/simpleirc/application/build/outputs/apk/application-normal-debug.apk"
+            location="/home/jordyn-void/code/simpleirc/application/build/outputs/apk/application-normal-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="8084059230024"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/jordyn-void/code/simpleirc/application/build/intermediates/builds/normal/debug/8084059230024/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="8504526277558"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/jordyn-void/code/simpleirc/application/build/intermediates/builds/normal/debug/8504526277558/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="9299169855310"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/jordyn-void/code/simpleirc/application/build/intermediates/builds/normal/debug/9299169855310/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="9349606665012"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/jordyn-void/code/simpleirc/application/build/intermediates/builds/normal/debug/9349606665012/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="9415768409939"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/jordyn-void/code/simpleirc/application/build/intermediates/builds/normal/debug/9415768409939/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="9577675854869"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/jordyn-void/code/simpleirc/application/build/intermediates/builds/normal/debug/9577675854869/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="9742327570113"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/jordyn-void/code/simpleirc/application/build/intermediates/reload-dex/normal/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
