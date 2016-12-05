@@ -21,24 +21,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/jordyn-void/code/simpleirc/application/build/intermediates/incremental-classes/normal/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a2902cbc06767f4aaafb4fb9427e582caaeaf9e1">
-        <dex dex="/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_ed5f0c554368835c127b0a38e99bda492abde2e7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jordyn-void/code/simpleirc/application/build/intermediates/incremental-runtime-classes/normal/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0c872ce122bbd142d161c448fc5a2aae791dc65f">
-        <dex dex="/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_b3b3f33dbaf2338066bbf15b1e3a1b2a8c215433/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -54,6 +36,24 @@
         revision="25.0.0"
         sha1="025cb89f2896c63200ff4c2e6c467a95691d880a">
         <dex dex="/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/internal_impl-22.1.0_84e5759903efc37f5fde9525d989439e27181f19/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jordyn-void/code/simpleirc/application/build/intermediates/incremental-classes/normal/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="15ee2e305b719c0d2e13cae588b50d69d6dc39a6">
+        <dex dex="/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_ed5f0c554368835c127b0a38e99bda492abde2e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jordyn-void/code/simpleirc/application/build/intermediates/incremental-runtime-classes/normal/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f375bb01651e4e9c5fd3f132be520b140a9520a1">
+        <dex dex="/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run_b3b3f33dbaf2338066bbf15b1e3a1b2a8c215433/classes.dex" />
     </item>
 
 </items>

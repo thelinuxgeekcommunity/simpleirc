@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_atelierforest",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/raw/theme_base16_atelierforest"
-    },
-    {
         "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_londontube",
         "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/raw/theme_base16_londontube"
+    },
+    {
+        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_atelierforest",
+        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/raw/theme_base16_atelierforest"
     },
     {
         "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_google",

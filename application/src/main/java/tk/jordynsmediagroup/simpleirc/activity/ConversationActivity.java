@@ -962,24 +962,21 @@ public class ConversationActivity extends AppCompatActivity implements
    */
   @Override
   public void onStatusUpdate() {
-    // An issue in the tracker relates to this.
-    // It's way too late to figure out which one.
-    // EditText input = (EditText) findViewById(R.id.input);
+    /*
+     * An issue in the tracker relates to this.
+     * It's way too late to figure out which one.
+     * EditText input = (EditText) findViewById(R.id.input);
+    */
 
-    if( server.isConnected() ) {
-      // input.setEnabled(true);
-    } else {
-      // input.setEnabled(false);
-
+    if( ! server.isConnected() ) {
       /*
-       *
        * If we are disconnected, we should have three times where we don't care
        * to pop up the dialog:
        *
        * * Total network loss has occurred and we're working on reconnecting a
        * server (it happens!) * The network is transient and we're waiting on
        * the network to become not-transient. * The server is in the
-       * preconnecting phases
+       * Pre connecting phases
        */
 
       if( server.getStatus() == Status.DISCONNECTED

@@ -1,4 +1,4 @@
-#Sun Dec 04 18:07:46 CST 2016
+#Mon Dec 05 14:04:59 CST 2016
 base.0=/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/normal/debug/folders/1000/10/instant-run-bootstrap_ed5f0c554368835c127b0a38e99bda492abde2e7
 renamed.1=classes.dex
 renamed.0=classes2.dex

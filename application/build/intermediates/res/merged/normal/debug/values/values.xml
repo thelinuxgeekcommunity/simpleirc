@@ -527,8 +527,8 @@
     <string name="default_quitmessage" translatable="false">Simple IRC: The quit option.</string>
     <string name="default_reconnect_error" translatable="false">true</string>
     <string name="default_reconnect_interval" translatable="false">5</string>
-    <string name="default_reconnect_loss">true</string>
-    <string name="default_reconnect_transient">true</string>
+    <string name="default_reconnect_loss">false</string>
+    <string name="default_reconnect_transient">false</string>
     <string name="default_show_channelbar" translatable="false">true</string>
     <string name="default_show_colors" translatable="false">true</string>
     <string name="default_show_colors_nick" translatable="false">true</string>

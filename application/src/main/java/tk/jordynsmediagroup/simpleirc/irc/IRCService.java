@@ -11,6 +11,7 @@ import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Handler;
+import android.os.SystemClock;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
@@ -299,7 +300,6 @@ public class IRCService extends Service {
     if( intent != null ) {
       handleCommand(intent);
     }
-
     // We want this service to continue running until it is explicitly
     // stopped, so return sticky.
     //return START_STICKY;
