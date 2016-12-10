@@ -1,0 +1,11 @@
+# Don't add/commit local gradle properties
+local.properties
+
+# Don't add/commit keystore properties
+keystore.properties
+
+# Don't add/commit local code properties
+simpleirc.iml
+
+# Don't add/commit built apks (as these might be buggy or outdated)
+application/build/outputs/*

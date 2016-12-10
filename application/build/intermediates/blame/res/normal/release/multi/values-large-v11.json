@@ -1,0 +1,28 @@
+[
+    {
+        "outputFile": "/home/jordyn-void/code/simpleirc/application/build/intermediates/incremental/mergeNormalReleaseResources/merged.dir/values-large-v11/values-large-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 5,
+                    "endColumn": 12,
+                    "endOffset": 234
+                },
+                "from": {
+                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/simpleirc/colorPickerView/unspecified/res/values-large-v11/values-large-v11.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 5,
+                        "endColumn": 12,
+                        "endOffset": 234
+                    }
+                }
+            }
+        ]
+    }
+]

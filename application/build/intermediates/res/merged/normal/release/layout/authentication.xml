@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auth_description"
+            android:padding="5dp" />
+
+        <CheckBox
+            android:id="@+id/nickserv_checkbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auth_nickserv" />
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/nickservHolder">
+            <TextView
+                android:id="@+id/nickserv_label_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auth_nickserv_password"
+                android:enabled="false" />
+
+            <EditText
+                android:id="@+id/nickserv_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="textPassword" />
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/sasl_checkbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auth_sasl" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/saslHolder">
+
+        <TextView
+            android:id="@+id/sasl_label_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auth_sasl_username"
+            android:enabled="false" />
+
+        <EditText
+            android:id="@+id/sasl_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:enabled="false" />
+
+        <TextView
+            android:id="@+id/sasl_label_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auth_sasl_password"
+            android:enabled="false" />
+
+        <EditText
+            android:id="@+id/sasl_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="textPassword"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -25,11 +25,15 @@ android {
     }
     buildTypes {
         release {
-            // Build config for a generic release build
+            // Build config for a release build
             minifyEnabled false
             signingConfig signingConfigs.KeyConfig
             pseudoLocalesEnabled true
             zipAlignEnabled true
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            pseudoLocalesEnabled true
         }
         debug {
             // Build config for a debug build
@@ -40,21 +44,19 @@ android {
             zipAlignEnabled true
             applicationIdSuffix '.debug'
         }
-        fdroid {
-            // Build config for the F-droid marketplace
-            debuggable false
-            jniDebuggable false
-            renderscriptDebuggable false
-            minifyEnabled false
-            pseudoLocalesEnabled true
-            applicationIdSuffix '.fdroid'
-            zipAlignEnabled true
-            signingConfig signingConfigs.KeyConfig
-        }
     }
     productFlavors {
         normal {
+            // Product flavor for a generic build
             applicationId 'tk.jordynsmediagroup.simpleirc'
+            minSdkVersion 11
+            targetSdkVersion 22
+        }
+        fdroid {
+            applicationIdSuffix '.fdroid'
+            minSdkVersion 11
+            targetSdkVersion 22
+            signingConfig signingConfigs.KeyConfig
         }
     }
 }
