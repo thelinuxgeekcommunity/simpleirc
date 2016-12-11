@@ -11,8 +11,7 @@ found at http://www.jibble.org/licenses/
 
 Modified by: Sebastian Kaspari <sebastian@yaaic.org>
 Modified by: The Linux Geek <onlinecloud1@gmail.com>
-
- */
+*/
 package org.jibble.pircbot;
 
 import tk.jordynsmediagroup.simpleirc.App;
@@ -184,7 +183,7 @@ public abstract class PircBot implements ReplyConstants {
     _password = password;
 
     if( isConnected() ) {
-      throw new IOException("The PircBot is already connected to an IRC server.  Disconnect first.");
+      throw new IOException("Simple IRC is already connected to an IRC server.  Disconnect first.");
     }
     _autoNickTries = 1;
 
@@ -196,7 +195,6 @@ public abstract class PircBot implements ReplyConstants {
     // Connect to the server.
 
     try {
-
       // XXX: PircBot Patch for SSL
       if( _useSSL ) {
         try {
@@ -429,7 +427,7 @@ public abstract class PircBot implements ReplyConstants {
    *
    * @param reason The reason for quitting the server.
    */
-  // XXX PircBot patch -- we need to override this method in Yaaic
+  // XXX PircBot patch -- we need to override this method in Simple IRC
   public void quitServer(String reason) {
     this.sendRawLine("QUIT :" + reason);
   }
@@ -480,23 +478,30 @@ public abstract class PircBot implements ReplyConstants {
    * @see Colors
    */
   public void sendMessage(String target, String message) {
-      // Write the message to the log if enabled
+    // Write the message to the log if enabled
     if (App.getSettings().logTraffic()) {
       try {
+    // Try to write to the log here
+        // The directory to write to
         String outDir = App.getSettings().getLogFile();
+        // The format to write the log file in
         DateFormat filedf = new SimpleDateFormat("yyyy-MM-dd");
         String filedate = filedf.format(Calendar.getInstance().getTime());
+        // Open the log
         File file = new File(outDir + filedate + ".log");
         BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
+        // Date to write to the log
         DateFormat df = new SimpleDateFormat("EEE, MMM d yyyy h:mm:ss a");
         String date = df.format(Calendar.getInstance().getTime());
+        // String to write to the log
         String entry = "[" + date + "]" + " " + target + ":" + " " + getNick() + ":" + " " + message;
+        // Write to the log and then flush and close it
         writer.write(entry);
         writer.newLine();
         writer.flush();
         writer.close();
-          // Send message here
-          _outQueue.add("PRIVMSG " + target + " :" + message);
+        // Send message here
+        _outQueue.add("PRIVMSG " + target + " :" + message);
       } catch (IOException e) {
         // on IO Execption
         // We need to get a better error message

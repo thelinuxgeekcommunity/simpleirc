@@ -1,3 +1,4 @@
+// Main activity
 package tk.jordynsmediagroup.simpleirc.activity;
 
 import android.app.AlertDialog;
@@ -40,11 +41,7 @@ import tk.jordynsmediagroup.simpleirc.model.Status;
 import tk.jordynsmediagroup.simpleirc.receiver.ServerReceiver;
 import tk.jordynsmediagroup.simpleirc.utils.LatchingValue;
 
-
-/**
- * List of servers
- *
- */
+// List of servers
 public class ServersActivity extends AppCompatActivity implements ServiceConnection, ServerListener, OnItemClickListener, OnItemLongClickListener {
   private IRCBinder binder;
   private ServerReceiver receiver;
@@ -54,9 +51,7 @@ public class ServersActivity extends AppCompatActivity implements ServiceConnect
 
   static LatchingValue<Boolean> doAutoconnect = new LatchingValue<Boolean>(true, false);
 
-  /**
-   * On create
-   */
+  // On create
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -86,18 +81,14 @@ public class ServersActivity extends AppCompatActivity implements ServiceConnect
     list.setOnItemLongClickListener(this);
   }
 
-  /**
-   * On Destroy
-   */
+  // On Destroy
   @Override
   public void onDestroy() {
     super.onDestroy();
     instanceCount--;
   }
 
-  /**
-   * On resume
-   */
+  // On resume
   @Override
   public void onResume() {
     super.onResume();
@@ -118,9 +109,8 @@ public class ServersActivity extends AppCompatActivity implements ServiceConnect
     adapter.loadServers();
   }
 
-  /**
-   * On pause
-   */
+
+  // On pause
   @Override
   public void onPause() {
     super.onPause();
@@ -133,9 +123,8 @@ public class ServersActivity extends AppCompatActivity implements ServiceConnect
     unregisterReceiver(receiver);
   }
 
-  /**
-   * Service connected to Activity
-   */
+
+  // Service connected to Activity
   @Override
   public void onServiceConnected(ComponentName name, IBinder service) {
     binder = (IRCBinder)service;

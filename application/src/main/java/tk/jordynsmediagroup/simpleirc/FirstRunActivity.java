@@ -71,11 +71,9 @@ public class FirstRunActivity extends Activity {
         DisplayMetrics outMetrics = new DisplayMetrics();
         FirstRunActivity.this.getWindowManager().getDefaultDisplay().getMetrics(outMetrics);
         // This tells us the ratio we have to work with.
-
         double scale = (float)(outMetrics.widthPixels) / (float)(sourceDrawable.getIntrinsicWidth());
 
         // Take up no more than 50% when in landscape, but 80% when in portrait.
-
         double imscale = (outMetrics.widthPixels > outMetrics.heightPixels ? 0.5 : 0.8);
 
         int width = (int)(imscale * outMetrics.widthPixels);
@@ -112,7 +110,7 @@ public class FirstRunActivity extends Activity {
           getPackageManager().getPackageInfo(getPackageName(), 0).versionName
       ));
     } catch ( NameNotFoundException e ) {
-      ((TextView)v.findViewById(R.id.versionlabel)).setText("Unkown version!");
+      ((TextView)v.findViewById(R.id.versionlabel)).setText("Unknown version!");
     }
     TextView firstView = ((TextView)v.findViewById(R.id.blathertext));
     firstView.setText(Html.fromHtml(getString(R.string.helptopic_titlepage_body)));

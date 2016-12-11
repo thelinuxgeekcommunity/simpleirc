@@ -140,6 +140,7 @@ public class ConversationActivity extends AppCompatActivity implements
       }
 
       if( keyCode == KeyEvent.KEYCODE_DPAD_UP ) {
+        // Scroll back in the buffer upon pressing UP on any dpad
         String message = scrollback.goBack();
         if( message != null ) {
           input.setText(message);
@@ -156,21 +157,16 @@ public class ConversationActivity extends AppCompatActivity implements
       }
 
       if( keyCode == KeyEvent.KEYCODE_ENTER ) {
+	// Send message on pressing enter
         sendMessage(input.getText().toString());
 
-        // Workaround for
-        // a race
-        // condition in
-        // EditText
-        // Instead of
-        // calling
-        // input.setText("");
+        // Workaround for a race condition in EditText Instead of calling input.setText("");
         TextKeyListener.clear(input.getText());
 
         return true;
       }
 
-      // Nick completion
+      // Do Nick completion on pressing search or tab
       if( keyCode == KeyEvent.KEYCODE_SEARCH || keyCode == KeyEvent.KEYCODE_TAB ) {
         doNickCompletion(input);
         return true;
@@ -192,7 +188,7 @@ public class ConversationActivity extends AppCompatActivity implements
     server = Atomic.getInstance().getServerById(serverId);
     settings = App.getSettings();
     if(settings == null) {
-      Log.wtf("SimpleIRC/Error", "Settings might be corrupt, please clear data and try again.");
+      Log.wtf("SimpleIRC/Fatal", "Settings might be corrupt, please clear data and try again.");
       finish(); }
     _scheme = new ColorScheme(
             settings.getColorScheme(),
@@ -225,7 +221,6 @@ public class ConversationActivity extends AppCompatActivity implements
     input.setOnKeyListener(inputKeyListener);
 
     // Fix from https://groups.google.com/forum/#!topic/yaaic/Z4bXZXvW7UM
-
     input.setOnClickListener(new EditText.OnClickListener() {
       public void onClick(View v) {
         openSoftKeyboard(v);
@@ -954,7 +949,6 @@ public class ConversationActivity extends AppCompatActivity implements
   @Override
   public void onTopicChanged(String target) {
     // No implementation
-
   }
 
   /**
@@ -1225,7 +1219,7 @@ public class ConversationActivity extends AppCompatActivity implements
         insertNickCompletion(input, users[result.get(0).intValue()]);
       } else if( result.size() > 0 ) {
         // There was an ambiguity. Choose who wins.
-        // in yaaic, this was 80% handled by an external intent.
+        // in Yaaic, this was 80% handled by an external intent.
         // I find that inelegant, since we can handle it here and win on
         // low-resource
         // devices (e.g. the Moto Triumph).
@@ -1318,7 +1312,6 @@ public class ConversationActivity extends AppCompatActivity implements
 
   @Override
   public void onPageScrollStateChanged(int arg0) {
-
   }
 
   private void hideSubtitle() {

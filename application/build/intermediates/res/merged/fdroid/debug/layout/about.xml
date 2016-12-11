@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Simple IRC"
+            android:textColor="#FF6CB600"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/version_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Placeholder version here"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Simple IRC: A simple irc client based off of Atmoic"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/app_copyright"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="none"
+            android:gravity="center_horizontal"
+            android:linksClickable="false"
+            android:text="@string/app_homepage"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/about_license_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -30,13 +30,13 @@ public class App extends Application {
     return _ctx;
   }
 
-
+ /* Setup the Color manager interface */
     private static ColorSchemeManager _csMgr;
   public static ColorScheme getColorScheme() {
     return new ColorScheme(_s.getColorScheme(), _s.getUseDarkColors());
   }
 
-
+ /* Setup the settings interface */
   public static Settings getSettings() {
     if(_s == null) {
       _s = new Settings(getAppContext());
@@ -44,6 +44,7 @@ public class App extends Application {
     return _s;
   }
 
+  /* Setup autoconnection to servers here */
   public static Boolean doAutoconnect() {
     return autoconnectComplete.getValue();
   }
@@ -58,9 +59,8 @@ public class App extends Application {
   @Override
   public void onCreate() {
     // Context exists here.
-
     _ctx = getApplicationContext();
-
+    // Load all the servers here
     Atomic.getInstance().loadServers(_ctx);
 
 
@@ -74,22 +74,23 @@ public class App extends Application {
 
     _r = getResources();
 
-    /*
+    // I have no idea why this is commented out */
+    /* 
     _csMgr = new ColorSchemeManager();
 
-    PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(_csMgr);
-*/
+    PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(_csMgr); 
+    */
 
-
+    /* Setup the first run screen here */
     if( _settings.getCurrentVersion() > _settings.getLastRunVersion() ) {
       Intent runIntent = new Intent(this, FirstRunActivity.class);
       runIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
       this.startActivity(runIntent);
     }
-
+    /* Get/Set the defaut nick */
     String ll = _settings.getDefaultNick();
     ll = ll.trim();
-
+    /* Finally do super.onCreate() */
     super.onCreate();
   }
 }

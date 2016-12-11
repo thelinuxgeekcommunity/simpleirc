@@ -1,13 +1,13 @@
 # simpleirc
-A Simple open source irc client based off of Atmoic for android.
+A Simple open source irc client based off of Atmoic.
 
-Licensed under the GPLv3
+All code in the repository is licensed under the GPLv3
 
 Supports the following:
 * SSL
 * SASL
 * ZNC (I haven't tested this)
-* DCC (again I haven't tested this)
+* DCC (Only supports send)
 * Reciving CTCP FINGER, and VERSION
 * Logging incomming and outgoing irc traffic
 * Android API 11+ (Android 3.0 Honycomb+)

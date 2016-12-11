@@ -1,3 +1,4 @@
+// Dependencies for the entire project
 include ':colorPickerView'
 include ':memorizingTrustManager'
 include ':viewPagerIndicator'

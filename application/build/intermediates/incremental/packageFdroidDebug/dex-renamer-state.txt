@@ -1,0 +1,4 @@
+#Sat Dec 10 20:11:46 CST 2016
+base.0=/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/fdroid/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/home/jordyn-void/code/simpleirc/application/build/intermediates/transforms/dex/fdroid/debug/folders/1000/1f/main/classes.dex

@@ -1,3 +1,4 @@
+// A dialog box activity to forget all SSL certs
 package tk.jordynsmediagroup.simpleirc.activity;
 
 import android.app.Activity;
@@ -40,7 +41,6 @@ public class ForgetCertificatesActivity extends Activity {
       @Override
       public void onClick(DialogInterface dialog, int which) {
         finish();
-
       }
     });
     builder.create().show();

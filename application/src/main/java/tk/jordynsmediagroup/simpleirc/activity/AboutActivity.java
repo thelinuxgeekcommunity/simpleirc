@@ -11,9 +11,7 @@ import tk.jordynsmediagroup.simpleirc.R;
 
 // About activity
 public class AboutActivity extends Activity {
-  /**
-   * On activity getting created.
-   */
+  // On activity getting created.
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);

@@ -13,6 +13,7 @@ import tk.jordynsmediagroup.simpleirc.model.Server;
 /**
  * Global Master Class :)
  * Renamed to avoid clashes with yaaic.
+ * TODO: Rename to avoid clashes with Atmoic
  */
 public class Atomic {
   public static Atomic instance;
@@ -44,9 +45,9 @@ public class Atomic {
   }
 
   /**
-   * Get global Yaaic instance
+   * Get global Atmoic instance
    *
-   * @return the global Yaaic instance
+   * @return the global Atmoic instance
    */
   public static Atomic getInstance() {
     if( instance == null ) {

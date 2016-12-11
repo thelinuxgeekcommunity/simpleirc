@@ -7,6 +7,7 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 android {
     signingConfigs {
         KeyConfig {
+	    // Set up the key properties from the loaded files
             keyAlias keystoreProperties['keyAlias']
             keyPassword keystoreProperties['keyPassword']
             storeFile file(keystoreProperties['storeFile'])
@@ -42,7 +43,6 @@ android {
             renderscriptDebuggable true
             minifyEnabled true
             zipAlignEnabled true
-            applicationIdSuffix '.debug'
         }
     }
     productFlavors {
@@ -53,6 +53,7 @@ android {
             targetSdkVersion 22
         }
         fdroid {
+	    // Product flavor for a f-droid build
             applicationIdSuffix '.fdroid'
             minSdkVersion 11
             targetSdkVersion 22
@@ -66,6 +67,7 @@ dependencies {
     compile project(':viewPagerIndicator')
     compile project(':memorizingTrustManager')
     compile project(':colorPickerView')
+    // Android support libaries
     compile 'com.android.support:support-v4:22.0.0'
     compile 'com.android.support:appcompat-v7:22.1.0'
 }

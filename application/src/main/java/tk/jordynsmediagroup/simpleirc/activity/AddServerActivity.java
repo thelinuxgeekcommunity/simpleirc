@@ -37,9 +37,7 @@ import tk.jordynsmediagroup.simpleirc.model.Server;
 import tk.jordynsmediagroup.simpleirc.model.Settings;
 import tk.jordynsmediagroup.simpleirc.model.Status;
 
-/**
- * Add a new server to the list
- */
+// Add a new server to the list
 public class AddServerActivity extends Activity implements OnClickListener {
   private static final int REQUEST_CODE_CHANNELS = 1;
   private static final int REQUEST_CODE_COMMANDS = 2;
@@ -173,9 +171,7 @@ public class AddServerActivity extends Activity implements OnClickListener {
     }
   }
 
-  /**
-   * On options menu requested
-   */
+  // On options menu requested
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
     super.onCreateOptionsMenu(menu);
@@ -186,9 +182,7 @@ public class AddServerActivity extends Activity implements OnClickListener {
     return true;
   }
 
-  /**
-   * On menu item selected
-   */
+  // On menu item selected
   @Override
   public boolean onMenuItemSelected(int featureId, MenuItem item) {
     switch ( item.getItemId() ) {
@@ -204,9 +198,8 @@ public class AddServerActivity extends Activity implements OnClickListener {
     return super.onMenuItemSelected(featureId, item);
   }
 
-  /**
+  /** 
    * On activity result
-
   @Override
   protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     if( resultCode != RESULT_OK ) {

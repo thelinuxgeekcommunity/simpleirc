@@ -4,16 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="tk.jordynsmediagroup.simpleirc"
     android:installLocation="auto"
-    android:versionCode="14"
-    android:versionName="1.4">
+    android:versionCode="15"
+    android:versionName="1.5">
 
+    <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+
     <!-- Never remove this even if gradle tells you to do so. -->
+    <!-- Minimum and Target SDK Versions -->
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="21" />
+    <!-- Define activities here -->
 
     <application
         tools:replace="icon,label"
@@ -84,6 +88,7 @@
             tools:replace="android:theme"
             android:theme="@style/Theme.AppCompat.DialogWhenLarge"
             />
+	<!-- First run activity -->
         <activity
             android:name="tk.jordynsmediagroup.simpleirc.FirstRunActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"
