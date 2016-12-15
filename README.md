@@ -18,6 +18,18 @@ Supports the following:
 * Whois support
 * Colored Messages
 
+The diffrences between Simple IRC and Atmoic:
+* Logging support
+* A black and white theme
+* A grey theme
+* Auto rejoin after kick
+* Ported to API 11+ (Android 3.0 Honycomb)
+* Some bug fixes and removed some redundant code
+* What Simple IRC replys with when CTCP fingered
+* Removed the messages that show when you connect to a server
+* Added some more verbose logging
+* Graphical emojis not enabled by default
+
 # Help
 To send a line to the server use /quote or /raw
 
