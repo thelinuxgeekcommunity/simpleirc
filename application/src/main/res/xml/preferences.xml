@@ -54,6 +54,16 @@
                     android:summary="@string/settings_colorscheme_desc"
                     android:title="@string/settings_colorscheme_title" />
                 <CheckBoxPreference
+                    android:defaultValue="@string/default_keep_screen_on"
+                    android:key="@string/key_keep_screen_on"
+                    android:summary="@string/settings_keep_screen_on_desc"
+                    android:title="@string/settings_keep_screen_on_title" />
+                <CheckBoxPreference
+                    android:defaultValue="@string/default_goto_new_query"
+                    android:key="@string/key_goto_new_query"
+                    android:summary="@string/settings_goto_new_query_desc"
+                    android:title="@string/settings_goto_new_query_title" />
+                <CheckBoxPreference
                     android:defaultValue="@string/default_colorscheme_dark"
                     android:key="@string/key_colorscheme_dark"
                     android:summary="@string/settings_colorscheme_dark_desc"

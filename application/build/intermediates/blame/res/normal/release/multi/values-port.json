@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/jordyn-void/code/simpleirc/application/build/intermediates/incremental/mergeNormalReleaseResources/merged.dir/values-port/values-port.xml",
+        "outputFile": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/incremental/mergeNormalReleaseResources/merged.dir/values-port/values-port.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 106
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-port/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-port/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

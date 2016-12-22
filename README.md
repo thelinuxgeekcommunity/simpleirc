@@ -10,7 +10,7 @@ Supports the following:
 * DCC (Only supports send)
 * Reciving CTCP FINGER, and VERSION
 * Logging incomming and outgoing irc traffic
-* Android API 11+ (Android 3.0 Honycomb+)
+* Android API 16+ (Android 4.1 Jellybean+)
 * Multi server and channel
 * Away message
 * AMSG support
@@ -23,7 +23,7 @@ The diffrences between Simple IRC and Atmoic:
 * A black and white theme
 * A grey theme
 * Auto rejoin after kick
-* Ported to API 11+ (Android 3.0 Honycomb)
+* Ported to API 16+ (Android 4.1 Jellybean)
 * Some bug fixes and removed some redundant code
 * What Simple IRC replys with when CTCP fingered
 * Removed the messages that show when you connect to a server

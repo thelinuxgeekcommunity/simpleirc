@@ -11,7 +11,7 @@ import tk.jordynsmediagroup.simpleirc.R;
  * A server as we know it
  */
 public class Server implements Comparable<Server> {
-  private int id;
+  private static int id;
   private String title;
   private String host;
   private int port;
@@ -100,7 +100,7 @@ public class Server implements Comparable<Server> {
    *
    * @return id
    */
-  public int getId() {
+  public static int getId() {
     return id;
   }
 

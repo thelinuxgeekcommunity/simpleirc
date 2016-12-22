@@ -1,11 +1,63 @@
-# Don't add/commit local gradle properties
+# Local gradle properties
 local.properties
 
-# Don't add/commit keystore properties
+# Keystore properties
 keystore.properties
 
-# Don't add/commit local code properties
+# Local code properties
 simpleirc.iml
 
 # Don't add/commit built apks (as these might be buggy or outdated)
 application/build/outputs/*
+
+# Vim swapfiles.
+**.swp
+
+# Compiled and generated files
+**/bin/
+**/gen/
+**/R.java
+**/build/**
+**/out/**
+
+# Ignore the key file.
+application/keystore
+
+# Build files
+ant.properties
+proguard.cfg
+application/local.properties
+
+# Ignore crowdin configuration
+crowdin.yaml
+
+# no.
+**/.classpath
+
+# NO.
+lint.xml
+**/lint.xml 
+**/.classpath
+libs/ActionBarSherlock/.classpath
+libs/ActionBarSherlock/.classpath
+local.properties
+**/proguard-project.txt
+.gradle/
+.gradle/**
+
+
+# IDEA Project files
+.idea/
+*.iml
+*.ips
+*.ipr
+*.iml
+*.ipw
+*.iws
+
+# IDEA IntelliJ leftovers
+/out/
+
+# Old format conversion backup files
+projectFilesBackup/*
+projectFilesBackup

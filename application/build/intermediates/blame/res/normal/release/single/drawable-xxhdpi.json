@@ -1,178 +1,178 @@
 [
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/part.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/part.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/user.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/user.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_message_reply.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_message_reply.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_tabcomplete_light.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_tabcomplete_light.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_tabcomplete_light.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_tabcomplete_light.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/error.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/error.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/op.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/op.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/quit.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/quit.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/voice.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/voice.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_ban.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/action_ban.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_conversations_dark.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_conversations_dark.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_query.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/action_query.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_ban.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/action_ban.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_kick.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/action_kick.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_op.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/action_op.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/apptheme_textfield_disabled_focused_holo_dark.9.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/apptheme_textfield_disabled_focused_holo_dark.9.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_button_next.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_button_next.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/join.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/join.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_close_conversation_light.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_close_conversation_light.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_network_connecting.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_network_connecting.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/action.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_deop.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/action_deop.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_deop.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/action_deop.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_message_copy.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_message_copy.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_reply.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/action_reply.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_save.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_save.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/apptheme_textfield_activated_holo_dark.9.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/apptheme_textfield_activated_holo_dark.9.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_reply.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/action_reply.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_add_conversation_dark.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_add_conversation_dark.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/part.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/part.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_devoice.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/action_devoice.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_tabcomplete_dark.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_tabcomplete_dark.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_button_prev.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_button_prev.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_close_conversation_dark.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_close_conversation_dark.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_users_light.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_users_light.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/voice.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/voice.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/join.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/join.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_devoice.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/action_devoice.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_conversations_light.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_conversations_light.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/apptheme_textfield_focused_holo_dark.9.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/apptheme_textfield_focused_holo_dark.9.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_settings.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_settings.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_button_prev.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_button_prev.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/apptheme_textfield_focused_holo_dark.9.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/apptheme_textfield_focused_holo_dark.9.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_network_disconnected.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_network_disconnected.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/apptheme_textfield_default_holo_dark.9.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/apptheme_textfield_default_holo_dark.9.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_close.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_close.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/error.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/error.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_network_connected.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_network_connected.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/quit.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/quit.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_users_light.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_users_light.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_network_connecting.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_network_connecting.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/warning.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/warning.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/warning.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/warning.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/op.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/op.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/info.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/info.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_button_next.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_button_next.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/apptheme_textfield_disabled_holo_dark.9.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/apptheme_textfield_disabled_holo_dark.9.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_conversations_light.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_conversations_light.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_close.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_close.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_add.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_add.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/user.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/user.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_add_conversation_dark.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_add_conversation_dark.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_add_conversation_light.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_add_conversation_light.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_conversations_dark.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_conversations_dark.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_save.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_save.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_users_dark.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_users_dark.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_voice.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/action_voice.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_close_conversation_light.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_close_conversation_light.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/apptheme_textfield_disabled_focused_holo_dark.9.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/apptheme_textfield_disabled_focused_holo_dark.9.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/info.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/info.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_message_copy.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_message_copy.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/apptheme_textfield_disabled_holo_dark.9.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/apptheme_textfield_disabled_holo_dark.9.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_network_disconnected.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_network_disconnected.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_op.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/action_op.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_tabcomplete_dark.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_tabcomplete_dark.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/action.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_network_connected.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_network_connected.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/apptheme_textfield_default_holo_dark.9.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/apptheme_textfield_default_holo_dark.9.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_kick.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/action_kick.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_settings.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_settings.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_query.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/action_query.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_add_conversation_light.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_add_conversation_light.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_close_conversation_dark.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_close_conversation_dark.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/apptheme_textfield_activated_holo_dark.9.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/apptheme_textfield_activated_holo_dark.9.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_add.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_add.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_message_reply.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/ic_message_reply.png"
     },
     {
-        "merged": "/home/jordyn-void/code/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/ic_action_users_dark.png",
-        "source": "/home/jordyn-void/code/simpleirc/application/src/main/res/drawable-xxhdpi/ic_action_users_dark.png"
+        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/drawable-xxhdpi/action_voice.png",
+        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/drawable-xxhdpi/action_voice.png"
     }
 ]

@@ -1,4 +1,4 @@
-# view res/xml/preferences.xml #generated:185
+# view res/xml/preferences.xml #generated:195
 -keep class afzkl.development.colorpickerview.preference.ColorPickerPreference { <init>(...); }
 
 # view land/res/layout-land/dialog_color_picker.xml #generated:32
@@ -80,46 +80,46 @@
 
 # view res/layout/abc_screen_toolbar.xml #generated:36
 # view res/layout/conversations.xml #generated:8
-# view res/layout/message.xml #generated:16
+# view res/layout/message.xml #generated:20
 # view res/layout/servers.xml #generated:7
 -keep class android.support.v7.widget.Toolbar { <init>(...); }
 
-# view AndroidManifest.xml #generated:86
+# view AndroidManifest.xml #generated:20
+-keep class com.android.tools.fd.runtime.BootstrapApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
 -keep class de.duenndns.ssl.MemorizingActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:20
--keep class tk.jordynsmediagroup.simpleirc.App { <init>(...); }
-
-# view AndroidManifest.xml #generated:90
+# view AndroidManifest.xml #generated:91
 -keep class tk.jordynsmediagroup.simpleirc.FirstRunActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:55
+# view AndroidManifest.xml #generated:56
 -keep class tk.jordynsmediagroup.simpleirc.activity.AboutActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:36
+# view AndroidManifest.xml #generated:37
 -keep class tk.jordynsmediagroup.simpleirc.activity.AddServerActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:49
+# view AndroidManifest.xml #generated:50
 -keep class tk.jordynsmediagroup.simpleirc.activity.ConversationActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:78
+# view AndroidManifest.xml #generated:79
 -keep class tk.jordynsmediagroup.simpleirc.activity.ForgetCertificatesActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:68
+# view AndroidManifest.xml #generated:69
 -keep class tk.jordynsmediagroup.simpleirc.activity.JoinActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:72
+# view AndroidManifest.xml #generated:73
 -keep class tk.jordynsmediagroup.simpleirc.activity.MessageActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:26
+# view AndroidManifest.xml #generated:27
 -keep class tk.jordynsmediagroup.simpleirc.activity.ServersActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:59
+# view AndroidManifest.xml #generated:60
 -keep class tk.jordynsmediagroup.simpleirc.activity.SettingsActivity { <init>(...); }
 
 # view res/layout/conversations.xml #generated:14
 -keep class tk.jordynsmediagroup.simpleirc.indicator.ConversationIndicator { <init>(...); }
 
-# view AndroidManifest.xml #generated:76
+# view AndroidManifest.xml #generated:77
 -keep class tk.jordynsmediagroup.simpleirc.irc.IRCService { <init>(...); }
 

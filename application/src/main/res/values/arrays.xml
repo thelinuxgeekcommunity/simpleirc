@@ -56,8 +56,11 @@
         <item>@string/user_action_dehalfop</item>
         <item>@string/user_action_voice</item>
         <item>@string/user_action_devoice</item>
+        <item>@string/user_action_quiet</item>
+        <item>@string/user_action_unquiet</item>
         <item>@string/user_action_ban</item>
         <item>@string/user_action_kick</item>
+        <item>@string/user_action_whois</item>
     </string-array>
 
 </resources>

@@ -38,7 +38,7 @@
             android:layout_weight="1"
             android:imeOptions="actionSend"
             android:inputType="textLongMessage"
-            android:singleLine="true"
+            android:maxLines="1"
             android:textCursorDrawable="@null"
             android:textIsSelectable="true" />
     </LinearLayout>

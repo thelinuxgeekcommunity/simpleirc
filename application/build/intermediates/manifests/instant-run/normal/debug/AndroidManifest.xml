@@ -2,20 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tk.jordynsmediagroup.simpleirc.debug"
     android:installLocation="auto"
-    android:versionCode="13"
-    android:versionName="1.3" > <!-- Never remove this even if gradle tells you to do so. -->
+    android:versionCode="16"
+    android:versionName="1.6" > <!-- Never remove this even if gradle tells you to do so. -->
+    <!-- Minimum and Target SDK Versions -->
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="16"
         android:targetSdkVersion="22" />
 
+    <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Define activities here -->
     <application
         name="tk.jordynsmediagroup.simpleirc.App"
         android:name="com.android.tools.fd.runtime.BootstrapApplication"
@@ -73,7 +74,7 @@
             android:name="tk.jordynsmediagroup.simpleirc.activity.MessageActivity"
             android:theme="@style/AppDialogTheme" />
 
-        <service android:name="tk.jordynsmediagroup.simpleirc.irc.IRCService" />
+        <service android:name="tk.jordynsmediagroup.simpleirc.irc.IRCService" /> <!-- Main IRC Service -->
 
         <activity android:name="tk.jordynsmediagroup.simpleirc.activity.ForgetCertificatesActivity" >
             <intent-filter>
@@ -86,6 +87,7 @@
         <activity
             android:name="de.duenndns.ssl.MemorizingActivity"
             android:theme="@style/Theme.AppCompat.DialogWhenLarge" />
+        <!-- First run activity -->
         <activity
             android:name="tk.jordynsmediagroup.simpleirc.FirstRunActivity"
             android:label="@string/title_activity_first_run"

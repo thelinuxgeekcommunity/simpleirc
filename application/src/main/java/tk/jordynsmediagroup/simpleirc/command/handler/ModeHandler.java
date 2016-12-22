@@ -10,9 +10,9 @@ import tk.jordynsmediagroup.simpleirc.model.Conversation;
 import tk.jordynsmediagroup.simpleirc.model.Server;
 
 /**
- * Command: /mode <channel> <mode>
+ * Command: /mode <channel/mode> <mode>
  * <p/>
- * Set or remove channel modes
+ * Set or remove channel or user modes
  */
 public class ModeHandler extends BaseHandler {
   /**
@@ -34,7 +34,7 @@ public class ModeHandler extends BaseHandler {
    */
   @Override
   public String getUsage() {
-    return "/mode <channel> <mode>";
+    return "/mode <channel/nick> <mode>";
   }
 
   /**

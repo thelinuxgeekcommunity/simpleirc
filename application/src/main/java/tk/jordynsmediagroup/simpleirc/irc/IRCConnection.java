@@ -7,15 +7,9 @@ import org.jibble.pircbot.NickAlreadyInUseException;
 import org.jibble.pircbot.PircBot;
 import org.jibble.pircbot.User;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Calendar;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.Date;
@@ -23,9 +17,10 @@ import java.util.Vector;
 import java.util.regex.Pattern;
 
 import tk.jordynsmediagroup.simpleirc.App;
-import tk.jordynsmediagroup.simpleirc.Atomic;
+import tk.jordynsmediagroup.simpleirc.SimpleIRC;
 import tk.jordynsmediagroup.simpleirc.R;
 import tk.jordynsmediagroup.simpleirc.command.CommandParser;
+import tk.jordynsmediagroup.simpleirc.logging.Logging;
 import tk.jordynsmediagroup.simpleirc.model.Broadcast;
 import tk.jordynsmediagroup.simpleirc.model.Channel;
 import tk.jordynsmediagroup.simpleirc.model.Conversation;
@@ -61,7 +56,7 @@ public class IRCConnection extends PircBot {
    * @param serverId
    */
   public IRCConnection(IRCService service, int serverId) {
-    this.server = Atomic.getInstance().getServerById(serverId);
+    this.server = SimpleIRC.getInstance().getServerById(serverId);
     this.service = service;
 
     this.debugTraffic = service.getSettings().debugTraffic();
@@ -75,7 +70,7 @@ public class IRCConnection extends PircBot {
   /**
    * This method handles events when any line of text arrives from the server.
    * <p/>
-   * We are intercepting this method call for logging the IRC traffic if
+   * We are intercepting this method call for Logging the IRC traffic if
    * this debug option is set.
    */
   @Override
@@ -88,24 +83,7 @@ public class IRCConnection extends PircBot {
        }
     // Write the message to the log file(s)
     if (App.getSettings().logTraffic()) {
-      try {
-        String outDir = App.getSettings().getLogFile();
-        DateFormat filedf = new SimpleDateFormat("yyyy-MM-dd");
-        String filedate = filedf.format(Calendar.getInstance().getTime());
-        File file = new File(outDir + filedate + ".log");
-        BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
-        DateFormat df = new SimpleDateFormat("EEE, MMM d yyyy h:mm:ss a");
-        String date = df.format(Calendar.getInstance().getTime());
-        String entry = "[" + date + "]" + " " + line;
-        writer.write(entry);
-        writer.newLine();
-        writer.flush();
-        writer.close();
-      } catch (IOException e) {
-        // on IO Execption
-        // We need to get a better error message
-        Log.v(TAG, "Could not write to log: " + e);
-      }
+      Logging.addLine(line);
     }
   }
 
@@ -157,7 +135,7 @@ public class IRCConnection extends PircBot {
       }
      this.sendRawLine(
         "NOTICE " + sourceNick + " :\u0001VERSION " +
-            "Simple IRC - A simple irc client based off of simpleirc https://github.com/jcjordyn130/simpleirc" +
+            "Simple IRC - A Simple IRC client based off of Atmoic https://github.com/jcjordyn130/simpleirc" +
             "\u0001"
     );
   }
@@ -180,7 +158,6 @@ public class IRCConnection extends PircBot {
   @Override
   public void onConnect() {
     server.setStatus(Status.CONNECTED);
-
     server.setMayReconnect(true);
 
     ignoreMOTD = service.getSettings().isIgnoreMOTDEnabled();
@@ -188,26 +165,9 @@ public class IRCConnection extends PircBot {
     service.sendBroadcast(
         Broadcast.createServerIntent(Broadcast.SERVER_UPDATE, server.getId())
     );
-
-    service.notifyConnected(server.getTitle());
-    /*Message message = new Message(service.getString(R.string.message_connected, server.getTitle()));
-    message.setColor(Message.MessageColor.USER_EVENT);
-    server.getConversation(ServerInfo.DEFAULT_NAME).addMessage(message);
-
-    Message infoMessage = new Message(service.getString(R.string.message_now_login));
-    infoMessage.setColor(Message.MessageColor.SERVER_EVENT);
-    server.getConversation(ServerInfo.DEFAULT_NAME).addMessage(infoMessage);
-
-    Intent intent = Broadcast.createConversationIntent(
-        Broadcast.CONVERSATION_MESSAGE,
-        server.getId(),
-        ServerInfo.DEFAULT_NAME
-    ); */
     if( server.getAuthentication().hasNickservCredentials() ) {
       identify(server.getAuthentication().getNickservPassword());
     }
-
-    //service.sendBroadcast(intent);
   }
 
   LatchingValue<Boolean> hasDoneAutorun = new LatchingValue<Boolean>(true, false);
@@ -241,7 +201,7 @@ public class IRCConnection extends PircBot {
       // do nothing
     }
 
-    // join channels
+    // Join channels
     if( autojoinChannels != null ) {
       for( String channel : autojoinChannels ) {
         // Add support for channel keys
@@ -272,7 +232,6 @@ public class IRCConnection extends PircBot {
   @Override
   protected void onAction(Date messageDate, String sender, String login, String hostname, String target, String action) {
     Conversation conversation;
-
     Message message = new Message(action, sender, Message.TYPE_ACTION, messageDate.getTime());
     message.setIcon(R.drawable.action);
 
@@ -327,7 +286,7 @@ public class IRCConnection extends PircBot {
     }
 
     if( mentioned ) {
-      // highlight
+      // Highlight
       message.setColor(Message.MessageColor.HIGHLIGHT);
       conversation.setStatus(Conversation.STATUS_HIGHLIGHT);
     }
@@ -338,6 +297,7 @@ public class IRCConnection extends PircBot {
    */
   @Override
   protected void onChannelInfo(String channel, int userCount, String topic) {
+      // Not implemented
   }
 
   /**
@@ -451,7 +411,7 @@ public class IRCConnection extends PircBot {
   protected void onKick(String target, String kickerNick, String kickerLogin, String kickerHostname, String recipientNick, String reason) {
     if( recipientNick.equals(getNick()) ) {
       // We are kicked
-      // If Autorejoin Kick is set then send a notice then rejoin here
+      // If Auto rejoin after Kick is set then send a notice then rejoin here
       if( service.getSettings().isAutoRejoinAfterKick()) {
         // Send notice
         Message message = new Message(service.getString(R.string.message_ownkick, target));
@@ -501,7 +461,7 @@ public class IRCConnection extends PircBot {
     Conversation conversation = server.getConversation(target);
 
     if( isMentioned(text) ) {
-      // highlight
+      // Highlight
       message.setColor(Message.MessageColor.ERROR);
       if( conversation.getStatus() != Conversation.STATUS_SELECTED || !server.getIsForeground() ) {
         service.addNewMention(
@@ -527,24 +487,67 @@ public class IRCConnection extends PircBot {
     service.sendBroadcast(intent);
   }
 
-  /**
-   * On Mode
-   */
-  @Override
-  protected void onMode(String target, String sourceNick, String sourceLogin, String sourceHostname, String mode) {
-    // Disabled as it doubles events (e.g. onOp and onMode will be called)
+    /**
+     * On User Mode
+     * Outputs a message upon having a mode set on us
+     */
+    @Override
+    protected void onUserMode(String targetNick, String sourceNick, String sourceLogin, String sourceHostname, String mode) {
+        String nick = mode.split("\\s+")[0];
+        String realmode = mode.split("\\s+")[1].split(":")[1];
+        Message message = new Message(service.getString(R.string.user_set_mode, sourceNick, realmode, nick));
+        message.setColor(Message.MessageColor.USER_EVENT);
+        server.getConversation(ServerInfo.DEFAULT_NAME).addMessage(message);
+
+        Intent intent = Broadcast.createConversationIntent(
+                Broadcast.CONVERSATION_MESSAGE,
+                server.getId(),
+                ServerInfo.DEFAULT_NAME
+        );
+        service.sendBroadcast(intent);
+    }
 
     /*
-    Message message = new Message(sourceNick + " sets mode " + mode);
-    server.getChannel(target).addMessage(message);
-
-    Intent intent = new Intent(Broadcast.CHANNEL_MESSAGE);
-    intent.putExtra(Broadcast.EXTRA_SERVER, server.getId());
-    intent.putExtra(Broadcast.EXTRA_CHANNEL, target);
-    service.sendBroadcast(intent);
+     * On Channel Mode
      */
-  }
+    @Override
+    protected void onMode(String channel, String sourceNick, String sourceLogin, String sourceHostname, String mode) {
+      // No implementation here :)
+    }
 
+    /*
+     * On malformed CTCP request
+     */
+    @Override
+    protected void onMalformedCTCP(String sourceNick, String sourceLogin, String sourceHostname, String target, String command) {
+        Message message = new Message(sourceNick + " Sent you a malformed CTCP " + command);
+        message.setColor(Message.MessageColor.USER_EVENT);
+        server.getConversation(ServerInfo.DEFAULT_NAME).addMessage(message);
+
+        Intent intent = Broadcast.createConversationIntent(
+                Broadcast.CONVERSATION_MESSAGE,
+                server.getId(),
+                ServerInfo.DEFAULT_NAME
+        );
+        service.sendBroadcast(intent);
+    }
+
+    /*
+     * On CTCP request
+     */
+    @Override
+    protected void onCTCP(String sourceNick, String sourceLogin, String sourceHostname, String target, String command) {
+        Message message = new Message(sourceNick + " Sent you a CTCP " + command);
+        message.setColor(Message.MessageColor.USER_EVENT);
+        server.getConversation(ServerInfo.DEFAULT_NAME).addMessage(message);
+
+        Intent intent = Broadcast.createConversationIntent(
+                Broadcast.CONVERSATION_MESSAGE,
+                server.getId(),
+                ServerInfo.DEFAULT_NAME
+        );
+        service.sendBroadcast(intent);
+    }
   /**
    * On Nick Change
    */
@@ -554,7 +557,7 @@ public class IRCConnection extends PircBot {
       this.updateNickMatchPattern();
 
       // Send message about own change to server info window
-      Message message = new Message(service.getString(R.string.message_self_rename, newNick));
+      Message message = new Message(service.getString(R.string.message_self_rename, newNick)); // Have no idea what android studio is complaning about here.
       message.setColor(Message.MessageColor.USER_EVENT);
       server.getConversation(ServerInfo.DEFAULT_NAME).addMessage(message);
 
@@ -1134,7 +1137,7 @@ public class IRCConnection extends PircBot {
    */
   @Override
   protected void onUnknown(String line) {
-    Message message = new Message(line);
+    Message message = new Message("Received a unknown line: " + line);
     message.setIcon(R.drawable.action);
     message.setColor(Message.MessageColor.SERVER_EVENT);
     server.getConversation(ServerInfo.DEFAULT_NAME).addMessage(message);
@@ -1219,13 +1222,12 @@ public class IRCConnection extends PircBot {
   public void onDisconnect() {
     // Call parent method to ensure "register" status is tracked
     super.onDisconnect();
-
     hasDoneAutorun.reset(); // Reset so that autorun will happen.
 
     // This is a somewhat scary proposition
     // Basically, if the settings say "reconnect on problem" and
     // the server is in a non-disconnect status
-    // reconnect it immediately. 
+    // reconnect it immediately.
     if( service.getSettings().isReconnectEnabled() && server.getStatus() != Status.DISCONNECTED ) {
       setAutojoinChannels(server.getCurrentChannelNames());
 

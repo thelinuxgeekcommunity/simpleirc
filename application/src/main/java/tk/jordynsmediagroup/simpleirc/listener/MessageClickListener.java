@@ -1,6 +1,7 @@
 package tk.jordynsmediagroup.simpleirc.listener;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -36,7 +37,7 @@ public class MessageClickListener implements OnItemClickListener,AdapterView.OnI
   }
 
   private void doThing(AdapterView<?> group, int position) {
-    android.util.Log.d("MessageClickListener", "clicking on item => "+position);
+    Log.d("MessageClickListener", "Clicking on item => "+position);
     MessageListAdapter adapter = (MessageListAdapter)group.getAdapter();
     Message m = adapter.getItem(position);
     Intent intent = new Intent(group.getContext(), MessageActivity.class);

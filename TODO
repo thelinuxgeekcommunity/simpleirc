@@ -1,7 +1,9 @@
 Todo list for Simple IRC:
+This list is in order of priority
 
-Add support to keep the screen on if in a conversation activty
+Cleanup and fix the connect thread in IRCService.java
+Fix a issue where Simple IRC gets confused about the current connection state
+Get better logging support
 Add a shadow to the text box (I can't find a way to do this in <5.1)
-Add /ctcp support
 Add support to change the background and text color of the about and settings activitys
 Add support to change the background and foreground of the main servers activity

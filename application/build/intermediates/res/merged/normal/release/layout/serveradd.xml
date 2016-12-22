@@ -216,8 +216,7 @@
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/username"
                     android:inputType="textNoSuggestions"
-                    android:singleLine="true"
-                    android:text="yaaic" />
+                    android:singleLine="true" />
             </LinearLayout>
 
             <LinearLayout
@@ -312,8 +311,8 @@
             android:text="@string/action_cancel" />
 
         <Space
-            android:layout_width="20px"
-            android:layout_height="20px"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_weight="3" />
 
         <Button

@@ -1,6 +1,16 @@
 package tk.jordynsmediagroup.simpleirc.model;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.LinkedList;
+
+import tk.jordynsmediagroup.simpleirc.App;
+import tk.jordynsmediagroup.simpleirc.logging.Logging;
 
 /**
  * Class for handling the scrollback history
@@ -22,8 +32,8 @@ public class Scrollback {
    * Add a message to the history
    */
   public void addMessage(String message) {
+    // Add message to the buffer here
     messages.addLast(message);
-
     if( messages.size() > MAX_HISTORY ) {
       messages.removeFirst();
     }

@@ -17,15 +17,18 @@ import java.util.Date;
 import java.util.Locale;
 
 import tk.jordynsmediagroup.simpleirc.App;
+import tk.jordynsmediagroup.simpleirc.logging.Logging;
 import tk.jordynsmediagroup.simpleirc.utils.MircColors;
 import tk.jordynsmediagroup.simpleirc.utils.Smilies;
+import tk.jordynsmediagroup.simpleirc.model.Message;
+import tk.jordynsmediagroup.simpleirc.model.MessageRenderParams;
 
 /**
  * A channel or server message
  */
 public class Message implements Parcelable {
 
-  protected Message(Parcel in) {
+    protected Message(Parcel in) {
     text = in.readString();
     sender = in.readString();
     timestamp = in.readLong();
@@ -92,7 +95,7 @@ public class Message implements Parcelable {
   private int type = NO_TYPE;
   private int icon = NO_ICON;
 
-  /**
+   /**
    * Create a new message without an icon defaulting to TYPE_MESSAGE
    *
    * @param text
@@ -439,7 +442,7 @@ public class Message implements Parcelable {
 
     convertView.setTextColor(currentScheme.getForeground());
     convertView.setLinkTextColor(currentScheme.getUrl());
-    convertView.setText(Message.render(this, currentParams));
+    convertView.setText(Message.render(this, currentParams));;
     convertView.setTag(this);
 
     currentParams = settings.getRenderParams();

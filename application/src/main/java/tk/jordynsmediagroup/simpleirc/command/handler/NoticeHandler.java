@@ -13,9 +13,9 @@ import tk.jordynsmediagroup.simpleirc.model.Message;
 import tk.jordynsmediagroup.simpleirc.model.Server;
 
 /**
- * Command: /notice <nickname> <message>
+ * Command: /notice <nickname/channel> <message>
  * <p/>
- * Send a notice to an other user
+ * Send a notice to an other user or channel
  */
 public class NoticeHandler extends BaseHandler {
   /**
@@ -48,7 +48,7 @@ public class NoticeHandler extends BaseHandler {
    */
   @Override
   public String getUsage() {
-    return "/notice <nickname> <message>";
+    return "/notice <nickname/channel> <message>";
   }
 
   /**

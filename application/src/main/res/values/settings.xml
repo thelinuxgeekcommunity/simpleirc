@@ -20,7 +20,7 @@
     <string name="default_include_seconds" translatable="false">false</string>
 
     <string name="key_reconnect_error" translatable="false">reconnect_error</string>
-    <string name="default_reconnect_error" translatable="false">true</string>
+    <string name="default_reconnect_error" translatable="false">false</string>
 
     <string name="key_reconnect_interval" translatable="false">reconnect_interval</string>
     <string name="default_reconnect_interval" translatable="false">5</string>
@@ -33,6 +33,12 @@
 
     <string name="key_fontsize" translatable="false">fontsize</string>
     <string name="default_fontsize" translatable="false">11</string>
+
+    <string name="key_keep_screen_on" translatable="false">keep_screen_on</string>
+    <string name="default_keep_screen_on" translatable="false">false</string>
+
+    <string name="key_goto_new_query" translatable="false">goto_new_query</string>
+    <string name="default_goto_new_query" translatable="false">false</string>
 
     <string name="key_voice_recognition" translatable="false">voice_recognition</string>
     <string name="default_voice_recognition" translatable="false">false</string>

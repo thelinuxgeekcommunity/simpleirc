@@ -7,6 +7,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.text.method.ScrollingMovementMethod;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -44,19 +45,19 @@ public class MessageActivity extends Activity implements Toolbar.OnMenuItemClick
 
     viewedMessage = getIntent().getExtras().getParcelable(Extra.MESSAGE);
 
-    Toolbar tb = (Toolbar)findViewById(R.id.toolbar);
-
-    tb.inflateMenu(R.menu.messageops);
-
-    tb.setOnMenuItemClickListener(this);
-
     messageView = (TextView)findViewById(R.id.message);
     messageView.setBackgroundColor(Color.BLACK);
 
     CharSequence msgSequence = Message.render(viewedMessage, tmpParams);
 
+    messageView.setMovementMethod(new ScrollingMovementMethod());
     messageView.setText(msgSequence);
 
+      Toolbar tb = (Toolbar)findViewById(R.id.toolbar);
+
+      tb.inflateMenu(R.menu.messageops);
+
+      tb.setOnMenuItemClickListener(this);
   }
 
   /**

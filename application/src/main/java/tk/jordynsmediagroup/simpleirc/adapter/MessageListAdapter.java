@@ -12,6 +12,7 @@ import android.widget.TextView;
 import java.util.LinkedList;
 
 import tk.jordynsmediagroup.simpleirc.App;
+import tk.jordynsmediagroup.simpleirc.logging.Logging;
 import tk.jordynsmediagroup.simpleirc.model.Conversation;
 import tk.jordynsmediagroup.simpleirc.model.Message;
 import tk.jordynsmediagroup.simpleirc.model.Settings;
@@ -146,7 +147,6 @@ public class MessageListAdapter extends BaseAdapter {
 
     view = getItem(position).render(view);
     view.setTextSize(_settings.getFontSize());
-
 
     return view;
   }

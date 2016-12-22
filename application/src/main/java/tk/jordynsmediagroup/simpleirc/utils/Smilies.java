@@ -61,6 +61,8 @@ public abstract class Smilies {
     mappings.put(":-X", R.drawable.emoji_sealed);
     mappings.put("o_O", R.drawable.emoji_wtf);
     mappings.put("O_o", R.drawable.emoji_wtf);
+    mappings.put("O_O", R.drawable.emoji_wtf);
+    mappings.put("o_o", R.drawable.emoji_wtf);
     mappings.put("XP", R.drawable.emoji_xp);
     mappings.put(";P", R.drawable.emoji_wink_tongue);
     mappings.put("-_-", R.drawable.emoji_null);
@@ -97,7 +99,7 @@ public abstract class Smilies {
     while ( m.find() ) {
       //Log.d("Smilies", "SID: "+mappings.get(m.group(1)).intValue());
       //Log.d("Smilies", "OID: "+R.drawable.emoji_smile);
-      Drawable smilie = context.getResources().getDrawable(mappings.get(m.group(1)).intValue());
+      Drawable smilie = context.getResources().getDrawable(mappings.get(m.group(1)));
 
       // We should scale the image
       int height = _settings.getFontSize();

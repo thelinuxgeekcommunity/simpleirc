@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First start pages. -->
-    <string name="helptopic_titlepage_title">Welcome to Atomic!</string>
+    <string name="helptopic_titlepage_title">Welcome to Simple IRC!</string>
     <string name="helptopic_titlepage_body">
         <![CDATA[
         <p>Welcome to Simple IRC, a fork of Atmoic. This guide will fill you in on what\'s changed or what\'s new.</p>

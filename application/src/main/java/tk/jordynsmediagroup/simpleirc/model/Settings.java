@@ -212,6 +212,7 @@ public class Settings {
             .getString(R.string.key_autorejoin_kick), Boolean.parseBoolean(resources
             .getString(R.string.default_autorejoin_kick)));
   }
+
   /**
    * LED light notification on highlight?
    *
@@ -255,6 +256,28 @@ public class Settings {
     return preferences
             .getBoolean(resources.getString(R.string.key_mirc_colors), Boolean
                     .parseBoolean(resources.getString(R.string.default_mirc_colors)));
+  }
+
+  /**
+   * Keep screen on while in a ConversationActivity
+   *
+   * @return True if the screen should be kept on, false if the screen should be able to turn off
+   */
+  public boolean keepScreenOn() {
+    return preferences
+            .getBoolean(resources.getString(R.string.key_keep_screen_on), Boolean
+                    .parseBoolean(resources.getString(R.string.default_keep_screen_on)));
+  }
+
+  /**
+   * Goto new query(s)
+   *
+   * @return True if we should goto new query(s), false if we shouldn't goto new query(s)
+   */
+  public boolean gotoNewQuery() {
+    return preferences
+            .getBoolean(resources.getString(R.string.key_goto_new_query), Boolean
+                    .parseBoolean(resources.getString(R.string.default_goto_new_query)));
   }
 
   /**

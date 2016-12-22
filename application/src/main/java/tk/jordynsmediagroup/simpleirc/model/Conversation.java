@@ -3,6 +3,8 @@ package tk.jordynsmediagroup.simpleirc.model;
 import java.util.Arrays;
 import java.util.LinkedList;
 
+import tk.jordynsmediagroup.simpleirc.logging.Logging;
+
 /**
  * Base class for conversations
  * <p/>
@@ -78,7 +80,7 @@ public abstract class Conversation implements Comparable<Conversation> {
     }
 
     /* Reversed comparison to account for an empty type */
-    return Integer.valueOf(i2).compareTo(Integer.valueOf(i1));
+    return Integer.valueOf(i2).compareTo(i1);
   }
 
   /**

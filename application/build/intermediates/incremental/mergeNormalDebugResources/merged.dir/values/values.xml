@@ -185,8 +185,11 @@
         <item>@string/user_action_dehalfop</item>
         <item>@string/user_action_voice</item>
         <item>@string/user_action_devoice</item>
+        <item>@string/user_action_quiet</item>
+        <item>@string/user_action_unquiet</item>
         <item>@string/user_action_ban</item>
         <item>@string/user_action_kick</item>
+        <item>@string/user_action_whois</item>
     </string-array>
     <attr format="reference" name="AT_AddConversation"/>
     <attr format="reference" name="AT_CloseConversation"/>
@@ -473,7 +476,9 @@
     <string name="command_desc_amsg">Send a message to all channels</string>
     <string name="command_desc_away">Sets you away</string>
     <string name="command_desc_back">Turn off the away status</string>
+    <string name="command_desc_ban">Bans a user or gets the ban list if no nick is given</string>
     <string name="command_desc_close">Closes the current window</string>
+    <string name="command_desc_ctcp">Sends a CTCP command to a user</string>
     <string name="command_desc_dcc">Send a file to a user</string>
     <string name="command_desc_dehalfop">Remove  half operator status</string>
     <string name="command_desc_deop">Remove operator status from a user</string>
@@ -488,13 +493,15 @@
     <string name="command_desc_msg">Send a message to a channel or user</string>
     <string name="command_desc_names">Lists all users in channel</string>
     <string name="command_desc_nick">Change own nickname</string>
-    <string name="command_desc_notice">Send a notice to an other user</string>
+    <string name="command_desc_notice">Send a notice to an other user or channel</string>
     <string name="command_desc_op">Give a user operator status</string>
     <string name="command_desc_part">Leave the current channel</string>
     <string name="command_desc_query">Open a private chat with a user</string>
+    <string name="command_desc_quiet">Quiets a user or gets the quiet list if no nick is given</string>
     <string name="command_desc_quit">Disconnect from server</string>
     <string name="command_desc_raw">Send a raw line to the server</string>
     <string name="command_desc_topic">Show or change the current topic</string>
+    <string name="command_desc_unquiet">Unquiets a user or gets the quiet list if no nick is given</string>
     <string name="command_desc_voice">Give a user voice status</string>
     <string name="command_desc_whois">Get information about a user</string>
     <string name="command_syntax">Syntax: %1$s</string>
@@ -514,18 +521,20 @@
     <string name="default_default_realname">Simple IRC User</string>
     <string name="default_default_username">simpleircuser</string>
     <string name="default_fontsize" translatable="false">11</string>
+    <string name="default_goto_new_query" translatable="false">false</string>
     <string name="default_graphical_smilies" translatable="false">false</string>
     <string name="default_history_size" translatable="false">500</string>
     <string name="default_ignore_motd" translatable="false">false</string>
     <string name="default_ime_extract" translatable="false">true</string>
     <string name="default_include_seconds" translatable="false">false</string>
+    <string name="default_keep_screen_on" translatable="false">false</string>
     <string name="default_led_highlight" translatable="false">false</string>
     <string name="default_log_file" translatable="false">/sdcard/SimpleIRC/</string>
     <string name="default_log_traffic" translatable="false">false</string>
     <string name="default_mirc_colors" translatable="false">true</string>
     <string name="default_notice_server_window" translatable="false">false</string>
     <string name="default_quitmessage" translatable="false">Simple IRC: The quit option.</string>
-    <string name="default_reconnect_error" translatable="false">true</string>
+    <string name="default_reconnect_error" translatable="false">false</string>
     <string name="default_reconnect_interval" translatable="false">5</string>
     <string name="default_reconnect_loss">false</string>
     <string name="default_reconnect_transient">false</string>
@@ -607,7 +616,7 @@
         &lt;p>I depend on you to provide me with feedback!&lt;/p>
         
     </string>
-    <string name="helptopic_titlepage_title">Welcome to Atomic!</string>
+    <string name="helptopic_titlepage_title">Welcome to Simple IRC!</string>
     <string name="invalid_number_of_params">Invalid number of params</string>
     <string name="irc_login_error">Could not log into the IRC server %1$s:%2$d</string>
     <string name="join">Join</string>
@@ -624,11 +633,13 @@
     <string name="key_default_realname">default_realname</string>
     <string name="key_default_username">default_username</string>
     <string name="key_fontsize" translatable="false">fontsize</string>
+    <string name="key_goto_new_query" translatable="false">goto_new_query</string>
     <string name="key_graphical_smilies" translatable="false">graphical_smilies</string>
     <string name="key_history_size" translatable="false">history_size</string>
     <string name="key_ignore_motd" translatable="false">ignore_motd</string>
     <string name="key_ime_extract" translatable="false">ime_extract</string>
     <string name="key_include_seconds" translatable="false">include_seconds</string>
+    <string name="key_keep_screen_on" translatable="false">keep_screen_on</string>
     <string name="key_led_color" translatable="false">led_highlight_color</string>
     <string name="key_led_highlight" translatable="false">led_highlight</string>
     <string name="key_log_file" translatable="false">log_file</string>
@@ -702,7 +713,9 @@
     <string name="message_set_channel_secret">%1$s sets channel secret</string>
     <string name="message_set_invite_only">%1$s sets invite only</string>
     <string name="message_set_moderated">%1$s sets moderated</string>
+    <string name="message_set_quiet">%1$s quiets: %2$s</string>
     <string name="message_set_topic_protection">%1$s sets topic protection</string>
+    <string name="message_set_unquiet">%1$s unquiets: %2$s</string>
     <string name="message_topic">Topic: %1$s</string>
     <string name="message_topic_set">%1$s sets topic: %2$s</string>
     <string name="message_users_on_chan">Users on %1$s:</string>
@@ -787,6 +800,8 @@
     <string name="settings_forget_certificates_desc">Use when you cannot trust a certificate anymore.</string>
     <string name="settings_forget_certificates_long">You will have to confirm unknown certificates again later.</string>
     <string name="settings_forget_certificates_title">Clear known certificate list</string>
+    <string name="settings_goto_new_query_desc">Goes to new query\'s automatically</string>
+    <string name="settings_goto_new_query_title">Go to new query\'s</string>
     <string name="settings_graphical_smilies_desc">Text smilies will be displayed as images in chat</string>
     <string name="settings_graphical_smilies_title">Show graphical smilies</string>
     <string name="settings_highlight">Highlight</string>
@@ -802,6 +817,8 @@
     <string name="settings_include_seconds_title">Show seconds</string>
     <string name="settings_joinpartquit_desc">Show join, part and quit messages in channels</string>
     <string name="settings_joinpartquit_title">Show join, part and quit</string>
+    <string name="settings_keep_screen_on_desc">Keeps the screen from turning off while in Simple IRC</string>
+    <string name="settings_keep_screen_on_title">Keep screen on</string>
     <string name="settings_label">Settings</string>
     <string name="settings_led_color_desc">Color to flash LED on highlight</string>
     <string name="settings_led_color_title">LED Flash Color</string>
@@ -822,7 +839,7 @@
     <string name="settings_quitmessage_dialog_title">Quit message</string>
     <string name="settings_quitmessage_title">Quit message</string>
     <string name="settings_reconnect_error_desc">Reconnect on network issue</string>
-    <string name="settings_reconnect_error_title">Reconnect on error</string>
+    <string name="settings_reconnect_error_title">Reconnect on error (BROKEN: Gets stuck in a reconnect loop)</string>
     <string name="settings_reconnect_interval_desc">Number of minutes between reconnection tries</string>
     <string name="settings_reconnect_interval_dialog_title">Reconnect interval</string>
     <string name="settings_reconnect_interval_title">Reconnect interval</string>
@@ -856,8 +873,12 @@
     <string name="user_action_kick">Kick</string>
     <string name="user_action_op">Op</string>
     <string name="user_action_query">Query</string>
+    <string name="user_action_quiet">Quiet</string>
     <string name="user_action_reply">Reply</string>
+    <string name="user_action_unquiet">UnQuiet</string>
     <string name="user_action_voice">Voice</string>
+    <string name="user_action_whois">Whois</string>
+    <string name="user_set_mode">%1$s Sets mode %2$s on %3$s</string>
     <string name="username">Username</string>
     <string name="users">Users</string>
     <string name="users_label">Users</string>

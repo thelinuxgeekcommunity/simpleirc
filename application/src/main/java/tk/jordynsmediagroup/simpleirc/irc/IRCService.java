@@ -11,7 +11,6 @@ import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Handler;
-import android.os.SystemClock;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
@@ -28,11 +27,12 @@ import javax.net.ssl.SSLException;
 import javax.net.ssl.X509TrustManager;
 
 import de.duenndns.ssl.MemorizingTrustManager;
-import tk.jordynsmediagroup.simpleirc.Atomic;
+import tk.jordynsmediagroup.simpleirc.SimpleIRC;
 import tk.jordynsmediagroup.simpleirc.R;
 import tk.jordynsmediagroup.simpleirc.activity.ConversationActivity;
 import tk.jordynsmediagroup.simpleirc.activity.ServersActivity;
 import tk.jordynsmediagroup.simpleirc.db.Database;
+import tk.jordynsmediagroup.simpleirc.logging.Logging;
 import tk.jordynsmediagroup.simpleirc.model.Broadcast;
 import tk.jordynsmediagroup.simpleirc.model.Conversation;
 import tk.jordynsmediagroup.simpleirc.model.Message;
@@ -43,13 +43,16 @@ import tk.jordynsmediagroup.simpleirc.model.Settings;
 import tk.jordynsmediagroup.simpleirc.model.Status;
 import tk.jordynsmediagroup.simpleirc.utils.MircColors;
 
- // The background service for managing the irc connections
+// The background service for managing the irc connections
 public class IRCService extends Service {
   public static final String ACTION_FOREGROUND = "jordynsmediagroup.simpleirc.service.foreground";
   public static final String ACTION_BACKGROUND = "jordynsmediagroup.simpleirc.service.background";
   public static final String ACTION_ACK_NEW_MENTIONS = "jordynsmediagroup.simpleirc.service.ack_new_mentions";
   public static final String EXTRA_ACK_SERVERID = "jordynsmediagroup.simpleirc.service.ack_serverid";
   public static final String EXTRA_ACK_CONVTITLE = "jordynsmediagroup.simpleirc.service.ack_convtitle";
+
+   // Logging TAG
+   private static String TAG = "SimpleIRC/IRCService";
 
   private static final int FOREGROUND_NOTIFICATION = 1;
   private static final int NOTIFICATION_LED_OFF_MS = 1000;
@@ -140,7 +143,7 @@ public class IRCService extends Service {
   public IRCService() {
     super();
 
-    this.connections = new HashMap<Integer, IRCConnection>();
+    this.connections = new HashMap<>();
     this.binder = new IRCBinder(this);
     this.connectedServerTitles = new ArrayList<String>();
     this.mentions = new LinkedHashMap<String, Conversation>();
@@ -151,7 +154,7 @@ public class IRCService extends Service {
   private boolean _isTransient = false;
 
   public boolean isNetworkTransient() {
-    Log.d("IRCService", "Network is transient: " + _isTransient);
+    Log.d(TAG, "Network is transient: " + _isTransient);
     return _isTransient;
   }
 
@@ -182,9 +185,9 @@ public class IRCService extends Service {
       final Integer[] new_servers = (Integer[])reconnectNextNetwork.toArray(new Integer[reconnectNextNetwork.size()]);
       for( int reconnect_server : new_servers ) {
 
-        Server s = Atomic.getInstance().getServerById(reconnect_server);
+        Server s = SimpleIRC.getInstance().getServerById(reconnect_server);
 
-        this.getConnection(reconnect_server).disconnect();
+        getConnection(reconnect_server).disconnect();
 
         s.setStatus(Status.PRE_CONNECTING);
         Intent sIntent = Broadcast.createServerIntent(Broadcast.SERVER_UPDATE, reconnect_server);
@@ -255,7 +258,7 @@ public class IRCService extends Service {
 
     // Load servers from Database
     Database db = new Database(this);
-    Atomic.getInstance().setServers(db.getServers());
+    SimpleIRC.getInstance().setServers(db.getServers());
     db.close();
 
     // Broadcast changed server list
@@ -393,7 +396,7 @@ public class IRCService extends Service {
           Convo = convID.substring(convID.indexOf(':') + 1);
 
 
-          Log.d("IRCService", "Jump target is '" + Convo + "'");
+          Log.d(TAG, "Jump target is '" + Convo + "'");
           notifyIntent.setClass(this, ConversationActivity.class);
           notifyIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
               | Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -538,7 +541,7 @@ public class IRCService extends Service {
   private void startForegroundCompat(int id, Notification notification) {
     // If we have the new startForeground API, then use it.
     if( mStartForeground != null ) {
-      mStartForegroundArgs[0] = Integer.valueOf(id);
+      mStartForegroundArgs[0] = id;
       mStartForegroundArgs[1] = notification;
       try {
         mStartForeground.invoke(this, mStartForegroundArgs);
@@ -551,7 +554,7 @@ public class IRCService extends Service {
       // Fall back on the old API.
       try {
         Method setForeground = getClass().getMethod("setForeground", mSetForegroudSignaure);
-        setForeground.invoke(this, new Object[]{true});
+        setForeground.invoke(this, true);
       } catch ( NoSuchMethodException exception ) {
         // Should not happen
       } catch ( InvocationTargetException e ) {
@@ -618,24 +621,33 @@ public class IRCService extends Service {
           return;
         }
 
-        try {
-          I_AM_A_HORRIBLE_BASTARD:
-          ;
-          IRCConnection connection = getConnection(serverId);
+        if ( settings.logTraffic() ) {
+          // If logging is enabled in settings then set it up here
+          Logging.setupLog();
+        }
 
+        try {
+          IRCConnection connection = getConnection(serverId);
+          // Set nickname here
           connection.setNickname(server.getIdentity().getNickname());
+          // Set other nicknames here
           connection.setAliases(server.getIdentity().getAliases());
+          // Set Ident
           connection.setIdent(server.getIdentity().getIdent());
+          // Set real name
           connection.setRealName(server.getIdentity().getRealName());
+          // Set if we use SSL
           connection.setUseSSL(server.useSSL());
           X509TrustManager[] trustMgr = MemorizingTrustManager.getInstanceList(getApplicationContext());
           connection.setTrustManagers(trustMgr);
 
           if( server.getCharset() != null ) {
+            // If a charset is set in the server settings then apply it here
             connection.setEncoding(server.getCharset());
           }
 
           if( server.getAuthentication().hasSaslCredentials() ) {
+            // If SASL credentials are set in the server settings then apply it here
             connection.setSaslCredentials(
                 server.getAuthentication().getSaslUsername(),
                 server.getAuthentication().getSaslPassword()
@@ -643,11 +655,13 @@ public class IRCService extends Service {
           }
 
           if( server.getPassword() != "" ) {
+            // If server credentials are set in the server settings then apply it here
             connection.connect(server.getHost(), server.getPort(), server.getPassword());
           } else {
             connection.connect(server.getHost(), server.getPort());
           }
         } catch ( Exception e ) {
+          // Upon all Exceptions disconnect
           server.setStatus(Status.DISCONNECTED);
 
           NetworkInfo ninf = ((ConnectivityManager)(IRCService.this.getSystemService(Service.CONNECTIVITY_SERVICE))).getActiveNetworkInfo();
@@ -664,6 +678,7 @@ public class IRCService extends Service {
 
           Message message;
 
+          // If a Exception(s) occurred notify the user here
           if( e instanceof NickAlreadyInUseException ) {
             message = new Message(getString(R.string.nickname_in_use, connection.getNick()));
             server.setMayReconnect(false);
@@ -689,19 +704,22 @@ public class IRCService extends Service {
                     "Connection will be established once network is connected");
               } else {
                 message = new Message("Reconnecting to server... ");
+                  connection.disconnect();
+                  server.setStatus(Status.DISCONNECTED);
                 Runnable r = new Runnable() {
-
                   @Override
                   public void run() {
-                    Log.d("IRCService", "In reconnect thread!");
-                    connection.disconnect();
+                    Log.d(TAG, "In reconnect thread!");
+                    Log.d(TAG, "This is where reconnect problems will occur.");
                     try {
+                      // Sleep here (For 5 seconds) to prevent using up all the CPU time
                       Thread.sleep(5000);
-                    } catch ( Exception eee ) {
-                      ;
-                      ;
+                    } catch (InterruptedException e) {
+                      // Just return here
+                      return;
                     }
-                    if( server.getStatus() != Status.DISCONNECTED ) {
+                    if( server.getStatus() != Status.CONNECTED ) {
+                      server.setStatus(Status.CONNECTING);
                       connect(server);
                     }
                   }
@@ -761,7 +779,7 @@ public class IRCService extends Service {
    */
   public void checkServiceStatus() {
     boolean shutDown = true;
-    ArrayList<Server> mServers = Atomic.getInstance().getServersAsArrayList();
+    ArrayList<Server> mServers = SimpleIRC.getInstance().getServersAsArrayList();
     int mSize = mServers.size();
     Server server;
 
@@ -811,4 +829,5 @@ public class IRCService extends Service {
   public IRCBinder onBind(Intent intent) {
     return binder;
   }
+
 }

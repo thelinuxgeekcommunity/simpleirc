@@ -12,7 +12,7 @@ import tk.jordynsmediagroup.simpleirc.utils.LatchingValue;
 
 public class App extends Application {
 
-  Atomic atomic;
+  SimpleIRC simpleIRC;
 
   public App() {
     super();
@@ -61,7 +61,7 @@ public class App extends Application {
     // Context exists here.
     _ctx = getApplicationContext();
     // Load all the servers here
-    Atomic.getInstance().loadServers(_ctx);
+    SimpleIRC.getInstance().loadServers(_ctx);
 
 
     tk.jordynsmediagroup.simpleirc.model.Settings _settings = new Settings(this);

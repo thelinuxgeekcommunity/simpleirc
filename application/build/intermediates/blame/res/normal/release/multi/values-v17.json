@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/jordyn-void/code/simpleirc/application/build/intermediates/incremental/mergeNormalReleaseResources/merged.dir/values-v17/values-v17.xml",
+        "outputFile": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/incremental/mergeNormalReleaseResources/merged.dir/values-v17/values-v17.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 278
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -33,7 +33,7 @@
                     "endOffset": 615
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -54,7 +54,7 @@
                     "endOffset": 765
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -75,7 +75,7 @@
                     "endOffset": 937
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -96,7 +96,7 @@
                     "endOffset": 1165
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -117,7 +117,7 @@
                     "endOffset": 1407
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -138,7 +138,7 @@
                     "endOffset": 1578
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -159,7 +159,7 @@
                     "endOffset": 1752
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -180,7 +180,7 @@
                     "endOffset": 1921
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 2194
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
                     "position": {
                         "startLine": 35,
                         "startColumn": 4,
@@ -222,7 +222,7 @@
                     "endOffset": 2394
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
                     "position": {
                         "startLine": 39,
                         "startColumn": 4,
@@ -243,7 +243,7 @@
                     "endOffset": 2642
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v17/values.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,

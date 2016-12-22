@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tk.jordynsmediagroup.simpleirc.debug"
     android:installLocation="auto"
-    android:versionCode="15"
-    android:versionName="1.5" > <!-- Never remove this even if gradle tells you to do so. -->
+    android:versionCode="16"
+    android:versionName="1.6" > <!-- Never remove this even if gradle tells you to do so. -->
     <!-- Minimum and Target SDK Versions -->
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="16"
         android:targetSdkVersion="22" />
 
     <!-- Permissions -->
@@ -73,7 +73,7 @@
             android:name="tk.jordynsmediagroup.simpleirc.activity.MessageActivity"
             android:theme="@style/AppDialogTheme" />
 
-        <service android:name="tk.jordynsmediagroup.simpleirc.irc.IRCService" />
+        <service android:name="tk.jordynsmediagroup.simpleirc.irc.IRCService" /> <!-- Main IRC Service -->
 
         <activity android:name="tk.jordynsmediagroup.simpleirc.activity.ForgetCertificatesActivity" >
             <intent-filter>

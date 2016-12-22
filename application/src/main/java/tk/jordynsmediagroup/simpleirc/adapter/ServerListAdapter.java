@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import tk.jordynsmediagroup.simpleirc.Atomic;
+import tk.jordynsmediagroup.simpleirc.SimpleIRC;
 import tk.jordynsmediagroup.simpleirc.R;
 import tk.jordynsmediagroup.simpleirc.model.Server;
 
@@ -34,7 +34,7 @@ public class ServerListAdapter extends BaseAdapter {
    * Delegate call to yaaic instance
    */
   public void loadServers() {
-    servers = Atomic.getInstance().getServersAsArrayList();
+    servers = SimpleIRC.getInstance().getServersAsArrayList();
     notifyDataSetChanged();
   }
 

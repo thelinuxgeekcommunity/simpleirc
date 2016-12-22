@@ -15,14 +15,7 @@ Modified by: The Linux Geek <onlinecloud1@gmail.com>
 package org.jibble.pircbot;
 
 import tk.jordynsmediagroup.simpleirc.App;
-import tk.jordynsmediagroup.simpleirc.R;
-import tk.jordynsmediagroup.simpleirc.activity.ConversationActivity;
-import tk.jordynsmediagroup.simpleirc.model.Broadcast;
-import tk.jordynsmediagroup.simpleirc.model.Conversation;
-import tk.jordynsmediagroup.simpleirc.model.Message;
-import tk.jordynsmediagroup.simpleirc.model.Server;
-import tk.jordynsmediagroup.simpleirc.model.Settings;
-import tk.jordynsmediagroup.simpleirc.model.Status;
+import tk.jordynsmediagroup.simpleirc.logging.Logging;
 import tk.jordynsmediagroup.simpleirc.ssl.NaiveTrustManager;
 import tk.jordynsmediagroup.simpleirc.tools.Base64;
 
@@ -63,19 +56,7 @@ import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.X509TrustManager;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.text.format.Time;
 import android.util.Log;
-import android.view.View;
-import android.widget.Toast;
-
-import static android.provider.Settings.System.DATE_FORMAT;
-import static tk.jordynsmediagroup.simpleirc.R.id.settings;
-import static tk.jordynsmediagroup.simpleirc.R.string.server;
 
 
 /**
@@ -143,7 +124,7 @@ public abstract class PircBot implements ReplyConstants {
    * @throws IrcException              if the server would not let us join it.
    * @throws NickAlreadyInUseException if our nick is already in use on the server.
    */
-  public final synchronized void connect(String hostname) throws IOException, IrcException, NickAlreadyInUseException {
+  public final synchronized void connect(String hostname) throws IOException, IrcException {
     this.connect(hostname, 6667, null);
   }
 
@@ -158,7 +139,7 @@ public abstract class PircBot implements ReplyConstants {
    * @throws IrcException              if the server would not let us join it.
    * @throws NickAlreadyInUseException if our nick is already in use on the server.
    */
-  public final synchronized void connect(String hostname, int port) throws IOException, IrcException, NickAlreadyInUseException {
+  public final synchronized void connect(String hostname, int port) throws IOException, IrcException {
     this.connect(hostname, port, null);
   }
 
@@ -175,7 +156,7 @@ public abstract class PircBot implements ReplyConstants {
    * @throws IrcException              if the server would not let us join it.
    * @throws NickAlreadyInUseException if our nick is already in use on the server.
    */
-  public final synchronized void connect(String hostname, int port, String password) throws IOException, IrcException, NickAlreadyInUseException {
+  public final synchronized void connect(String hostname, int port, String password) throws IOException, IrcException {
     _registered = false;
 
     _server = hostname;
@@ -310,7 +291,7 @@ public abstract class PircBot implements ReplyConstants {
    * @throws NickAlreadyInUseException if our nick is already in use on the server.
    * @since PircBot 0.9.9
    */
-  public final synchronized void reconnect() throws IOException, IrcException, NickAlreadyInUseException {
+  public final synchronized void reconnect() throws IOException, IrcException {
     if( getServer() == null ) {
       throw new IrcException("Cannot reconnect to an IRC server because we were never connected to one previously!");
     }
@@ -480,38 +461,11 @@ public abstract class PircBot implements ReplyConstants {
   public void sendMessage(String target, String message) {
     // Write the message to the log if enabled
     if (App.getSettings().logTraffic()) {
-      try {
-    // Try to write to the log here
-        // The directory to write to
-        String outDir = App.getSettings().getLogFile();
-        // The format to write the log file in
-        DateFormat filedf = new SimpleDateFormat("yyyy-MM-dd");
-        String filedate = filedf.format(Calendar.getInstance().getTime());
-        // Open the log
-        File file = new File(outDir + filedate + ".log");
-        BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
-        // Date to write to the log
-        DateFormat df = new SimpleDateFormat("EEE, MMM d yyyy h:mm:ss a");
-        String date = df.format(Calendar.getInstance().getTime());
-        // String to write to the log
-        String entry = "[" + date + "]" + " " + target + ":" + " " + getNick() + ":" + " " + message;
-        // Write to the log and then flush and close it
-        writer.write(entry);
-        writer.newLine();
-        writer.flush();
-        writer.close();
-        // Send message here
-        _outQueue.add("PRIVMSG " + target + " :" + message);
-      } catch (IOException e) {
-        // on IO Execption
-        // We need to get a better error message
-        System.out.println("Could not write to log: " + e);
-      }
-      } else {
+        Logging.addLine(":PRIVMSG" + " :" + target + " :" + message);
+    }
           // Send message here
           _outQueue.add("PRIVMSG " + target + " :" + message);
       }
-  }
 
 
   /**
@@ -522,33 +476,12 @@ public abstract class PircBot implements ReplyConstants {
    * @see Colors
    */
   public final void sendAction(String target, String action) {
+      // Log it here
       if (App.getSettings().logTraffic()) {
-          if (App.getSettings().logTraffic()) {
-              try {
-                  String outDir = App.getSettings().getLogFile();
-                  DateFormat filedf = new SimpleDateFormat("yyyy-MM-dd");
-                  String filedate = filedf.format(Calendar.getInstance().getTime());
-                  File file = new File(outDir + filedate + ".log");
-                  BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
-                  DateFormat df = new SimpleDateFormat("EEE, MMM d yyyy h:mm:ss a");
-                  String date = df.format(Calendar.getInstance().getTime());
-                  String entry = "[" + date + "]" + " " + target + ":" + " " + getNick() + ":" + " " + "[ACTION]" + " " + action;
-                  writer.write(entry);
-                  writer.newLine();
-                  writer.flush();
-                  writer.close();
-                  // Send CTCP ACTION here
-                  sendCTCPCommand(target, "ACTION " + action);
-              } catch (IOException e) {
-                  // on IO Execption
-                  // We need to get a better error message
-                  System.out.println("Could not write to log: " + e);
-              }
-          } else {
-              // Send CTCP ACTION here
-              sendCTCPCommand(target, "ACTION " + action);
-          }
+        Logging.addLine(":[ACTION]" + " :" + target + " :" + action);
       }
+      // Send CTCP ACTION here
+      sendCTCPCommand(target, "ACTION " + action);
   }
 
 
@@ -559,6 +492,9 @@ public abstract class PircBot implements ReplyConstants {
    * @param notice The notice to send.
    */
   public final void sendNotice(String target, String notice) {
+      if (App.getSettings().logTraffic()) {
+          Logging.addLine(":[NOTICE]" + " :" + notice);
+      }
     _outQueue.add("NOTICE " + target + " :" + notice);
   }
 
@@ -784,7 +720,6 @@ public abstract class PircBot implements ReplyConstants {
     this.kick(channel, nick, "");
   }
 
-
   /**
    * Kicks a user from a channel, giving a reason.
    * This method attempts to kick a user from a channel and
@@ -798,6 +733,32 @@ public abstract class PircBot implements ReplyConstants {
     this.sendRawLine("KICK " + channel + " " + nick + " :" + reason);
   }
 
+    /**
+     * Performs a WHOIS on a user.
+     * @param nick   The nick of the user to WHOIS.
+     */
+    public final void whois(String nick) {
+        this.sendRawLineViaQueue("WHOIS " + nick);
+    }
+
+  /**
+   * Quiets a user on a channel.
+   * @param channel   The channel to QUIET the user on.
+   * @param mask      The mask of the user to QUIET.
+   */
+  public final void quiet(String channel, String mask) {
+    this.sendRawLineViaQueue("MODE " + channel + " +q " + mask);
+  }
+
+
+  /**
+   * UnQuiets a user on a channel.
+   * @param channel   The channel to UNQUIET the user on.
+   * @param mask      The mask of the user to UNQUIET.
+   */
+  public final void unquiet(String channel, String mask) {
+    this.sendRawLineViaQueue("MODE " + channel + " -q " + mask);
+  }
 
   /**
    * Issues a request for a list of all channels on the IRC server.
@@ -1005,13 +966,11 @@ public abstract class PircBot implements ReplyConstants {
       Log.d("pIRCbot", "Got a " + m.group(3) + " on " + m.group(4));
       if( m.group(3).equals("LS") ) {
         // Request all CAPs back. (?)
-        List<String> ok_caps = Arrays.asList(new String[] {
-            "znc.in/server-time-iso",
+        List<String> ok_caps = Arrays.asList("znc.in/server-time-iso",
 //            "znc.in/self-message",  // XXX: Re-enable later when we're better than this.
-            "sasl",
-            "userhost-in-names",
-            "multi-prefix"
-        });
+                "sasl",
+                "userhost-in-names",
+                "multi-prefix");
 
         String got_avail = m.group(4);
         String want_caps = "";
@@ -1169,18 +1128,29 @@ public abstract class PircBot implements ReplyConstants {
       String request = line.substring(line.indexOf(":\u0001") + 2, line.length() - 1);
       if( request.equals("VERSION") ) {
         // VERSION request
+        this.onCTCP(sourceNick, sourceLogin, sourceHostname, target, "VERSION");
         this.onVersion(sourceNick, sourceLogin, sourceHostname, target);
       } else if( request.startsWith("ACTION ") ) {
         // ACTION request
+        this.onCTCP(sourceNick, sourceLogin, sourceHostname, target, "ACTION");
         this.onAction(messageDate, sourceNick, sourceLogin, sourceHostname, target, request.substring(7));
+      } else if ( request.startsWith("ACTION") ) {
+          // This is a malformed ACTION request
+          this.onMalformedCTCP(sourceNick, sourceLogin, sourceHostname, target, "ACTION");
       } else if( request.startsWith("PING ") ) {
-        // PING request
-        this.onPing(sourceNick, sourceLogin, sourceHostname, target, request.substring(5));
+          // PING request
+          this.onCTCP(sourceNick, sourceLogin, sourceHostname, target, "PING");
+          this.onPing(sourceNick, sourceLogin, sourceHostname, target, request.substring(5));
+      } else if ( request.startsWith("PING") ) {
+          // This is a malformed PING request
+          this.onMalformedCTCP(sourceNick, sourceLogin, sourceHostname, target, "PING");
       } else if( request.equals("TIME") ) {
         // TIME request
+        this.onCTCP(sourceNick, sourceLogin, sourceHostname, target, "TIME");
         this.onTime(sourceNick, sourceLogin, sourceHostname, target);
       } else if( request.equals("FINGER") ) {
         // FINGER request
+          this.onCTCP(sourceNick, sourceLogin, sourceHostname, target, "FINGER");
         this.onFinger(sourceNick, sourceLogin, sourceHostname, target);
       } else if( (tokenizer = new StringTokenizer(request)).countTokens() >= 5 && tokenizer.nextToken().equals("DCC") ) {
         // This is a DCC request.
@@ -1580,7 +1550,7 @@ public abstract class PircBot implements ReplyConstants {
   }
 
 
-  /**
+    /**
    * This method is called whenever someone (possibly us) changes nick on any
    * of the channels that we are on.
    * <p/>
@@ -1803,11 +1773,11 @@ public abstract class PircBot implements ReplyConstants {
             onRemovePrivate(channel, sourceNick, sourceLogin, sourceHostname);
           }
         } else if( atPos == 's' ) {
-          if( pn == '+' ) {
-            onSetSecret(channel, sourceNick, sourceLogin, sourceHostname);
-          } else {
-            onRemoveSecret(channel, sourceNick, sourceLogin, sourceHostname);
-          }
+            if (pn == '+') {
+                onSetSecret(channel, sourceNick, sourceLogin, sourceHostname);
+            } else {
+                onRemoveSecret(channel, sourceNick, sourceLogin, sourceHostname);
+            }
         }
       }
 
@@ -1815,7 +1785,7 @@ public abstract class PircBot implements ReplyConstants {
     } else {
       // The mode of a user is being changed.
       String nick = target;
-      this.onUserMode(nick, sourceNick, sourceLogin, sourceHostname, mode);
+      this.onUserMode(target, sourceNick, sourceLogin, sourceHostname, mode);
     }
   }
 
@@ -1840,8 +1810,7 @@ public abstract class PircBot implements ReplyConstants {
   protected void onMode(String channel, String sourceNick, String sourceLogin, String sourceHostname, String mode) {
   }
 
-
-  /**
+    /**
    * Called when the mode of a user is set.
    * <p/>
    * The implementation of this method in the PircBot abstract class
@@ -2317,7 +2286,6 @@ public abstract class PircBot implements ReplyConstants {
   protected void onSetSecret(String channel, String sourceNick, String sourceLogin, String sourceHostname) {
   }
 
-
   /**
    * Called when a channel has 'secret' mode removed.
    * <p/>
@@ -2335,8 +2303,6 @@ public abstract class PircBot implements ReplyConstants {
    */
   protected void onRemoveSecret(String channel, String sourceNick, String sourceLogin, String sourceHostname) {
   }
-
-
   /**
    * Called when we are invited to a channel by a user.
    * <p/>
@@ -2579,6 +2545,39 @@ public abstract class PircBot implements ReplyConstants {
   protected void onUnknown(String line) {
     // And then there were none :)
   }
+
+    /**
+     * This method is called whenever we receive a CTCP command that
+     * the PircBot has not been programmed to recognise.
+     * <p/>
+     * The implementation of this method in the PircBot abstract class
+     * performs no actions and may be overridden as required.
+     *
+     * @param sourceNick     The nick of the user that sent the malformed CTCP request.
+     * @param sourceLogin    The login of the user that sent the malformed CTCP request.
+     * @param sourceHostname The hostname of the user that sent the malformed CTCP request.
+     * @param target         The target of the malformed CTCP request, be it our nick or a channel name.
+     * @param command        The name of the malformed CTCP request
+     */
+    protected void onMalformedCTCP(String sourceNick, String sourceLogin, String sourceHostname, String target, String command) {
+        // This does nothing :)
+    }
+
+    /**
+     * This method is called whenever we receive a CTCP command
+     * <p/>
+     * The implementation of this method in the PircBot abstract class
+     * performs no actions and may be overridden as required.
+     *
+     * @param sourceNick     The nick of the user that sent the malformed CTCP request.
+     * @param sourceLogin    The login of the user that sent the malformed CTCP request.
+     * @param sourceHostname The hostname of the user that sent the malformed CTCP request.
+     * @param target         The target of the malformed CTCP request, be it our nick or a channel name.
+     * @param command        The name of the malformed CTCP request
+     */
+    protected void onCTCP(String sourceNick, String sourceLogin, String sourceHostname, String target, String command) {
+        // This does nothing :)
+    }
 
   /**
    * Sets the name of the bot, which will be used as its nick when it
@@ -3346,7 +3345,7 @@ public abstract class PircBot implements ReplyConstants {
   private String _finger = "You ought to be arrested for fingering a bot!";
 
 
-  private final List<Character> _channelPrefixes = Arrays.asList(new Character[] { '#','&','+','!' });
+  private final List<Character> _channelPrefixes = Arrays.asList('#','&','+','!');
 
 
   // XXX: Better TLS support

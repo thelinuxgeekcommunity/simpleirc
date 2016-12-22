@@ -7,6 +7,8 @@ import java.util.HashMap;
 import tk.jordynsmediagroup.simpleirc.command.handler.AMsgHandler;
 import tk.jordynsmediagroup.simpleirc.command.handler.AwayHandler;
 import tk.jordynsmediagroup.simpleirc.command.handler.BackHandler;
+import tk.jordynsmediagroup.simpleirc.command.handler.BanHandler;
+import tk.jordynsmediagroup.simpleirc.command.handler.CTCPHandler;
 import tk.jordynsmediagroup.simpleirc.command.handler.ClearHandler;
 import tk.jordynsmediagroup.simpleirc.command.handler.CloseHandler;
 import tk.jordynsmediagroup.simpleirc.command.handler.DCCHandler;
@@ -27,9 +29,11 @@ import tk.jordynsmediagroup.simpleirc.command.handler.NoticeHandler;
 import tk.jordynsmediagroup.simpleirc.command.handler.OpHandler;
 import tk.jordynsmediagroup.simpleirc.command.handler.PartHandler;
 import tk.jordynsmediagroup.simpleirc.command.handler.QueryHandler;
+import tk.jordynsmediagroup.simpleirc.command.handler.QuietHandler;
 import tk.jordynsmediagroup.simpleirc.command.handler.QuitHandler;
 import tk.jordynsmediagroup.simpleirc.command.handler.RawHandler;
 import tk.jordynsmediagroup.simpleirc.command.handler.TopicHandler;
+import tk.jordynsmediagroup.simpleirc.command.handler.UnQuietHandler;
 import tk.jordynsmediagroup.simpleirc.command.handler.VoiceHandler;
 import tk.jordynsmediagroup.simpleirc.command.handler.WhoisHandler;
 import tk.jordynsmediagroup.simpleirc.exception.CommandException;
@@ -82,6 +86,10 @@ public class CommandParser {
     commands.put("quote", new RawHandler());
     commands.put("amsg", new AMsgHandler());
     commands.put("clear", new ClearHandler());
+    commands.put("ban", new BanHandler());
+    commands.put("quiet", new QuietHandler());
+    commands.put("unquiet", new UnQuietHandler());
+    commands.put("ctcp", new CTCPHandler());
 
     aliases = new HashMap<String, String>();
 
@@ -91,6 +99,8 @@ public class CommandParser {
     aliases.put("h", "help");
     aliases.put("raw", "quote");
     aliases.put("w", "whois");
+    aliases.put("banlist", "ban");
+    aliases.put("quietlist", "quiet");
   }
 
   /**

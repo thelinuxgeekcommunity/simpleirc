@@ -7,7 +7,7 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 android {
     signingConfigs {
         KeyConfig {
-	    // Set up the key properties from the loaded files
+	    // Set up the key properties from the loaded file(s)
             keyAlias keystoreProperties['keyAlias']
             keyPassword keystoreProperties['keyPassword']
             storeFile file(keystoreProperties['storeFile'])
@@ -21,8 +21,8 @@ android {
     buildToolsVersion "25.0.0"
     defaultConfig {
         applicationId 'tk.jordynsmediagroup.simpleirc'
-        minSdkVersion 11 // Android 3.0 Honeycomb
-        targetSdkVersion 22 // Android 6.0 Marshmallow
+        minSdkVersion 16 // Android 4.1 Jellybean
+        targetSdkVersion 22 // Android 5.1 Lollipop
     }
     buildTypes {
         release {
@@ -49,15 +49,14 @@ android {
         normal {
             // Product flavor for a generic build
             applicationId 'tk.jordynsmediagroup.simpleirc'
-            minSdkVersion 11
+            minSdkVersion 16
             targetSdkVersion 22
         }
         fdroid {
-	    // Product flavor for a f-droid build
+	        // Product flavor for a f-droid build
             applicationIdSuffix '.fdroid'
-            minSdkVersion 11
+            minSdkVersion 16
             targetSdkVersion 22
-            signingConfig signingConfigs.KeyConfig
         }
     }
 }
@@ -67,7 +66,7 @@ dependencies {
     compile project(':viewPagerIndicator')
     compile project(':memorizingTrustManager')
     compile project(':colorPickerView')
-    // Android support libaries
+    // Android support libraries
     compile 'com.android.support:support-v4:22.0.0'
     compile 'com.android.support:appcompat-v7:22.1.0'
 }

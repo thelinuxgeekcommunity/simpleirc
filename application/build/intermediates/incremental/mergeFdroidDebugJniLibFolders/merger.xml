@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/jordyn-void/code/simpleirc/application/src/main/jniLibs"/></dataSet><dataSet config="fdroid"><source path="/home/jordyn-void/code/simpleirc/application/src/fdroid/jniLibs"/></dataSet><dataSet config="debug"><source path="/home/jordyn-void/code/simpleirc/application/src/debug/jniLibs"/></dataSet><dataSet config="fdroidDebug"><source path="/home/jordyn-void/code/simpleirc/application/src/fdroidDebug/jniLibs"/></dataSet></merger>

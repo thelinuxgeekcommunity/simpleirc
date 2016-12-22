@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/jordyn-void/code/simpleirc/application/build/intermediates/incremental/mergeNormalDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
+        "outputFile": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/incremental/mergeNormalDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 114
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-w600dp-v13/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-w600dp-v13/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 169
                 },
                 "from": {
-                    "file": "/home/jordyn-void/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-w600dp-v13/values.xml",
+                    "file": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-w600dp-v13/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,

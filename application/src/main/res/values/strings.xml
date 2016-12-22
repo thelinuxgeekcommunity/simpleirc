@@ -149,10 +149,18 @@
     <string name="command_desc_join">Join a channel</string>
     <!-- Description for /kick  -->
     <string name="command_desc_kick">Kicks a user</string>
+    <!-- Description for /ban  -->
+    <string name="command_desc_ban">Bans a user or gets the ban list if no nick is given</string>
+    <!-- Description for /quiet  -->
+    <string name="command_desc_quiet">Quiets a user or gets the quiet list if no nick is given</string>
+    <!-- Description for /unquiet  -->
+    <string name="command_desc_unquiet">Unquiets a user or gets the quiet list if no nick is given</string>
     <!-- Description for /me (IRC ACTION statement) -->
     <string name="command_desc_me">Perform an action</string>
     <!-- Description for /mode (Changes modes for a channel) -->
     <string name="command_desc_mode">Change channel modes</string>
+    <!-- Description for /ctcp (Sends a CTCP command to a user) -->
+    <string name="command_desc_ctcp">Sends a CTCP command to a user</string>
     <!-- Description for /msg (Sends message to channel/user) -->
     <string name="command_desc_msg">Send a message to a channel or user</string>
     <!-- Description for /names (Lists users in a channel) -->
@@ -160,7 +168,7 @@
     <!-- Description for /nick (changes own nickname) -->
     <string name="command_desc_nick">Change own nickname</string>
     <!-- Description for /notice (Sends notice to user/channel) -->
-    <string name="command_desc_notice">Send a notice to an other user</string>
+    <string name="command_desc_notice">Send a notice to an other user or channel</string>
     <!-- Description for /op (gives operator privs to user) -->
     <string name="command_desc_op">Give a user operator status</string>
     <!-- Description for /halfop (gives halfoperator privs to user) -->
@@ -251,6 +259,12 @@
     <string name="message_remove_channel_limit">%1$s removes limit</string>
     <!-- Status message: $1 bans $2 (hostmask) -->
     <string name="message_set_ban">%1$s sets ban: %2$s</string>
+    <!-- Status message: $1 quiets $2 (hostmask) -->
+    <string name="message_set_quiet">%1$s quiets: %2$s</string>
+    <!-- Status message: $1 unquiet $2 (hostmask) -->
+    <string name="message_set_unquiet">%1$s unquiets: %2$s</string>
+    <!-- Status message: $1 Sets mode $2 On $3 -->
+    <string name="user_set_mode">%1$s Sets mode %2$s on %3$s</string>
     <!-- Status message: $1 removed ban on $2 -->
     <string name="message_remove_ban">%1$s removes ban: %2$s</string>
     <!-- Status message: $1 disabled changing the topic (topic protection) -->
@@ -284,8 +298,11 @@
     <string name="user_action_dehalfop">DeHalfOp</string>
     <string name="user_action_voice">Voice</string>
     <string name="user_action_devoice">DeVoice</string>
+    <string name="user_action_quiet">Quiet</string>
+    <string name="user_action_unquiet">UnQuiet</string>
     <string name="user_action_kick">Kick</string>
     <string name="user_action_ban">Ban</string>
+    <string name="user_action_whois">Whois</string>
 
 
     <!--
@@ -298,7 +315,7 @@
 
     <string name="settings_connection">Connection</string>
 
-    <string name="settings_reconnect_error_title">Reconnect on error</string>
+    <string name="settings_reconnect_error_title">Reconnect on error (BROKEN: Gets stuck in a reconnect loop)</string>
     <string name="settings_reconnect_error_desc">Reconnect on network issue</string>
 
     <string name="settings_reconnect_interval_title">Reconnect interval</string>
@@ -370,6 +387,12 @@
 
     <string name="settings_noticeserverwindow_title">Notices server window</string>
     <string name="settings_noticeserverwindow_desc">Show notices in server window</string>
+
+    <string name="settings_keep_screen_on_title">Keep screen on</string>
+    <string name="settings_keep_screen_on_desc">Keeps the screen from turning off while in Simple IRC</string>
+
+    <string name="settings_goto_new_query_title">Go to new query\'s</string>
+    <string name="settings_goto_new_query_desc">Goes to new query\'s automatically</string>
 
     <string name="settings_mirc_colors_title">Show message colors</string>
     <string name="settings_mirc_colors_desc">Show mIRC colors in messages</string>

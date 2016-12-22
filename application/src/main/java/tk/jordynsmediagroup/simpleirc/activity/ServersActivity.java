@@ -27,7 +27,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import tk.jordynsmediagroup.simpleirc.Atomic;
+import tk.jordynsmediagroup.simpleirc.SimpleIRC;
 import tk.jordynsmediagroup.simpleirc.R;
 import tk.jordynsmediagroup.simpleirc.adapter.ServerListAdapter;
 import tk.jordynsmediagroup.simpleirc.db.Database;
@@ -146,7 +146,7 @@ public class ServersActivity extends AppCompatActivity implements ServiceConnect
    */
   private void autoconnect() {
     // If we don't have any servers to go with.
-    if( Atomic.getInstance().getServersAsArrayList().size() < 1 )
+    if( SimpleIRC.getInstance().getServersAsArrayList().size() < 1 )
       return;
     // Or we've done this already
     if( !doAutoconnect.getValue() )
@@ -294,7 +294,7 @@ public class ServersActivity extends AppCompatActivity implements ServiceConnect
    * @param serverId The id of the server
    */
   private void editServer(int serverId) {
-    Server server = Atomic.getInstance().getServerById(serverId);
+    Server server = SimpleIRC.getInstance().getServerById(serverId);
 
     if( server.getStatus() != Status.DISCONNECTED ) {
       Toast.makeText(this, getResources().getString(R.string.disconnect_before_editing), Toast.LENGTH_SHORT).show();
@@ -343,7 +343,7 @@ public class ServersActivity extends AppCompatActivity implements ServiceConnect
         startActivity(new Intent(this, SettingsActivity.class));
         break;
       case R.id.disconnect_all:
-        ArrayList<Server> mServers = Atomic.getInstance().getServersAsArrayList();
+        ArrayList<Server> mServers = SimpleIRC.getInstance().getServersAsArrayList();
         binder.getService().clearReconnectList();
         for( Server server : mServers ) {
           DisconnectServer(server);
@@ -377,7 +377,7 @@ public class ServersActivity extends AppCompatActivity implements ServiceConnect
     db.close();
     // make sure we don't accidentally reconnect it
     binder.getService().removeReconnection(serverId);
-    Atomic.getInstance().removeServerById(serverId);
+    SimpleIRC.getInstance().removeServerById(serverId);
     adapter.loadServers();
   }
 
@@ -394,7 +394,7 @@ public class ServersActivity extends AppCompatActivity implements ServiceConnect
   @Override
   public void onBackPressed() {
     if( lastBackPress + 2000 > System.currentTimeMillis() ) {
-      ArrayList<Server> mServers = Atomic.getInstance().getServersAsArrayList();
+      ArrayList<Server> mServers = SimpleIRC.getInstance().getServersAsArrayList();
       for( Server server : mServers ) {
         if( binder.getService().hasConnection(server.getId()) ) {
           DisconnectServer(server);

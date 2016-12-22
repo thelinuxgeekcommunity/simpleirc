@@ -8,6 +8,7 @@ import tk.jordynsmediagroup.simpleirc.exception.CommandException;
 import tk.jordynsmediagroup.simpleirc.irc.IRCService;
 import tk.jordynsmediagroup.simpleirc.model.Conversation;
 import tk.jordynsmediagroup.simpleirc.model.Server;
+import tk.jordynsmediagroup.simpleirc.model.Status;
 
 /**
  * Command: /quit [<reason>]
@@ -20,8 +21,12 @@ public class QuitHandler extends BaseHandler {
   @Override
   public void execute(String[] params, Server server, Conversation conversation, IRCService service) throws CommandException {
     if( params.length == 1 ) {
+      server.setMayReconnect(false);
+      server.setStatus(Status.DISCONNECTED);
       service.getConnection(server.getId()).quitServer();
     } else {
+      server.setMayReconnect(false);
+      server.setStatus(Status.DISCONNECTED);
       service.getConnection(server.getId()).quitServer(BaseHandler.mergeParams(params));
     }
   }

@@ -2,7 +2,6 @@ package tk.jordynsmediagroup.simpleirc.activity;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
-
 import tk.jordynsmediagroup.simpleirc.R;
 
 // Settings

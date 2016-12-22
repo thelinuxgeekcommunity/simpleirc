@@ -22,7 +22,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 
-import tk.jordynsmediagroup.simpleirc.Atomic;
+import tk.jordynsmediagroup.simpleirc.SimpleIRC;
 import tk.jordynsmediagroup.simpleirc.R;
 import tk.jordynsmediagroup.simpleirc.db.Database;
 import tk.jordynsmediagroup.simpleirc.dialog.AddAliasView;
@@ -58,6 +58,7 @@ public class AddServerActivity extends Activity implements OnClickListener {
 
   private Settings s;
 
+
   /**
    * On create
    */
@@ -70,7 +71,6 @@ public class AddServerActivity extends Activity implements OnClickListener {
     setContentView(R.layout.serveradd);
 
     ActionBar actionBar = getActionBar();
-
 
     authentication = new Authentication();
     aliases = new ArrayList<String>();
@@ -375,7 +375,7 @@ public class AddServerActivity extends Activity implements OnClickListener {
     server.setAutoJoinChannels(channels);
     server.setConnectCommands(commands);
 
-    Atomic.getInstance().addServer(server);
+    SimpleIRC.getInstance().addServer(server);
   }
 
   /**
@@ -410,7 +410,7 @@ public class AddServerActivity extends Activity implements OnClickListener {
     server.setAutoJoinChannels(channels);
     server.setConnectCommands(commands);
 
-    Atomic.getInstance().updateServer(server);
+    SimpleIRC.getInstance().updateServer(server);
   }
 
   /**

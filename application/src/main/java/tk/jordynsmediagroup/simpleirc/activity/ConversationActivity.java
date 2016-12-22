@@ -51,7 +51,7 @@ import java.util.List;
 import java.util.Locale;
 
 import tk.jordynsmediagroup.simpleirc.App;
-import tk.jordynsmediagroup.simpleirc.Atomic;
+import tk.jordynsmediagroup.simpleirc.SimpleIRC;
 import tk.jordynsmediagroup.simpleirc.R;
 import tk.jordynsmediagroup.simpleirc.adapter.ConversationPagerAdapter;
 import tk.jordynsmediagroup.simpleirc.adapter.MessageListAdapter;
@@ -105,9 +105,9 @@ public class ConversationActivity extends AppCompatActivity implements
   private ConversationReceiver channelReceiver;
   private ServerReceiver serverReceiver;
 
-  private ViewPager pager;
+  public static ViewPager pager;
   private ConversationIndicator indicator;
-  private ConversationPagerAdapter pagerAdapter;
+  public static ConversationPagerAdapter pagerAdapter;
 
   private Scrollback scrollback;
 
@@ -185,7 +185,7 @@ public class ConversationActivity extends AppCompatActivity implements
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     serverId = getIntent().getExtras().getInt("serverId");
-    server = Atomic.getInstance().getServerById(serverId);
+    server = SimpleIRC.getInstance().getServerById(serverId);
     settings = App.getSettings();
     if(settings == null) {
       Log.wtf("SimpleIRC/Fatal", "Settings might be corrupt, please clear data and try again.");
@@ -246,7 +246,10 @@ public class ConversationActivity extends AppCompatActivity implements
     indicator.setSelectedColor(_scheme.getForeground());
     indicator.setSelectedBold(true);
     indicator.setBackgroundColor(_scheme.getBackground());
-
+    if (settings.keepScreenOn()) {
+        // If turned on in the settings then set the SurfaceFlinger flag to keep the screen on while in the foreground
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+    }
     indicator.setVisibility(View.GONE);
 
     indicator.setOnPageChangeListener(this);
@@ -331,10 +334,7 @@ public class ConversationActivity extends AppCompatActivity implements
                 .getIntrinsicWidth());
 
         if (event.getAction() == MotionEvent.ACTION_UP && tappedX) {
-          cv.doNickCompletion(tt);
-        } else {
-          // Blarrarharhguhaguhaguhaeguahguh STFU linter.
-          // :3
+            cv.doNickCompletion(tt);
         }
         return false;
       }
@@ -551,7 +551,6 @@ public class ConversationActivity extends AppCompatActivity implements
     super.onPause();
 
     // Mark the current visible line.
-
     server.setIsForeground(false);
 
     if( binder != null && binder.getService() != null ) {
@@ -603,7 +602,7 @@ public class ConversationActivity extends AppCompatActivity implements
   public boolean onCreateOptionsMenu(Menu menu) {
     super.onCreateOptionsMenu(menu);
 
-    // inflate from xml
+    // Inflate from xml
     MenuInflater inflater = new MenuInflater(this);
     inflater.inflate(R.menu.conversations, menu);
 
@@ -694,19 +693,11 @@ public class ConversationActivity extends AppCompatActivity implements
                   switch ( which ) {
                     case 0:
                       final String replyText = nicknameWithoutPrefix + ": ";
-                      /*
-                       * handler.post(new Runnable() {
-                       *
-                       * @Override public void run() {
-                       */
                       EditText input = (EditText)findViewById(R.id.input);
                       input.setText(replyText);
                       input.setSelection(replyText.length());
                       openSoftKeyboard(input);
                       input.requestFocus();
-
-                      // }
-                      // });
                       break;
                     case 1:
                       Conversation query = server
@@ -741,21 +732,24 @@ public class ConversationActivity extends AppCompatActivity implements
                       break;
                     case 7:
                       connection.deVoice(conversation, nicknameWithoutPrefix);
-                      break;
                     case 8:
-                      connection.ban(conversation, nicknameWithoutPrefix
-                              + "!*@*");
+                      connection.quiet(conversation, nicknameWithoutPrefix + "!*@*");
                       break;
                     case 9:
+                      connection.unquiet(conversation, nicknameWithoutPrefix + "!*@*");
+                      break;
+                    case 10:
+                      connection.ban(conversation, nicknameWithoutPrefix + "!*@*");
+                      break;
+                    case 11:
                       connection.kick(conversation, nicknameWithoutPrefix);
                       break;
-
+                    case 12:
+                      connection.whois(nicknameWithoutPrefix);
+                      break;
                   }
-
-                  /* ********************* */
-
                 }
-              }; // <-- Thats all for the actions listener.
+              }; // <-- That's all for the actions listener.
 
               AlertDialog.Builder ActionMenuBuilder = new Builder(_tContext);
 
@@ -787,8 +781,10 @@ public class ConversationActivity extends AppCompatActivity implements
 
               }
               Drawable d = getResources().getDrawable(drawableRes);
-              d.setBounds(0, 0, d.getIntrinsicWidth(), d.getIntrinsicHeight());
-              ss.setSpan(new ImageSpan(d), 0, 1,
+                if (d != null) {
+                    d.setBounds(0, 0, d.getIntrinsicWidth(), d.getIntrinsicHeight());
+                }
+                ss.setSpan(new ImageSpan(d), 0, 1,
                   SpannableString.SPAN_INCLUSIVE_EXCLUSIVE);
             }
             ss.setSpan(new ForegroundColorSpan(Message.getSenderColor(nick, _scheme)),
@@ -844,7 +840,6 @@ public class ConversationActivity extends AppCompatActivity implements
         break;
 
     }
-
     return true;
   }
 
@@ -900,16 +895,19 @@ public class ConversationActivity extends AppCompatActivity implements
    */
   @Override
   public synchronized void onNewConversation(String target) {
-
     createNewConversation(target);
-    /*
-    pager.setCurrentItem(pagerAdapter.getPositionByName(target));
-    */
+    // Goto new query if enabled
+    if ( settings.gotoNewQuery() ) {
+        pager.setCurrentItem(pagerAdapter.getPositionByName(target));
+    }
   }
 
+    /**
+     * On clear conversation
+     * @param target - What conversation to clear
+     */
   @Override
   public synchronized void onClearConversation(String target) {
-
     pagerAdapter.getItem(pagerAdapter.getPositionByName(target)).clearHistory();
     pagerAdapter.getItemAdapter(target).clear();
     Log.d("ConversationActivity", "Cleared conversation " + target);
@@ -987,10 +985,7 @@ public class ConversationActivity extends AppCompatActivity implements
         return;
       }
 
-      if( !binder.getService().getSettings().isReconnectEnabled()
-          && !reconnectDialogActive
-          && !binder.getService().isReconnecting(serverId) ) {
-
+      if( !binder.getService().getSettings().isReconnectEnabled() && ! reconnectDialogActive && ! binder.getService().isReconnecting(serverId) ) {
         reconnectDialogActive = true;
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder
@@ -1210,13 +1205,13 @@ public class ConversationActivity extends AppCompatActivity implements
       for( int i = 0; i < users.length; i++ ) {
         String nick = removeStatusChar(users[i].toLowerCase(Locale.US));
         if( nick.startsWith(word.toLowerCase(Locale.US)) ) {
-          result.add(Integer.valueOf(i));
+          result.add(i);
         }
       }
 
       if( result.size() == 1 ) {
         input.setSelection(cursor, sel_end);
-        insertNickCompletion(input, users[result.get(0).intValue()]);
+        insertNickCompletion(input, users[result.get(0)]);
       } else if( result.size() > 0 ) {
         // There was an ambiguity. Choose who wins.
         // in Yaaic, this was 80% handled by an external intent.
@@ -1235,7 +1230,7 @@ public class ConversationActivity extends AppCompatActivity implements
         final String[] extra = new String[result.size()];
         int i = 0;
         for( Integer n : result ) {
-          extra[i++] = users[n.intValue()];
+          extra[i++] = users[n];
         }
         // Now, take that list of possible user and let someone choose
         // who wins.
@@ -1369,7 +1364,7 @@ public class ConversationActivity extends AppCompatActivity implements
 
   @Override
   public void onPageSelected(int arg0) {
-    if( settings.showChannelBar() == false ) {
+    if(!settings.showChannelBar()) {
       showSubtitle();
     }
   }
