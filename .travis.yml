@@ -1,7 +1,0 @@
-language: bash
-dist: trusty
-sudo: false
-
-script:
-    - ./makerelease.sh --info --no-daemon
-
