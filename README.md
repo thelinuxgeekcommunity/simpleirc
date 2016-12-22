@@ -30,6 +30,13 @@ The diffrences between Simple IRC and Atmoic:
 * Added some more verbose logging
 * Graphical emojis not enabled by default
 
+# Prebuilt APK's
+You can find prebuilt apk's in the directory "apks"
+
+The apks with "fdroid" in the name are built just like the ones from fdroid execpt being signed with my key instead of theres
+
+The apks with "debug" in the name are built with debugging symbols
+
 # Help
 To send a line to the server use /quote or /raw
 
