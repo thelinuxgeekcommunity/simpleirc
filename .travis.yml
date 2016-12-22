@@ -1,9 +1,6 @@
 language: bash
-
 dist: trusty
-
-before_script:
-    - cd jcjordyn130/simpleirc
+sudo: false
 
 script:
     - makerelease.sh --info --no-daemon
