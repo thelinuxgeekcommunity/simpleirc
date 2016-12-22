@@ -17,4 +17,3 @@ Added a notice when receiving a CTCP or malformed CTCP request
 Disabled "Reconnect on error" by default (See TODO)
 Fixed building/doing anything with Simple IRC without my keystore and keystore properties file
 Added a script to automate building Simple IRC
-Added Travis CI to auto build Simple IRC
