@@ -29,6 +29,10 @@ The diffrences between Simple IRC and Atmoic:
 * Removed the messages that show when you connect to a server
 * Added some more verbose logging
 * Graphical emojis not enabled by default
+* /CTCP support
+* A notice when you get CTCP'ed
+* A notice when you get a Malformed CTCP
+* A option to keep the screen on while Simple IRC is in the foreground
 
 # Prebuilt APK's
 You can find prebuilt apk's in the directory "apks"
