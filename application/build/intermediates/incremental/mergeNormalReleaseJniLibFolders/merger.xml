@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/jordyn-arch/code/simpleirc/application/src/main/jniLibs"/></dataSet><dataSet config="normal"><source path="/home/jordyn-arch/code/simpleirc/application/src/normal/jniLibs"/></dataSet><dataSet config="release"><source path="/home/jordyn-arch/code/simpleirc/application/src/release/jniLibs"/></dataSet><dataSet config="normalRelease"><source path="/home/jordyn-arch/code/simpleirc/application/src/normalRelease/jniLibs"/></dataSet></merger>

@@ -1,151 +1,11 @@
 [
     {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_atelierforest",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_atelierforest"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_embers",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_embers"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_marrakesh",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_marrakesh"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_brewer",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_brewer"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_white_and_black",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_white_and_black"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_default",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_default"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_mocha",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_mocha"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_default",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_default"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_codeschool",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_codeschool"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_marrakesh",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_marrakesh"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_ocean",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_ocean"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_shapeshifter",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_shapeshifter"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_twilight",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_twilight"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_grayscale",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_grayscale"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_greenscreen",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_greenscreen"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_white_and_black",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_white_and_black"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_google",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_google"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_tomorrow",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_tomorrow"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_codeschool",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_codeschool"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_chalk",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_chalk"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_atelierdune",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_atelierdune"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_atelierseaside",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_atelierseaside"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_bespin",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_bespin"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_atelierlakeside",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_atelierlakeside"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_twilight",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_twilight"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_atelierheath",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_atelierheath"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_londontube",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_londontube"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_monokai",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_monokai"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_google",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_google"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_atelierheath",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_atelierheath"
-    },
-    {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_monokai",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_monokai"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_ashes",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_ashes"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_chalk",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_chalk"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_railscasts",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_railscasts"
-    },
-    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_solarized",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_solarized"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_3024",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_3024"
-    },
-    {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_isotope",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_isotope"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_embers",
@@ -160,8 +20,16 @@
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_atelierforest"
     },
     {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_3024",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_3024"
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_marrakesh",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_marrakesh"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_white_and_black",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_white_and_black"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_default",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_default"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_ashes",
@@ -172,12 +40,12 @@
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_greenscreen"
     },
     {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_paraiso",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_paraiso"
-    },
-    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_eighties",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_eighties"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_shapeshifter",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_shapeshifter"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_paraiso",
@@ -192,36 +60,40 @@
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_brewer"
     },
     {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_default",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_default"
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_tomorrow",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_tomorrow"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_codeschool",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_codeschool"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_chalk",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_chalk"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_atelierdune",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_atelierdune"
     },
     {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_eighties",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_eighties"
-    },
-    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_atelierlakeside",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_atelierlakeside"
     },
     {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_shapeshifter",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_shapeshifter"
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_twilight",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_twilight"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_atelierseaside",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_atelierseaside"
     },
     {
-        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_grayscale",
-        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_grayscale"
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_atelierheath",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_atelierheath"
     },
     {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_solarized",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_solarized"
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_grayscale",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_grayscale"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_default",
@@ -236,12 +108,16 @@
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_ocean"
     },
     {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_londontube",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_londontube"
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_londontube",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_londontube"
     },
     {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_tomorrow",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/raw/theme_base16_tomorrow"
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_google",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_google"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_monokai",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/raw/theme_base16_monokai"
     },
     {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/raw/theme_base16_railscasts",

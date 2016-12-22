@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/debug/xml/preferences.xml",
-        "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/xml/preferences.xml"
-    },
-    {
         "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/debug/xml/preferences.xml",
         "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/xml/preferences.xml"
     }
