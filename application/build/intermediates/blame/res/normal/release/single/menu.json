@@ -4,6 +4,18 @@
         "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/menu/servers.xml"
     },
     {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/menu/messageops.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/menu/messageops.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/menu/conversations.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/menu/conversations.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/menu/servers.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/menu/servers.xml"
+    },
+    {
         "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/menu/conversations.xml",
         "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/menu/conversations.xml"
     },
@@ -14,5 +26,9 @@
     {
         "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/menu/messageops.xml",
         "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/menu/messageops.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/menu/addserver.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/menu/addserver.xml"
     }
 ]

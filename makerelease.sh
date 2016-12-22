@@ -11,6 +11,9 @@ if [ ! -e apks ]; then
 mkdir -p apks
 fi
 
+# Remove all apks from application/build/outputs/apk
+rm -v application/build/outputs/apk/*.apk
+
 # Build stuff here
 echo "Building a debug build..."
 ./gradlew assembleNormalDebug $GRADLEARGS
@@ -22,7 +25,7 @@ echo "Building a fdroid debug build..."
 echo "Copying the built apk to the output directory..."
 cp -v application/build/outputs/apk/application-fdroid-debug.apk apks/SimpleIRC-$VERSION-fdroid-debug.apk
 
-if [ -e application/keystore ] || [ -e keystore.properties ]; then
+if [ -e keystore.properties ]; then
 echo "Building a release build..."
 ./gradlew assembleNormalRelease $GRADLEARGS
 echo "Copying the built apk to the output directory..."
@@ -31,7 +34,7 @@ else
 echo "Keystore not found, not building a release build..."
 fi
 
-if [ -e application/keystore ] || [ -e keystore.properties ]; then
+if [ -e keystore.properties ]; then
 echo "Building a fdroid release build..."
 ./gradlew assemblefdroidRelease $GRADLEARGS
 echo "Copying the built apk to the output directory..."

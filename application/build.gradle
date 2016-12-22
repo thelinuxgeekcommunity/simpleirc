@@ -1,17 +1,18 @@
 apply plugin: 'com.android.application'
 // Load the keystore properties from the root of the project
 def keystorePropertiesFile = rootProject.file("keystore.properties")
-def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-
 android {
-    signingConfigs {
-        KeyConfig {
-	    // Set up the key properties from the loaded file(s)
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
+    if ( keystorePropertiesFile.exists() ) {
+        signingConfigs {
+            KeyConfig {
+                def keystoreProperties = new Properties()
+                keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+                // Set up the key properties from the loaded file(s)
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+            }
         }
     }
     lintOptions {
@@ -28,7 +29,8 @@ android {
         release {
             // Build config for a release build
             minifyEnabled false
-            signingConfig signingConfigs.KeyConfig
+            // If the keystore and keystore properties exist then add that signing config
+            if ( keystorePropertiesFile.exists() ) { signingConfig signingConfigs.KeyConfig }
             pseudoLocalesEnabled true
             zipAlignEnabled true
             debuggable false

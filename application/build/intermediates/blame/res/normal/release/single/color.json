@@ -1,5 +1,21 @@
 [
     {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/color/switch_thumb_material_dark.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/color/switch_thumb_material_light.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/color/abc_primary_text_material_dark.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
         "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/color/abc_primary_text_disable_only_material_light.xml",
         "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color/abc_primary_text_disable_only_material_light.xml"
     },
@@ -12,8 +28,16 @@
         "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color/abc_secondary_text_material_dark.xml"
     },
     {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/color/abc_primary_text_material_light.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color/abc_primary_text_material_light.xml"
+    },
+    {
         "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/color/switch_thumb_material_light.xml",
         "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/color/vpi__dark_theme.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/simpleirc/viewPagerIndicator/unspecified/res/color/vpi__dark_theme.xml"
     },
     {
         "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/color/abc_primary_text_material_light.xml",
@@ -26,6 +50,14 @@
     {
         "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/color/vpi__dark_theme.xml",
         "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/simpleirc/viewPagerIndicator/unspecified/res/color/vpi__dark_theme.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/color/abc_primary_text_material_dark.xml",
@@ -42,5 +74,17 @@
     {
         "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/color/vpi__light_theme.xml",
         "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/exploded-aar/simpleirc/viewPagerIndicator/unspecified/res/color/vpi__light_theme.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/color/abc_search_url_text.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/color/abc_secondary_text_material_light.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/color/vpi__light_theme.xml",
+        "source": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/exploded-aar/simpleirc/viewPagerIndicator/unspecified/res/color/vpi__light_theme.xml"
     }
 ]

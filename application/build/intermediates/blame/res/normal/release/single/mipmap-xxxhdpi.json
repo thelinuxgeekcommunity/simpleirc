@@ -2,5 +2,9 @@
     {
         "merged": "/home/jordyn-linuxmint/Desktop/simpleirc/application/build/intermediates/res/merged/normal/release/mipmap-xxxhdpi/ic_launcher.png",
         "source": "/home/jordyn-linuxmint/Desktop/simpleirc/application/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/jordyn-arch/code/simpleirc/application/build/intermediates/res/merged/normal/release/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/home/jordyn-arch/code/simpleirc/application/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     }
 ]

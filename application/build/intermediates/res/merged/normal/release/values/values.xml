@@ -478,6 +478,7 @@
     <string name="command_desc_back">Turn off the away status</string>
     <string name="command_desc_ban">Bans a user or gets the ban list if no nick is given</string>
     <string name="command_desc_close">Closes the current window</string>
+    <string name="command_desc_ctcp">Sends a CTCP command to a user</string>
     <string name="command_desc_dcc">Send a file to a user</string>
     <string name="command_desc_dehalfop">Remove  half operator status</string>
     <string name="command_desc_deop">Remove operator status from a user</string>
@@ -533,7 +534,7 @@
     <string name="default_mirc_colors" translatable="false">true</string>
     <string name="default_notice_server_window" translatable="false">false</string>
     <string name="default_quitmessage" translatable="false">Simple IRC: The quit option.</string>
-    <string name="default_reconnect_error" translatable="false">true</string>
+    <string name="default_reconnect_error" translatable="false">false</string>
     <string name="default_reconnect_interval" translatable="false">5</string>
     <string name="default_reconnect_loss">false</string>
     <string name="default_reconnect_transient">false</string>
@@ -838,7 +839,7 @@
     <string name="settings_quitmessage_dialog_title">Quit message</string>
     <string name="settings_quitmessage_title">Quit message</string>
     <string name="settings_reconnect_error_desc">Reconnect on network issue</string>
-    <string name="settings_reconnect_error_title">Reconnect on error</string>
+    <string name="settings_reconnect_error_title">Reconnect on error (BROKEN: Gets stuck in a reconnect loop)</string>
     <string name="settings_reconnect_interval_desc">Number of minutes between reconnection tries</string>
     <string name="settings_reconnect_interval_dialog_title">Reconnect interval</string>
     <string name="settings_reconnect_interval_title">Reconnect interval</string>
