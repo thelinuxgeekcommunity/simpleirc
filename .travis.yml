@@ -3,7 +3,7 @@ language: bash
 dist: trusty
 
 before_script:
-    - cd simpleirc
+    - cd jcjordyn130/simpleirc
 
 script:
     - makerelease.sh --info --no-daemon
