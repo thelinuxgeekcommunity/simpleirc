@@ -3,5 +3,5 @@ dist: trusty
 sudo: false
 
 script:
-    - makerelease.sh --info --no-daemon
+    - ./makerelease.sh --info --no-daemon
 
