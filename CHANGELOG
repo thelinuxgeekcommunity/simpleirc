@@ -1,5 +1,8 @@
 Changelog for Simple IRC:
 
+Version 1.7:
+Removed a line from IRCService.java that was causing Simple IRC to think it was disconnected all the time
+
 Version 1.6:
 Changed minimum android api version to 16 (4.1 Jellybean)
 Added/Change some comments

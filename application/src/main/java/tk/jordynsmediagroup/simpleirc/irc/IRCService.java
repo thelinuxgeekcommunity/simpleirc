@@ -705,7 +705,6 @@ public class IRCService extends Service {
               } else {
                 message = new Message("Reconnecting to server... ");
                   connection.disconnect();
-                  server.setStatus(Status.DISCONNECTED);
                 Runnable r = new Runnable() {
                   @Override
                   public void run() {
