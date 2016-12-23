@@ -1,5 +1,13 @@
 Changelog for Simple IRC:
 
+Version 1.8:
+Fixed a race condition where onCTCP would be called if someone ran "/me" in a channel
+Fixed some hardcoded strings
+Fixed a misspelling in IRCConnection.java/onVersion
+Removed executable permissions from some files that don't need them (In the git repository)
+Changed .gitignore (In the git repository)
+Fixed some spelling in CONTRIBUTORS (In the git repository)
+
 Version 1.7:
 Removed a line from IRCService.java that was causing Simple IRC to think it was disconnected all the time
 

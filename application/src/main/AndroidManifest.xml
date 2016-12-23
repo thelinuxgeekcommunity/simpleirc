@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="tk.jordynsmediagroup.simpleirc"
     android:installLocation="auto"
-    android:versionCode="17"
-    android:versionName="1.7">
+    android:versionCode="18"
+    android:versionName="1.8">
 
     <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />

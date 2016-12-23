@@ -125,6 +125,8 @@
     <string name="nickname_in_use">Nickname %1$s already in use</string>
     <string name="irc_login_error">Could not log into the IRC server %1$s:%2$d</string>
     <string name="could_not_connect">Could not connect to %1$s:%2$d</string>
+    <string name="malformed_ctcp">%1$s Sent you a malformed CTCP %2$s</string>
+    <string name="on_ctcp">%1$s Sent you a CTCP %2$s</string>
 
     <!--  Command descriptions  -->
     <!-- description for /amsg -->

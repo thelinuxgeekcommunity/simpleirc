@@ -19,6 +19,7 @@ application/build/outputs/*
 **/R.java
 **/build/**
 **/out/**
+*/build
 
 # Ignore the key file.
 application/keystore

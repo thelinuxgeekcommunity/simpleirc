@@ -131,7 +131,7 @@ public class IRCConnection extends PircBot {
   @Override
   protected void onVersion(String sourceNick, String sourceLogin, String sourceHostname, String target) {
       if( debugTraffic ) {
-          Log.v(TAG, server.getTitle() + " :: " + "Recived CTCP version from:" + " " + sourceNick);
+          Log.v(TAG, server.getTitle() + " :: " + "Received CTCP version from:" + " " + sourceNick);
       }
      this.sendRawLine(
         "NOTICE " + sourceNick + " :\u0001VERSION " +
@@ -520,7 +520,7 @@ public class IRCConnection extends PircBot {
      */
     @Override
     protected void onMalformedCTCP(String sourceNick, String sourceLogin, String sourceHostname, String target, String command) {
-        Message message = new Message(sourceNick + " Sent you a malformed CTCP " + command);
+        Message message = new Message(service.getString(R.string.malformed_ctcp, sourceNick, command));
         message.setColor(Message.MessageColor.USER_EVENT);
         server.getConversation(ServerInfo.DEFAULT_NAME).addMessage(message);
 
@@ -537,17 +537,21 @@ public class IRCConnection extends PircBot {
      */
     @Override
     protected void onCTCP(String sourceNick, String sourceLogin, String sourceHostname, String target, String command) {
-        Message message = new Message(sourceNick + " Sent you a CTCP " + command);
-        message.setColor(Message.MessageColor.USER_EVENT);
-        server.getConversation(ServerInfo.DEFAULT_NAME).addMessage(message);
+        if (command == "ACTION") {
+            return; // Return on CTCP ACTION due to a race condition
+        }
+        // If all is good then notify the user that they got CTCP'ed
+            Message message = new Message(service.getString(R.string.on_ctcp, sourceNick, command));
+            message.setColor(Message.MessageColor.USER_EVENT);
+            server.getConversation(ServerInfo.DEFAULT_NAME).addMessage(message);
 
-        Intent intent = Broadcast.createConversationIntent(
-                Broadcast.CONVERSATION_MESSAGE,
-                server.getId(),
-                ServerInfo.DEFAULT_NAME
-        );
-        service.sendBroadcast(intent);
-    }
+            Intent intent = Broadcast.createConversationIntent(
+                    Broadcast.CONVERSATION_MESSAGE,
+                    server.getId(),
+                    ServerInfo.DEFAULT_NAME
+            );
+            service.sendBroadcast(intent);
+        }
   /**
    * On Nick Change
    */
@@ -557,7 +561,7 @@ public class IRCConnection extends PircBot {
       this.updateNickMatchPattern();
 
       // Send message about own change to server info window
-      Message message = new Message(service.getString(R.string.message_self_rename, newNick)); // Have no idea what android studio is complaning about here.
+      Message message = new Message(service.getString(R.string.message_self_rename, newNick)); // Have no idea what android studio is complaining about here.
       message.setColor(Message.MessageColor.USER_EVENT);
       server.getConversation(ServerInfo.DEFAULT_NAME).addMessage(message);
 
