@@ -6,7 +6,7 @@ All code in the repository is licensed under the GPLv3
 Supports the following:
 * SSL
 * SASL
-* ZNC (I haven't tested this)
+* ZNC (Some commands don't work)
 * DCC (Only supports send)
 * Reciving CTCP FINGER, and VERSION
 * Logging incomming and outgoing irc traffic
