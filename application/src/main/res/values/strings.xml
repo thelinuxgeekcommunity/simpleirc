@@ -46,7 +46,7 @@
     <!-- Port for IRC, numeric -->
     <string name="server_port">Port</string>
     <!-- Server password (/PASS) -->
-    <string name="server_password">Password</string>
+    <string name="server_password">Server/ZNC Password</string>
     <!-- Use SSL for the connections? -->
     <string name="server_useSSL">Use SSL</string>
     <!-- Server should be automatically connected (Checkbox) -->

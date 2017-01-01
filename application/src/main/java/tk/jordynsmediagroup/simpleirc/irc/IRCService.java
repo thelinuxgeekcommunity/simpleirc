@@ -621,47 +621,36 @@ public class IRCService extends Service {
           return;
         }
 
-        if ( settings.logTraffic() ) {
-          // If logging is enabled in settings then set it up here
-          Logging.setupLog();
-        }
-
         try {
+          I_AM_A_HORRIBLE_BASTARD:
+          ;
           IRCConnection connection = getConnection(serverId);
-          // Set nickname here
+
           connection.setNickname(server.getIdentity().getNickname());
-          // Set other nicknames here
           connection.setAliases(server.getIdentity().getAliases());
-          // Set Ident
           connection.setIdent(server.getIdentity().getIdent());
-          // Set real name
           connection.setRealName(server.getIdentity().getRealName());
-          // Set if we use SSL
           connection.setUseSSL(server.useSSL());
           X509TrustManager[] trustMgr = MemorizingTrustManager.getInstanceList(getApplicationContext());
           connection.setTrustManagers(trustMgr);
 
           if( server.getCharset() != null ) {
-            // If a charset is set in the server settings then apply it here
             connection.setEncoding(server.getCharset());
           }
 
           if( server.getAuthentication().hasSaslCredentials() ) {
-            // If SASL credentials are set in the server settings then apply it here
             connection.setSaslCredentials(
-                server.getAuthentication().getSaslUsername(),
-                server.getAuthentication().getSaslPassword()
+                    server.getAuthentication().getSaslUsername(),
+                    server.getAuthentication().getSaslPassword()
             );
           }
 
           if( server.getPassword() != "" ) {
-            // If server credentials are set in the server settings then apply it here
             connection.connect(server.getHost(), server.getPort(), server.getPassword());
           } else {
             connection.connect(server.getHost(), server.getPort());
           }
         } catch ( Exception e ) {
-          // Upon all Exceptions disconnect
           server.setStatus(Status.DISCONNECTED);
 
           NetworkInfo ninf = ((ConnectivityManager)(IRCService.this.getSystemService(Service.CONNECTIVITY_SERVICE))).getActiveNetworkInfo();
@@ -678,7 +667,6 @@ public class IRCService extends Service {
 
           Message message;
 
-          // If a Exception(s) occurred notify the user here
           if( e instanceof NickAlreadyInUseException ) {
             message = new Message(getString(R.string.nickname_in_use, connection.getNick()));
             server.setMayReconnect(false);
@@ -696,29 +684,27 @@ public class IRCService extends Service {
               updateNotification("Reconnecting.", "Reconnection queued", Notification.PRIORITY_MIN, false, false, false);
               server.setStatus(Status.RECONNECTING);
               IRCService.this.sendBroadcast(Broadcast.createServerIntent(
-                  Broadcast.SERVER_UPDATE, serverId));
+                      Broadcast.SERVER_UPDATE, serverId));
 
               if( _isTransient && (settings.reconnectTransient() || settings.reconnectLoss()) ) {
                 reconnectNextNetwork.add(serverId);
                 message = new Message(
-                    "Connection will be established once network is connected");
+                        "Connection will be established once network is connected");
               } else {
                 message = new Message("Reconnecting to server... ");
-                  connection.disconnect();
                 Runnable r = new Runnable() {
+
                   @Override
                   public void run() {
-                    Log.d(TAG, "In reconnect thread!");
-                    Log.d(TAG, "This is where reconnect problems will occur.");
+                    Log.d("IRCService", "In reconnect thread!");
+                    connection.disconnect();
                     try {
-                      // Sleep here (For 5 seconds) to prevent using up all the CPU time
                       Thread.sleep(5000);
-                    } catch (InterruptedException e) {
-                      // Just return here
-                      return;
+                    } catch ( Exception eee ) {
+                      ;
+                      ;
                     }
-                    if( server.getStatus() != Status.CONNECTED ) {
-                      server.setStatus(Status.CONNECTING);
+                    if( server.getStatus() != Status.DISCONNECTED ) {
                       connect(server);
                     }
                   }
@@ -733,9 +719,9 @@ public class IRCService extends Service {
           server.getConversation(ServerInfo.DEFAULT_NAME).addMessage(message);
 
           Intent cIntent = Broadcast.createConversationIntent(
-              Broadcast.CONVERSATION_MESSAGE,
-              serverId,
-              ServerInfo.DEFAULT_NAME
+                  Broadcast.CONVERSATION_MESSAGE,
+                  serverId,
+                  ServerInfo.DEFAULT_NAME
           );
           sendBroadcast(cIntent);
         }

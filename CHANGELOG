@@ -1,5 +1,9 @@
 Changelog for Simple IRC:
 
+Version 1.9:
+Fixed issue #9 (Notification says I'm not connected)
+Renamed a string from the server creation dialog
+
 Version 1.8:
 Fixed a race condition where onCTCP would be called if someone ran "/me" in a channel
 Fixed some hardcoded strings
