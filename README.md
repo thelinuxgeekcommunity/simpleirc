@@ -1,6 +1,9 @@
 # simpleirc
 A Simple open source irc client based off of Atmoic.
 
+<a href="https://f-droid.org/repository/browse/?fdid=tk.jordynsmediagroup.simpleirc.fdroid" target="_blank">
+<img src="https://f-droid.org/badge/get-it-on.png" height="80"/></a>
+
 All code in the repository is licensed under the GPLv3
 
 Supports the following:
@@ -37,7 +40,7 @@ The diffrences between Simple IRC and Atmoic:
 # Prebuilt APK's
 You can find prebuilt apk's in the directory "apks"
 
-The apks with "fdroid" in the name are built just like the ones from fdroid execpt being signed with my key instead of theres
+The apks with "fdroid" in the name are built just like the ones from fdroid except being signed with my key instead of theres
 
 The apks with "debug" in the name are built with debugging symbols
 
