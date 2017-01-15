@@ -1,5 +1,5 @@
 # simpleirc
-A Simple open source irc client based off of Atmoic.
+A simple open source IRC client based off of Atmoic.
 
 All code in the repository is licensed under the GPLv3
 
