@@ -1,10 +1,14 @@
 # simpleirc
 A Simple open source irc client based off of Atmoic.
 
+All code in the repository is licensed under the GPLv3
+
+<!-- Badge for the F-Droid app store -->
 <a href="https://f-droid.org/repository/browse/?fdid=tk.jordynsmediagroup.simpleirc.fdroid" target="_blank">
 <img src="https://f-droid.org/badge/get-it-on.png" height="80"/></a>
-
-All code in the repository is licensed under the GPLv3
+<!-- Badge for the Amazon app store -->
+<a href="https://www.amazon.com/The-Linux-Geek-Simple-IRC/dp/B01N769H2J" target="_blank">
+<img src="https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/devportal2/res/images/amazon-underground-app-us-white.png" height="70"/></a>
 
 Supports the following:
 * SSL
