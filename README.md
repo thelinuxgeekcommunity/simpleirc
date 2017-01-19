@@ -1,5 +1,5 @@
 # simpleirc
-A simple open source IRC client based off of Atmoic.
+A simple open source IRC client based off of Atomic.
 
 All code in the repository is licensed under the GPLv3
 
@@ -8,7 +8,7 @@ Supports the following:
 * SASL
 * ZNC (Some commands don't work)
 * DCC (Only supports send)
-* Reciving CTCP FINGER, and VERSION
+* Receiving CTCP FINGER, and VERSION
 * Logging incomming and outgoing irc traffic
 * Android API 16+ (Android 4.1 Jellybean+)
 * Multi server and channel
