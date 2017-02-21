@@ -35,7 +35,7 @@ The diffrences between Simple IRC and Atmoic:
 * A option to keep the screen on while Simple IRC is in the foreground
 
 # Testing
-This is the testing branch, here is where the latest code for Simple IRC is stored.
+This is the testing branch, This is where the latest code for Simple IRC is stored.
 If you want stable use the master branch.
 
 # Prebuilt APKs
