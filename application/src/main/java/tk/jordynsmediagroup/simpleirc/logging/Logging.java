@@ -24,31 +24,33 @@ public class Logging {
     private static Conversation conversation = ConversationActivity.pagerAdapter.getItem(ConversationActivity.pager.getCurrentItem());
     // Static function to add a line to the log
     public static void addLine(String line) {
-        try {
+        if (App.getSettings().logTraffic()) {
+            try {
             /* Try to write to the log here
              The directory to write to */
-            String outDir = App.getSettings().getLogFile();
-            // The format to write the log file in
-            DateFormat filedf = DateFormat.getDateInstance();
-            String filedate = filedf.format(Calendar.getInstance().getTime());
-            // Open the log
-            File file = new File(outDir + filedate + ".log");
-            BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
-            // Date to write to the log
-            DateFormat df = DateFormat.getDateTimeInstance();
-            String date = df.format(Calendar.getInstance().getTime());
-            // String to write to the log
-            String entry = "[" + date + "]" + " " + line;
-            // Write to the log and then flush and close it
-            writer.write(entry);
-            writer.newLine();
-            writer.flush();
-            writer.close();
-        } catch (FileNotFoundException e) {
-            // This needs to be fixed
-            return;
-        } catch (IOException e) {
-            // This needs to be fixed
+                String outDir = App.getSettings().getLogFile();
+                // The format to write the log file in
+                DateFormat filedf = DateFormat.getDateInstance();
+                String filedate = filedf.format(Calendar.getInstance().getTime());
+                // Open the log
+                File file = new File(outDir + filedate + ".log");
+                BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
+                // Date to write to the log
+                DateFormat df = DateFormat.getDateTimeInstance();
+                String date = df.format(Calendar.getInstance().getTime());
+                // String to write to the log
+                String entry = "[" + date + "]" + " " + line;
+                // Write to the log and then flush and close it
+                writer.write(entry);
+                writer.newLine();
+                writer.flush();
+                writer.close();
+            } catch (FileNotFoundException e) {
+                // This needs to be fixed
+                return;
+            } catch (IOException e) {
+                // This needs to be fixed
+            }
         }
     }
     // Static function to setup logging
