@@ -6,7 +6,7 @@ All code in the repository is licensed under the GPLv3
 Supports the following:
 * SSL
 * SASL
-* ZNC (Some commands don't work)
+* ZNC
 * DCC (Only supports send)
 * Receiving CTCP FINGER, and VERSION
 * Logging incomming and outgoing irc traffic
@@ -33,6 +33,10 @@ The diffrences between Simple IRC and Atmoic:
 * A notice when you get CTCP'ed
 * A notice when you get a Malformed CTCP
 * A option to keep the screen on while Simple IRC is in the foreground
+
+# Testing
+This is the testing branch, here is where the latest code for Simple IRC is stored.
+If you want stable use the master branch.
 
 # Prebuilt APKs
 You can find prebuilt apk's in the directory "apks"
