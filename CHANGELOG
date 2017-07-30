@@ -22,9 +22,9 @@ Fixed the logging some little and added a class for logging (So I don't have to 
 Create the logging directory if it doesn't exist if logging is enabled
 Renamed the base class from "Atmoic" to "SimpleIRC" to not conflict with Atmoic
 Fixed the copy dialog when used with large amounts of text (example: /help)
-Fixed a issue where large amounts of nick alias(s)/autojoin channels/autorun commands would overlap the textbox
-Added a option to Quiet/UnQuiet a user from the interface
-Added a option to whois a user from the interface
+Fixed an issue where large amounts of nick alias(s)/autojoin channels/autorun commands would overlap the textbox
+Added an option to Quiet/UnQuiet a user from the interface
+Added an option to whois a user from the interface
 Added a /ban and a /quiet command
 Added a notice upon setting a user mode (Like hexchat)
 Added a command to send CTCP commands
@@ -32,5 +32,5 @@ Added a notice when receiving a CTCP or malformed CTCP request
 Disabled "Reconnect on error" by default (See TODO)
 Fixed building/doing anything with Simple IRC without my keystore and keystore properties file
 Added a script to automate building Simple IRC
-Added a option to keep the screen on while Simple IRC is in the foreground
-Added a option to goto new query's at they get created
+Added an option to keep the screen on while Simple IRC is in the foreground
+Added an option to goto new queries at they get created

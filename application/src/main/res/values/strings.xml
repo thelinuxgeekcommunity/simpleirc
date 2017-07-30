@@ -176,7 +176,7 @@
     <!-- Description for /halfop (gives halfoperator privs to user) -->
     <string name="command_desc_halfop">Give a user half operator status</string>
     <!-- Description for /dehalfop (removes halfoperator privs from user) -->
-    <string name="command_desc_dehalfop">Remove  half operator status</string>
+    <string name="command_desc_dehalfop">Remove half operator status</string>
     <!-- Description for /part (Leaves the current channel) -->
     <string name="command_desc_part">Leave the current channel</string>
     <!-- Description for /query (Opens query window for user) -->
@@ -393,8 +393,8 @@
     <string name="settings_keep_screen_on_title">Keep screen on</string>
     <string name="settings_keep_screen_on_desc">Keeps the screen from turning off while in Simple IRC</string>
 
-    <string name="settings_goto_new_query_title">Go to new query\'s</string>
-    <string name="settings_goto_new_query_desc">Goes to new query\'s automatically</string>
+    <string name="settings_goto_new_query_title">Go to new queries</string>
+    <string name="settings_goto_new_query_desc">Goes to new queries automatically</string>
 
     <string name="settings_mirc_colors_title">Show message colors</string>
     <string name="settings_mirc_colors_desc">Show mIRC colors in messages</string>
