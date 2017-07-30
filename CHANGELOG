@@ -33,4 +33,4 @@ Disabled "Reconnect on error" by default (See TODO)
 Fixed building/doing anything with Simple IRC without my keystore and keystore properties file
 Added a script to automate building Simple IRC
 Added a option to keep the screen on while Simple IRC is in the foreground
-Added a option to goto new query's at they get created
+Added a option to goto new queries at they get created
